@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>debug</name>
+    <events>
+        <event-block sid="447571227646402">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="803050503618265" type="beaconCar1" />
+                <condition id="-7" name="Compare instance variable" sid="740380578036071" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">beaconCar1.character</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="667252783216185" type="debugTextCharacterStats1">
+                    <param id="0" name="Object">uiPortraits</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="0" name="Set text" sid="360601325551790" type="debugTextCharacterStats1">
+                    <param id="0" name="Text">&quot;CHAR: &quot;&amp;beaconCar1.character&amp;newline&amp;&quot;OP: &quot;&amp;int(beaconCar1.opinion)&amp;newline&amp;&quot;SK: &quot;&amp;beaconCar1.skill&amp;newline</param>
+                </action>
+                <action id="3" name="Set font size" sid="172197684801634" type="debugTextCharacterStats1">
+                    <param id="0" name="Size (pt)">10/Zoom</param>
+                </action>
+                <action id="-7" name="Set size" sid="445937197429699" type="debugTextCharacterStats1">
+                    <param id="0" name="Width">uiPortraits.Width*1.25</param>
+                    <param id="1" name="Height">uiPortraits.Height*4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="706844900325154">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="654048990095439" type="debugTextCharacterStats1">
+                            <param id="0" name="Text">newline&amp;&quot;(&quot;&amp;invisVehicle1.character&amp;&quot;)&quot;&amp;newline&amp;&quot;Ax: &quot;&amp;invisAxle1.character&amp;newline&amp;&quot;Fr: &quot;&amp;invisFrame1.character&amp;newline&amp;&quot;FW: &quot;&amp;wheelFront1.character&amp;newline&amp;&quot;RW: &quot;&amp;wheelRear1.character</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="771703860356958">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="251656432959784" type="debugTextCharacterStats1">
+                            <param id="0" name="Text">newline&amp;newline&amp;&quot;CYC: &quot;&amp;int(beaconCar1.Sine2.CyclePosition*100)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="718859380155212">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="192365419524898" type="System">
+                                    <param id="0" name="First value">int(beaconCar1.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="467676059044952" type="debugTextCharacterStats1">
+                                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="358522517167635">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="904136651854854" type="System">
+                                    <param id="0" name="First value">int(beaconCar1.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="793282248058505" type="debugTextCharacterStats1">
+                                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="944994971239500">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="501053313811908" type="beaconCar2" />
+                <condition id="-7" name="Compare instance variable" sid="907190445672151" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">beaconCar2.character</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="811489280164183" type="debugTextCharacterStats2">
+                    <param id="0" name="Object">uiPortraits</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="0" name="Set text" sid="378925145769301" type="debugTextCharacterStats2">
+                    <param id="0" name="Text">&quot;CHAR: &quot;&amp;beaconCar2.character&amp;newline&amp;&quot;OP: &quot;&amp;int(beaconCar2.opinion)&amp;newline&amp;&quot;SK: &quot;&amp;beaconCar2.skill&amp;newline</param>
+                </action>
+                <action id="3" name="Set font size" sid="308772470181344" type="debugTextCharacterStats2">
+                    <param id="0" name="Size (pt)">10/Zoom</param>
+                </action>
+                <action id="-7" name="Set size" sid="171354027933473" type="debugTextCharacterStats2">
+                    <param id="0" name="Width">uiPortraits.Width*1.25</param>
+                    <param id="1" name="Height">uiPortraits.Height*4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="699435914916662">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="824922670217025" type="debugTextCharacterStats2">
+                            <param id="0" name="Text">newline&amp;&quot;(&quot;&amp;invisVehicle2.character&amp;&quot;)&quot;&amp;newline&amp;&quot;Ax: &quot;&amp;invisAxle2.character&amp;newline&amp;&quot;Fr: &quot;&amp;invisFrame2.character&amp;newline&amp;&quot;FW: &quot;&amp;wheelFront2.character&amp;newline&amp;&quot;RW: &quot;&amp;wheelRear2.character</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="456136348963614">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="956686153001501" type="debugTextCharacterStats2">
+                            <param id="0" name="Text">newline&amp;newline&amp;&quot;CYC: &quot;&amp;int(beaconCar2.Sine2.CyclePosition*100)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="108094793559250">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="585013901129152" type="System">
+                                    <param id="0" name="First value">int(beaconCar2.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="405122320309083" type="debugTextCharacterStats2">
+                                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="926063250454669">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="466131144177480" type="System">
+                                    <param id="0" name="First value">int(beaconCar2.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="148195398453754" type="debugTextCharacterStats2">
+                                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="753783248223780">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="421447884566785" type="beaconCar3" />
+                <condition id="-7" name="Compare instance variable" sid="807440020742168" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">beaconCar3.character</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="439854369400849" type="debugTextCharacterStats3">
+                    <param id="0" name="Object">uiPortraits</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="0" name="Set text" sid="604308681812550" type="debugTextCharacterStats3">
+                    <param id="0" name="Text">&quot;CHAR: &quot;&amp;beaconCar3.character&amp;newline&amp;&quot;OP: &quot;&amp;int(beaconCar3.opinion)&amp;newline&amp;&quot;SK: &quot;&amp;beaconCar3.skill&amp;newline</param>
+                </action>
+                <action id="3" name="Set font size" sid="322203615878869" type="debugTextCharacterStats3">
+                    <param id="0" name="Size (pt)">10/Zoom</param>
+                </action>
+                <action id="-7" name="Set size" sid="505492589481087" type="debugTextCharacterStats3">
+                    <param id="0" name="Width">uiPortraits.Width*1.25</param>
+                    <param id="1" name="Height">uiPortraits.Height*4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="285811112119584">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="920874507562110" type="debugTextCharacterStats3">
+                            <param id="0" name="Text">newline&amp;&quot;(&quot;&amp;invisVehicle3.character&amp;&quot;)&quot;&amp;newline&amp;&quot;Ax: &quot;&amp;invisAxle3.character&amp;newline&amp;&quot;Fr: &quot;&amp;invisFrame3.character&amp;newline&amp;&quot;FW: &quot;&amp;wheelFront3.character&amp;newline&amp;&quot;RW: &quot;&amp;wheelRear3.character</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758969585723055">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Append text" sid="810612434534716" type="debugTextCharacterStats3">
+                            <param id="0" name="Text">newline&amp;newline&amp;&quot;CYC: &quot;&amp;int(beaconCar3.Sine2.CyclePosition*100)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="469043820350235">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="618502937935684" type="System">
+                                    <param id="0" name="First value">int(beaconCar3.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="609375022639064" type="debugTextCharacterStats3">
+                                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="380070818000244">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="643875840554075" type="System">
+                                    <param id="0" name="First value">int(beaconCar3.Sine2.CyclePosition*100)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="445081081760496" type="debugTextCharacterStats3">
+                                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="972937908767514">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="241720101965761" type="beaconCar1" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="698547757788146" type="debugTextCharacterStats1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="479663162811567">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="753771160592825" type="beaconCar1" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="730858119135235" type="debugTextCharacterStats1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455691533817306">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="475845217515704" type="beaconCar2" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="183445399507764" type="debugTextCharacterStats2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443552868543770">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="445937547359070" type="beaconCar2" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="212299517433176" type="debugTextCharacterStats2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568554511632002">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="703458077755080" type="beaconCar3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="933904496519436" type="debugTextCharacterStats3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="826917442291618">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="397248789524683" type="beaconCar3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="292913809453577" type="debugTextCharacterStats3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

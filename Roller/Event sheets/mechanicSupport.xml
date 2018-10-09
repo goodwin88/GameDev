@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicSupport</name>
+    <events>
+        <event-block sid="438496228742753">
+            <conditions>
+                <condition id="-18" name="On created" sid="905946669275209" type="support01" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="445561881242029" type="support01" />
+                <action id="5" name="Set frame" sid="988913978870003" type="support01">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="230436957857652" type="support01">
+                    <param id="0" name="Scale">0.125</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="124873436842083">
+            <conditions>
+                <condition behavior="PinToImagePoint" id="0" inverted="1" name="Is pinned" sid="418368114442619" type="support01" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="161469533465670" type="support01" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

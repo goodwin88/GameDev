@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupWorld</name>
+    <events>
+        <event-block sid="983067391027105">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="348396914558336" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="983172402924220" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Value">choose(1,2,3)</param>
+                </action>
+                <action id="2" name="Stop" sid="429506544279556" type="bd" />
+                <action id="-3" name="Set position" sid="275335454377443" type="bd">
+                    <param id="0" name="X">ViewportRight(&quot;invis&quot;)/2</param>
+                    <param id="1" name="Y">ViewportBottom(&quot;invis&quot;)/2</param>
+                </action>
+                <action id="-7" name="Set size" sid="491747393844972" type="bd">
+                    <param id="0" name="Width">ViewportRight(&quot;invis&quot;)</param>
+                    <param id="1" name="Height">ViewportBottom(&quot;invis&quot;)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="100325044894436" type="gloom">
+                    <param id="0" name="Object">bd</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="865206337743754" type="gloom">
+                    <param id="0" name="Width">bd.Width</param>
+                    <param id="1" name="Height">bd.Height*0.8</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="155187608860180" type="gloom">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="120211579832715">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="528812813362543" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="269030230517231" type="bd">
+                            <param id="0" name="Frame number">choose(1,2,3)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="757805280494454" type="envGroundSpawn">
+                            <param id="0" name="Angle">choose(10,20,30,40)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="435541195821910">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="282561698537045" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="154371600606472" type="bd">
+                            <param id="0" name="Frame number">choose(4,5,6)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="615631857530238" type="envGroundSpawn">
+                            <param id="0" name="Angle">choose(10,20,30,40)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="295062323714343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="101563366055644" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="243395753915992" type="bd">
+                            <param id="0" name="Frame number">choose(7,8,9)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

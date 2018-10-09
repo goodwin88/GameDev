@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicPinning</name>
+    <events>
+        <include>uiBars</include>
+        <event-block sid="2685070578298171">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="8521099963667024" type="tileBlank" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7335100860201851" type="tileBlank" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

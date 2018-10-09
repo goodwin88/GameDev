@@ -1,0 +1,2044 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>GoodPeoples</name>
+    <description></description>
+    <version>0.1.091118.1</version>
+    <author>Chris Goodwin</author>
+    <author-email>chris@goodwinillustration.com</author-email>
+    <author-website>http://goodwinillustration.com</author-website>
+    <app-id>goodwinillustration.com</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_pin2imgpt" version="1">Pin to image point</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>0</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="invisZeroX" sid="985218350919035">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="444763540167708" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.848" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisZeroY" sid="887742507054993">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671824875677839" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anchorFace" sid="162341310238734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692549765945241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="209505387024449">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="faceCranium" sid="286984210118077">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504335260345686" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.50137" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\001.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\002.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\003.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\004.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\005.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\006.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cranium\007.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="0" />
+                        <image-point name="Imagepoint 3" x="0.502347" y="0.5" />
+                        <collision-poly>
+                            <point x="0.243836" y="0.163603" />
+                            <point x="0.49863" y="0.0514706" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0328767" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceJaw" sid="986486339352747">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508886799533358" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" />
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\001.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\002.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\003.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\004.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\005.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\006.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\jaw\007.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.49863" y="0.891544" />
+                            <point x="0.334247" y="0.775735" />
+                            <point x="0.126027" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceMandible" sid="829967681152515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990301175140501" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\001.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\001.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\002.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\003.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\004.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\006.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\mandible\007.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceForehead" sid="192195297504555">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779145390870215" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\001.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="0.967123" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.0514706" />
+                            <point x="0.756164" y="0.163603" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\002.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="0.923288" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.0698529" />
+                            <point x="0.712329" y="0.193015" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\003.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="0.876712" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.108456" />
+                            <point x="0.665753" y="0.224265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\004.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.108456" />
+                            <point x="0.665753" y="0.224265" />
+                            <point x="0.873973" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\005.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.0625" />
+                            <point x="0.747945" y="0.169118" />
+                            <point x="0.939726" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\006.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.123162" />
+                            <point x="0.668493" y="0.222426" />
+                            <point x="0.942466" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\forehead\007.png">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.123162" />
+                            <point x="0.668493" y="0.222426" />
+                            <point x="0.942466" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceCheek" sid="533307047780699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139888560923877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\002.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\001.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\003.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\004.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\005.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\006.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501683" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Quadrants\cheek\007.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50137" y="0.483456" />
+                            <point x="0.375342" y="0.419118" />
+                            <point x="0.531507" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceNoseBack" sid="893106415508646">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525141288042410" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorFaceRed" sid="405355310076249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490777311217191" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorFaceBlue" sid="576828866651913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="208412386399352" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorFaceYellow" sid="225947015562502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421639898968889" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorFaceBlack" sid="164136880351690">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495643717679946" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeLeft" sid="955107479532540">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881234244428035" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeWhite.gif">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <image-point name="Imagepoint 2" x="0.5" y="-0.136" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.808" y="0.192" />
+                            <point x="1" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="1" />
+                            <point x="0.188" y="0.812" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="1" />
+                        <image-point name="Imagepoint 2" x="0.5" y="-0.136" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.808" y="0.192" />
+                            <point x="1" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="1" />
+                            <point x="0.188" y="0.812" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeRight" sid="549575434519694">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780411650508722" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeWhite.gif">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <image-point name="Imagepoint 2" x="0.5" y="-0.136" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.808" y="0.192" />
+                            <point x="1" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="1" />
+                            <point x="0.188" y="0.812" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <image-point name="Imagepoint 2" x="0.5" y="-0.136" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.5" />
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.808" y="0.192" />
+                            <point x="1" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="1" />
+                            <point x="0.188" y="0.812" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeLidLeftLower" sid="127857414742851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905847382551246" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeBag.gif">
+                        <collision-poly>
+                            <point x="0.566682" y="1" />
+                            <point x="0.833258" y="0.751299" />
+                            <point x="1" y="0.221067" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0">
+                        <collision-poly>
+                            <point x="0.566682" y="1" />
+                            <point x="0.833258" y="0.751299" />
+                            <point x="1" y="0.221067" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelidLower01.gif">
+                        <collision-poly>
+                            <point x="0.497426" y="1" />
+                            <point x="1" y="0.574951" />
+                            <point x="1" y="0.18305" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\001.png">
+                        <collision-poly>
+                            <point x="0.46025" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\002.png">
+                        <collision-poly>
+                            <point x="0.441459" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.935418" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\003.png">
+                        <collision-poly>
+                            <point x="0.492235" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.331923" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeLidLeftUpper" sid="984066783360834">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286179153823145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeBag.gif">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <collision-poly>
+                            <point x="0.0987654" y="0.523256" />
+                            <point x="0.0679012" y="0.616279" />
+                            <point x="0.5" y="0.011628" />
+                            <point x="0.932099" y="0.616279" />
+                            <point x="0.901235" y="0.523256" />
+                            <point x="0.5" y="0.255814" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeBrowLeft" sid="626502217956207">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770018859381716" speed="5">
+                    <frame duration="1" hotspotX="0.503846" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\001.png" />
+                    <frame duration="1" hotspotX="0.503846" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.503067" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\002.png" />
+                    <frame duration="1" hotspotX="0.503623" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\003.png" />
+                    <frame duration="1" hotspotX="0.50193" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\004.png" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\005.png" />
+                    <frame duration="1" hotspotX="0.503876" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\006.png" />
+                    <frame duration="1" hotspotX="0.503086" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\007.png" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\008.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.827082" y="0" />
+                            <point x="1" y="0.928359" />
+                            <point x="1" y="0.462608" />
+                            <point x="0.827082" y="0.835209" />
+                            <point x="0" y="0.462608" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeBrowRight" sid="700363282967212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633848457741484" speed="5">
+                    <frame duration="1" hotspotX="0.503846" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\001.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.430019" />
+                            <point x="0" y="0.668235" />
+                            <point x="0.338476" y="0" />
+                            <point x="1" y="0.668235" />
+                            <point x="1" y="0.430019" />
+                            <point x="0.338476" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503846" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.430019" />
+                            <point x="0" y="0.668235" />
+                            <point x="0.338476" y="0" />
+                            <point x="1" y="0.668235" />
+                            <point x="1" y="0.430019" />
+                            <point x="0.338476" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503067" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\002.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.437258" />
+                            <point x="0" y="0.650831" />
+                            <point x="0.371177" y="0" />
+                            <point x="1" y="0.650831" />
+                            <point x="1" y="0.437258" />
+                            <point x="0.371177" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503623" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\003.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.427219" />
+                            <point x="0" y="0.674964" />
+                            <point x="0.34784" y="0" />
+                            <point x="1" y="0.674964" />
+                            <point x="1" y="0.427219" />
+                            <point x="0.34784" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50193" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\004.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.412606" />
+                            <point x="0" y="0.690971" />
+                            <point x="0.335922" y="0" />
+                            <point x="1" y="0.690971" />
+                            <point x="1" y="0.412606" />
+                            <point x="0.335922" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503817" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\005.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.435719" />
+                            <point x="0" y="0.640466" />
+                            <point x="0.339709" y="0" />
+                            <point x="1" y="0.640466" />
+                            <point x="1" y="0.435719" />
+                            <point x="0.339709" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503876" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\006.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.415371" />
+                            <point x="0" y="0.703447" />
+                            <point x="0.337224" y="0" />
+                            <point x="1" y="0.703447" />
+                            <point x="1" y="0.415371" />
+                            <point x="0.337224" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503086" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\007.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0.421434" />
+                            <point x="0" y="0.671681" />
+                            <point x="0.370382" y="0" />
+                            <point x="1" y="0.671681" />
+                            <point x="1" y="0.421434" />
+                            <point x="0.370382" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503817" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyebrows\008.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeLidRightLower" sid="442807470302067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599615598860187" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.188235" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeBag.gif">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0.22615" />
+                            <point x="0.786287" y="0.867072" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.188235" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\001.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.55" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.188235" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\002.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.213713" y="0.867072" />
+                            <point x="0" y="0.22615" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.196078" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\003.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.466049" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.181818" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\004.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.71009" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504132" hotspotY="-0.193548" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\005.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.71009" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="eyeLidRightUpper" sid="963330238717230">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624442757374684" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyeBag.gif">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <collision-poly>
+                            <point x="0.0987654" y="0.523256" />
+                            <point x="0.0679012" y="0.616279" />
+                            <point x="0.5" y="0.011628" />
+                            <point x="0.932099" y="0.616279" />
+                            <point x="0.901235" y="0.523256" />
+                            <point x="0.5" y="0.255814" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceNoseBridge" sid="203854790330176">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469359637188117" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorNoseBlack" sid="427283445582657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574985598045889" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorNoseBlue" sid="160365288250660">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239287843736843" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorNoseRed" sid="119841045362716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988372999560118" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorNoseYellow" sid="577868459568380">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580090131104778" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceNoseFill" sid="578607543542711">
+            <plugin id="Sprite" />
+            <container>
+                <type>faceNoseFill</type>
+                <type>faceNose</type>
+                <type>nostril</type>
+            </container>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339999675845215" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\004.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\001.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\002.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\003.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\005.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\006.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses Fills\007.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.833333" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.833333" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceNose" sid="158105587897741">
+            <plugin id="Sprite" />
+            <container>
+                <type>faceNoseFill</type>
+                <type>faceNose</type>
+                <type>nostril</type>
+            </container>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668547995031518" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\004.png">
+                        <image-point name="Imagepoint 1" x="0.004" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.004" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\001.png">
+                        <image-point name="Imagepoint 1" x="0.004" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.0045045" hotspotY="-0.0338164" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\002.png">
+                        <image-point name="Imagepoint 1" x="0.0045045" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.00520833" hotspotY="-0.0118203" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\003.png">
+                        <image-point name="Imagepoint 1" x="0.00520833" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\005.png">
+                        <image-point name="Imagepoint 1" x="0.004" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\006.png">
+                        <image-point name="Imagepoint 1" x="0.004" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\Noses\007.png">
+                        <image-point name="Imagepoint 1" x="0.00333333" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.416667" y="0" />
+                            <point x="0.416667" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nostril" sid="523462056423042">
+            <plugin id="Sprite" />
+            <container>
+                <type>faceNoseFill</type>
+                <type>faceNose</type>
+                <type>nostril</type>
+            </container>
+            <animation-folder>
+                <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962780372705380" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\001.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\002.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\003.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\004.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\005.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\006.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\007.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\008.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.106918" y="0.108974" />
+                            <point x="0.496855" y="0.0448718" />
+                            <point x="0.27044" y="0.74359" />
+                            <point x="0.0943396" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.935897" />
+                            <point x="0.201258" y="0.794872" />
+                            <point x="0.0377358" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\009.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.106918" y="0.108974" />
+                            <point x="0.496855" y="0.0448718" />
+                            <point x="0.27044" y="0.74359" />
+                            <point x="0.0943396" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.935897" />
+                            <point x="0.201258" y="0.794872" />
+                            <point x="0.0377358" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\010.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.232704" y="0.237179" />
+                            <point x="0.496855" y="0.0897436" />
+                            <point x="0.320755" y="0.692308" />
+                            <point x="0.213836" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.903846" />
+                            <point x="0.264151" y="0.730769" />
+                            <point x="0.157233" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\011.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.861635" y="0.878205" />
+                            <point x="0.496855" y="0.833333" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.878205" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\012.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.861635" y="0.878205" />
+                            <point x="0.496855" y="0.878205" />
+                            <point x="0.194969" y="0.820513" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.955128" />
+                            <point x="0.150943" y="0.846154" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\013.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.220126" y="0.224359" />
+                            <point x="0.496855" y="0.0512821" />
+                            <point x="0.308176" y="0.705128" />
+                            <point x="0.257862" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.916667" />
+                            <point x="0.257862" y="0.737179" />
+                            <point x="0.213836" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\nostrils\014.png">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                        <collision-poly>
+                            <point x="0.622642" y="0.634615" />
+                            <point x="0.496855" y="0.685897" />
+                            <point x="1" y="1" />
+                            <point x="0.496855" y="0.942308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mouthCrease" sid="395633485022058">
+            <plugin id="Sprite" />
+            <container>
+                <type>mouthCrease</type>
+                <type>mouthLips</type>
+            </container>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662358141194679" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouthCrease01.gif">
+                        <image-point name="Imagepoint 1" x="0" y="0.658537" />
+                        <image-point name="Imagepoint 2" x="1" y="0.512195" />
+                        <collision-poly>
+                            <point x="0.188034" y="0.634146" />
+                            <point x="0.512821" y="0.780488" />
+                            <point x="0.867521" y="0.463415" />
+                            <point x="0.846154" y="0.756098" />
+                            <point x="0.820513" y="0.804878" />
+                            <point x="0.512821" y="0.951219" />
+                            <point x="0.192308" y="0.878049" />
+                            <point x="0.0854701" y="0.756098" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0" y="0.658537" />
+                        <image-point name="Imagepoint 2" x="1" y="0.512195" />
+                        <collision-poly>
+                            <point x="0.188034" y="0.634146" />
+                            <point x="0.512821" y="0.780488" />
+                            <point x="0.867521" y="0.463415" />
+                            <point x="0.846154" y="0.756098" />
+                            <point x="0.820513" y="0.804878" />
+                            <point x="0.512821" y="0.951219" />
+                            <point x="0.192308" y="0.878049" />
+                            <point x="0.0854701" y="0.756098" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\002.png">
+                        <image-point name="Imagepoint 1" x="0" y="0.658537" />
+                        <image-point name="Imagepoint 2" x="1" y="0.512195" />
+                        <collision-poly>
+                            <point x="0.128862" y="1" />
+                            <point x="0.5286" y="1" />
+                            <point x="0.965154" y="0.637122" />
+                            <point x="0.938856" y="1" />
+                            <point x="0.907298" y="1" />
+                            <point x="0.5286" y="1" />
+                            <point x="0.134123" y="1" />
+                            <point x="0.00262987" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="whiteoutGame" sid="394136920706380">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829814443171380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mouthLips" sid="873120951685218">
+            <plugin id="Sprite" />
+            <container>
+                <type>mouthCrease</type>
+                <type>mouthLips</type>
+            </container>
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991657458473267" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.366337" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips01.gif">
+                        <image-point name="Imagepoint 1" x="1.12393" y="1.15842" />
+                        <image-point name="Imagepoint 2" x="0.512821" y="-0.49505" />
+                        <image-point name="Imagepoint 3" x="0.504274" y="0.504951" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.376238">
+                        <image-point name="Imagepoint 1" x="1.12393" y="1.15842" />
+                        <image-point name="Imagepoint 2" x="0.512821" y="-0.49505" />
+                        <image-point name="Imagepoint 3" x="0.504274" y="0.504951" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.342466" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips02.gif">
+                        <image-point name="Imagepoint 1" x="1.12446" y="1.15068" />
+                        <image-point name="Imagepoint 2" x="0.51073" y="-0.493151" />
+                        <image-point name="Imagepoint 3" x="0.502146" y="0.506849" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.445652" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips03.gif">
+                        <image-point name="Imagepoint 1" x="1.12393" y="1.15217" />
+                        <image-point name="Imagepoint 2" x="0.512821" y="-0.48913" />
+                        <image-point name="Imagepoint 3" x="0.504274" y="0.51087" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.358974" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips04.gif">
+                        <image-point name="Imagepoint 1" x="1.12393" y="1.15385" />
+                        <image-point name="Imagepoint 2" x="0.512821" y="-0.487179" />
+                        <image-point name="Imagepoint 3" x="0.504274" y="0.512821" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.38806" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips05.gif">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.16418" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.492537" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.507463" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.454545" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips06.gif">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.16364" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.490909" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.509091" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.382353" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips07.gif">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.16176" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.485294" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.514706" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.367647" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\001.png">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.16176" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.485294" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.514706" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.527473" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\002.png">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.15385" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.494505" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.505495" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.432099" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\003.png">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.16049" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.493827" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.506173" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.393258" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\004.png">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.1573" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.494382" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.505618" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.409639" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\005.png">
+                        <image-point name="Imagepoint 1" x="1.125" y="1.15663" />
+                        <image-point name="Imagepoint 2" x="0.508621" y="-0.493976" />
+                        <image-point name="Imagepoint 3" x="0.5" y="0.506024" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.382353" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\006.png">
+                        <image-point name="Imagepoint 1" x="1.12446" y="1.15686" />
+                        <image-point name="Imagepoint 2" x="0.51073" y="-0.490196" />
+                        <image-point name="Imagepoint 3" x="0.502146" y="0.509804" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.419355" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\007.png">
+                        <image-point name="Imagepoint 1" x="1.12446" y="1.16129" />
+                        <image-point name="Imagepoint 2" x="0.51073" y="-0.483871" />
+                        <image-point name="Imagepoint 3" x="0.502146" y="0.516129" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.390476" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\lips\008.png">
+                        <image-point name="Imagepoint 1" x="1.12393" y="1.15238" />
+                        <image-point name="Imagepoint 2" x="0.512821" y="-0.485714" />
+                        <image-point name="5" x="0.683761" y="0.228571" />
+                        <image-point name="3" x="1.63675" y="1.19048" />
+                        <image-point name="Imagepoint 4" x="1" y="1" />
+                        <image-point name="Imagepoint 3" x="0.504274" y="0.514286" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.179661" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619855" />
+                            <point x="0" y="0.179661" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceEar" sid="473715470949045">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714778413960677" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.501171">
+                        <image-point name="Imagepoint 1" x="0" y="0.501171" />
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear01.gif">
+                        <image-point name="Imagepoint 1" x="0" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.453782" y="0.718045" />
+                            <point x="0.260504" y="0.586467" />
+                            <point x="0.5" y="0.75188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear02.gif">
+                        <image-point name="Imagepoint 1" x="0" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.406393" y="0.64966" />
+                            <point x="0.196346" y="0.530613" />
+                            <point x="0.456621" y="0.680272" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear03.gif">
+                        <image-point name="Imagepoint 1" x="0" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.335052" y="0.758475" />
+                            <point x="0.0979373" y="0.61017" />
+                            <point x="0.391753" y="0.79661" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="earLines" sid="880560257911870">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="434161321492698" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\earLines.gif">
+                        <image-point name="Imagepoint 1" x="0.933824" y="0.623529" />
+                        <collision-poly>
+                            <point x="0.205882" y="0.0294118" />
+                            <point x="0.573529" y="0.141176" />
+                            <point x="0.779412" y="0.958824" />
+                            <point x="0.205882" y="0.0529412" />
+                            <point x="0.823529" y="0.994118" />
+                            <point x="0.683824" y="0.958824" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.933824" y="0.623529" />
+                        <collision-poly>
+                            <point x="0.205882" y="0.0294118" />
+                            <point x="0.573529" y="0.141176" />
+                            <point x="0.779412" y="0.958824" />
+                            <point x="0.205882" y="0.0529412" />
+                            <point x="0.823529" y="0.994118" />
+                            <point x="0.683824" y="0.958824" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="earShade" sid="778263755893872">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958868526704961" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.657718" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\earShade.gif">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.382959" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.715667" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cheekbone" sid="329486487846513">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506733606026330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\cheekbone01.gif">
+                        <collision-poly>
+                            <point x="0.677419" y="0.5125" />
+                            <point x="0.516129" y="0.45" />
+                            <point x="0.991936" y="0.88125" />
+                            <point x="0.677419" y="0.59375" />
+                            <point x="0.935484" y="0.88125" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.677419" y="0.5125" />
+                            <point x="0.516129" y="0.45" />
+                            <point x="0.991936" y="0.88125" />
+                            <point x="0.677419" y="0.59375" />
+                            <point x="0.935484" y="0.88125" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\cheekbones\001.png">
+                        <collision-poly>
+                            <point x="0.954787" y="0" />
+                            <point x="0.491237" y="0" />
+                            <point x="1" y="0.327" />
+                            <point x="0.954787" y="0" />
+                            <point x="1" y="0.327" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503937" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\cheekbone02.gif">
+                        <collision-poly>
+                            <point x="1" y="0.903937" />
+                            <point x="0.728928" y="0.63622" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.503448" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\cheekbone03.gif">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceEarLobe" sid="432924454758714">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911327816511641" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" />
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\earLobe02.gif">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\earLobe01.gif">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\earLobe03.gif">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="irisLeft" sid="204677582347053">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501903333995830" speed="5">
+                    <frame duration="1" hotspotX="0.235294" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\iris01.gif" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="533163990967354">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="irisRight" sid="854460423608181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407143747838194" speed="5">
+                    <frame duration="1" hotspotX="0.235294" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\iris01.gif" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceChin" sid="555029840037005">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220126232267260" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501502" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\chin02.gif">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.653852" />
+                            <point x="0" y="0.879862" />
+                            <point x="0" y="0.595735" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501567" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0.389864" />
+                            <point x="1" y="0.195891" />
+                            <point x="1" y="0.439743" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backdrop" sid="843548257594584">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138880195437569" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="logo" sid="747811924598803">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="320548248246759">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="775001758610362" speed="5">
+                    <frame duration="1" hotspotX="0.523466" hotspotY="0.552083" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\logo.png">
+                        <collision-poly>
+                            <point x="0.209386" y="0.15625" />
+                            <point x="0.509025" y="0.00520833" />
+                            <point x="0.862816" y="0.0833333" />
+                            <point x="0.0469314" y="0.854167" />
+                            <point x="0.509025" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceMouthBack" sid="247814248966625">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983253415801483" speed="5">
+                    <frame duration="1" hotspotX="0.620061" hotspotY="0.503145" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\mouthback.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.996855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anchorMouthCorner" sid="415231229941270">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623614034650572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="faceEyeRightBack" sid="754842109377282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717992207891115" speed="5">
+                    <frame duration="1" hotspotX="0.620061" hotspotY="0.503145" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\mouthback.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.996855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anchorEyeRightCorner" sid="561428321702395">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454041336634852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textInstruction" sid="487707285171391">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textVersion" sid="308273024626111">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="invis9GridAsset1" sid="461989607160915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871442301055952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset2" sid="886473188511696">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646890543690312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset3" sid="173323450297224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863595024769917" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset4" sid="831826999511141">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574105707806454" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset5" sid="896689622989942">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529370723659718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="grid1" x="0" y="0" />
+                        <image-point name="grid2" x="0.5" y="0" />
+                        <image-point name="grid3" x="1" y="0" />
+                        <image-point name="grid4" x="0" y="0.5" />
+                        <image-point name="grid6" x="1" y="0.5" />
+                        <image-point name="grid7" x="0" y="1" />
+                        <image-point name="grid8" x="0.5" y="1" />
+                        <image-point name="grid9" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="grid1" x="0" y="0" />
+                        <image-point name="grid2" x="0.5" y="0" />
+                        <image-point name="grid3" x="1" y="0" />
+                        <image-point name="grid4" x="0" y="0.5" />
+                        <image-point name="grid6" x="1" y="0.5" />
+                        <image-point name="grid7" x="0" y="1" />
+                        <image-point name="grid8" x="0.5" y="1" />
+                        <image-point name="grid9" x="1" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="grid1" x="0" y="0" />
+                        <image-point name="grid2" x="0.5" y="0" />
+                        <image-point name="grid3" x="1" y="0" />
+                        <image-point name="grid4" x="0" y="0.5" />
+                        <image-point name="grid6" x="1" y="0.5" />
+                        <image-point name="grid7" x="0" y="1" />
+                        <image-point name="grid8" x="0.5" y="1" />
+                        <image-point name="grid9" x="1" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset6" sid="546220104277623">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139626834906315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset7" sid="499786291914014">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137604946676902" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset8" sid="476852363676870">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462268388603597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridAsset9" sid="240636314416619">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400185325070521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invis9GridBar" sid="131149887947226">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="overlap" sid="148893907578568" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="359461964902321">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="731812538493080">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invis9GridBar</type>
+                <type>mini9GridBar</type>
+            </container>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486701629234273" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisWallLeft" sid="444229748285458">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620302182192904" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisWallRight" sid="183300474884135">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627169804455060" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisWallTop" sid="399043779231634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692142086684954" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisWallBottom" sid="594901416984181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819837518611608" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beaconPath" sid="186589021058013">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="overlap" sid="235320813095696" type="number" />
+                <instance-variable name="gridNumber" sid="913446686016541" type="number" />
+                <instance-variable name="set" sid="264930620935569" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="149405570717181">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648715884012184" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="particleThoughtBubble" sid="491932383779910">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="bubblet" sid="774231989739550">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="251595038667782">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="102889223995608">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="854064272243020">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="378303788066531">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347536875163488" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.71875" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="whiteoutThoughts" sid="276284517586230">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370450109558607" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mini9GridBar" sid="252175376224582">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="overlap" sid="627361924128221" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="959593026612377">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invis9GridBar</type>
+                <type>mini9GridBar</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130177009827808" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="faceParts" plugin-id="Sprite" sid="174395641413104">
+            <members>
+                <member>cheekbone</member>
+                <member>eyeBrowLeft</member>
+                <member>eyeBrowRight</member>
+                <member>eyeLeft</member>
+                <member>eyeLidLeftLower</member>
+                <member>eyeLidLeftUpper</member>
+                <member>eyeLidRightLower</member>
+                <member>eyeLidRightUpper</member>
+                <member>eyeRight</member>
+                <member>faceCheek</member>
+                <member>faceChin</member>
+                <member>faceCranium</member>
+                <member>faceEar</member>
+                <member>faceEarLobe</member>
+                <member>faceEyeRightBack</member>
+                <member>faceForehead</member>
+                <member>faceJaw</member>
+                <member>faceMandible</member>
+                <member>faceMouthBack</member>
+                <member>faceNose</member>
+                <member>faceNoseBack</member>
+                <member>faceNoseBridge</member>
+                <member>faceNoseFill</member>
+                <member>mouthCrease</member>
+                <member>mouthLips</member>
+                <member>nostril</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="scaleHorizontal" sid="232907924491293" type="number" />
+                <instance-variable name="scaleVertical" sid="817805457346605" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="795193298783294">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="colorFace" plugin-id="Sprite" sid="472485454802883">
+            <members>
+                <member>colorFaceBlack</member>
+                <member>colorFaceBlue</member>
+                <member>colorFaceRed</member>
+                <member>colorFaceYellow</member>
+            </members>
+        </family>
+        <family name="faceCreases" plugin-id="Sprite" sid="663260549430320">
+            <members>
+                <member>cheekbone</member>
+                <member>eyeLidLeftLower</member>
+                <member>eyeLidLeftUpper</member>
+                <member>eyeLidRightLower</member>
+                <member>eyeLidRightUpper</member>
+            </members>
+        </family>
+        <family name="colorNose" plugin-id="Sprite" sid="404543915238717">
+            <members>
+                <member>colorNoseBlack</member>
+                <member>colorNoseBlue</member>
+                <member>colorNoseRed</member>
+                <member>colorNoseYellow</member>
+            </members>
+        </family>
+        <family name="invis9Grid" plugin-id="Sprite" sid="689741566536799">
+            <members>
+                <member>invis9GridAsset1</member>
+                <member>invis9GridAsset2</member>
+                <member>invis9GridAsset3</member>
+                <member>invis9GridAsset4</member>
+                <member>invis9GridAsset5</member>
+                <member>invis9GridAsset6</member>
+                <member>invis9GridAsset7</member>
+                <member>invis9GridAsset8</member>
+                <member>invis9GridAsset9</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="gridNumber" sid="111591091027478" type="number" />
+                <instance-variable name="overlap" sid="417586088999749" type="number" />
+            </instance-variables>
+        </family>
+        <family name="invisWall" plugin-id="Sprite" sid="360969939662986">
+            <members>
+                <member>invisWallBottom</member>
+                <member>invisWallLeft</member>
+                <member>invisWallRight</member>
+                <member>invisWallTop</member>
+            </members>
+        </family>
+        <family name="invis9GridCorner" plugin-id="Sprite" sid="456717033874046">
+            <members>
+                <member>invis9GridAsset1</member>
+                <member>invis9GridAsset3</member>
+                <member>invis9GridAsset7</member>
+                <member>invis9GridAsset9</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>game.xml</event-sheet>
+        <event-sheet>setupAxis.xml</event-sheet>
+        <event-sheet>setupFace.xml</event-sheet>
+        <event-sheet>setupColor.xml</event-sheet>
+        <event-sheet>mechanicShuffle.xml</event-sheet>
+        <event-sheet>setupMouth.xml</event-sheet>
+        <event-sheet>setupEyes.xml</event-sheet>
+        <event-sheet>setup9grid.xml</event-sheet>
+        <event-sheet>mechanicThoughtBubble.xml</event-sheet>
+        <event-sheet>mechanicMiniGrid.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Touch" uid="39">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

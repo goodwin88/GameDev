@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicMiniGrid</name>
+    <events>
+        <event-block sid="888557736327039">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="423146822795135" type="System" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="867898176866692" type="mini9GridBar">
+                    <param id="0" name="Width">invis9GridBar.Width*0.15</param>
+                    <param id="1" name="Height">invis9GridBar.Height*0.60</param>
+                </action>
+                <action id="-3" name="Set position" sid="584936584231435" type="mini9GridBar">
+                    <param id="0" name="X">particleThoughtBubble.X+(invis9GridBar.X*0.15)-(scrollx*0.15)</param>
+                    <param id="1" name="Y">particleThoughtBubble.Y+(invis9GridBar.Y*0.15)-(scrolly*0.15)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="894049277187635" type="mini9GridBar">
+                    <param id="0" name="Angle">invis9GridBar.Angle</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="110784693941972" type="mini9GridBar">
+                    <param id="0" name="Opacity">invis9GridBar.Opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="684032002593233">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="821667163301585" type="invis9GridBar" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="708876941455048" type="mini9GridBar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="436434098973921">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="302462354307616" type="invis9GridBar" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="612357577167323" type="mini9GridBar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

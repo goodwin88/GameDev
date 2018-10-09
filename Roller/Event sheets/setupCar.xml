@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupCar</name>
+    <events>
+        <event-block sid="274083869418563">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="424463597395363" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="629143132567315" type="soul">
+                    <param id="0" name="Instance variable">chassisStyle</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="576352286525983" type="soul">
+                    <param id="0" name="Instance variable">lowFront</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="397775920993402" type="soul">
+                    <param id="0" name="Instance variable">lowCenter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="602188304967021" type="soul">
+                    <param id="0" name="Instance variable">lowBack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="690994310251413" type="soul">
+                    <param id="0" name="Instance variable">lowFront</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="759362993480435" type="soul">
+                    <param id="0" name="Instance variable">lowCenter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="143038420543999" type="soul">
+                    <param id="0" name="Instance variable">lowBack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442322092439716">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="495226805925369" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="395009800561055" type="carPrimBody">
+                    <param id="0" name="Object">spawnerCar</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="701785538469893" type="carPrimChassis">
+                    <param id="0" name="Object">carPrimBody</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="817606445653629" type="carPartChassis">
+                    <param id="0" name="Object">carPrimChassis</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="713651619068247" type="carPartChassis">
+                    <param id="0" name="Pin to">carPrimChassis</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="184248544195227" type="carPrimHighBack">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;HighBack&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="921615642219234" type="carPrimHighCenter">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;HighCenter&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="370620632552435" type="carPrimHighFront">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;HighFront&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="896302558507278" type="carPrimLowBack">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;LowBack&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="130208610343051" type="carPrimLowCenter">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;LowCenter&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="772004532744660" type="carPrimLowFront">
+                    <param id="0" name="Pin to">carPartChassis</param>
+                    <param id="1" name="ImagePoint">&quot;LowFront&quot;</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="967149975462326">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="163535483628634" type="carPrimLowBack">
+                    <param id="0" name="Object">carPartWheel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="900150561938839" type="carPrimLowBack">
+                    <param id="0" name="Object">carPartWheel</param>
+                    <param id="1" name="Layer">&quot;Player&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="132957715109660" type="carPartWheel">
+                    <param id="0" name="Pin to">carPrimLowBack</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiDialogText</name>
+    <events>
+        <comment>Possible Initial States</comment>
+        <comment>Green In Front</comment>
+        <event-block sid="582531902792636">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="718663670138302" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3210000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="850325048347022" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="173887060787847" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Gr In Front, Or in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="344783783571459" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="394036757352907">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="319519248385945" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2310000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="771389931685519" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="128586737955628" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Gr In Front, Pr in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="386409575191432" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Purple In Front</comment>
+        <event-block sid="469948670049780">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="873149722042958" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3120000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="541626740386421" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="875825150975664" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Pr In Front, Or in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="121637226787261" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="658536134813824">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="110797452275857" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1320000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="858248210681812" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="729879747513630" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Pr In Front, Gr in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="172443492573071" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Orange In Front</comment>
+        <event-block sid="723415425075013">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="907550151951891" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2130000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="413917762415606" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="176426141503607" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Or In Front, Pr in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="422062837627785" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="892169620024745">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="728635227423425" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1230000</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="147509857527035" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="167034337891465" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;Or In Front, Gr in Back&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="886033859496701" type="dialoguePortraitLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Possible First Move States</comment>
+        <comment>Green In Front</comment>
+        <event-block sid="330731657147508">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="720477735231735" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3211001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="588824865128318">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="281226865096038" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3211010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="130176473850073">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="919422653832636" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3211100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="136963809721586">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="672521446855128" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2311001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="750957821092607">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="951737934004898" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2311010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="232226859432942">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="441443274020266" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2311100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment>Purple In Front</comment>
+        <event-block sid="418681467030943">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="719290189683803" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3121001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="587527803398147">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="369305285691390" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3121010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="807428204982889">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="911204723063763" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3121100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="861322259282660">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="545009241946263" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1321001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="711758343313558">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="721429705465785" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1321010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="347962021129762">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="600530675786575" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1321100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment>Orange In Front</comment>
+        <event-block sid="107862823766447">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="722841094387251" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2131001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="670903716074088">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="852025584068398" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2131010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="944570812468642">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="123850182928875" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2131100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="131503676370780">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="800483207123566" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1231001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="804660807906049">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="297267732176893" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1231010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="997554894933019">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="947385448349659" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1231100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment>Possible Second Move States</comment>
+        <comment>Green In Front</comment>
+        <event-block sid="659094063165337">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="693709104080039" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3212011</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="121234227499014">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="335839140380814" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3212110</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="714226053456784">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="439875790025328" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3212101</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="626510863184035">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="777743753349315" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2312011</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="337293379403959">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="908331181024001" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2312110</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="225087415151625">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="714349411369098" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2312111</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment>Purple In Front</comment>
+        <event-block sid="106032186016574">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="337938957247233" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3122001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="220202348475088">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="227076721749344" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3120010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="659521039679040">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="280533225687485" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3120100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="952279937801856">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="212969211076769" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1320001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="311557334574418">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="469997535573119" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1320010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="618780552325674">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="107389716978596" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1320100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment>Orange In Front</comment>
+        <event-block sid="960454821470420">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="638958132195206" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2130001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="798657755893312">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="652806881580984" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2130010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="663052309373569">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="132405159428867" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2130100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="421391865097830">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="279512838592396" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1230001</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="133019360941815">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="626176229341374" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1230010</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="857029376245622">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="112560480257362" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1230100</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

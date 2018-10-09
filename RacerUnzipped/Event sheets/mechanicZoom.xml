@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicZoom</name>
+    <events>
+        <event-block sid="388653950855667">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="619173601016658" type="System">
+                    <param id="0" name="First value">Zoom</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="850600495830865" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM IN&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="596419573186334" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM OUT&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119429170177297">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="989487948970396" type="System">
+                    <param id="0" name="First value">Zoom</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="999431008876570" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM IN&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="284517629873778" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM OUT&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="675357984780912">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="566563873033071" type="System">
+                    <param id="0" name="First value">Zoom</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="521398119130186" type="System">
+                    <param id="0" name="First value">Zoom</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="409012008737851" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM IN&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="461530921289579" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM OUT&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914459493544339">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="769855630582042" type="System">
+                    <param id="0" name="First value">Zoom</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="169335978921139" type="System">
+                    <param id="0" name="Variable">Zoom</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="233763448130784" title="ZOOM IN">
+            <sub-events>
+                <event-block sid="768834236400725">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="416372935424537" type="System">
+                            <param id="0" name="First value">scrollx*2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">beaconCamera.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="370311732907993" type="System">
+                            <param id="0" name="Variable">Zoom</param>
+                            <param id="1" name="Value">0.001</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="566793286085060" title="ZOOM OUT">
+            <sub-events>
+                <event-block sid="254290314525738">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="708544081884646" type="System">
+                            <param id="0" name="First value">scrollx*2</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">beaconCamera.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="872639968652912" type="System">
+                            <param id="0" name="Variable">Zoom</param>
+                            <param id="1" name="Value">0.001</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="734445086593179">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="497478238026819" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="736105826286981" type="System">
+                    <param id="0" name="Variable">Zoom</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="175928034864133" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM IN&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="912615885079454" type="System">
+                    <param id="0" name="Group name">&quot;ZOOM OUT&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="810764936185361">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="802547575126603" type="System" />
+            </conditions>
+            <actions>
+                <action id="-20" name="Set layout scale" sid="853981070600839" type="System">
+                    <param id="0" name="Scale">Zoom</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="154348641824126">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="865765477232967" type="beaconsVehicle" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="986505377562389">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="964029815596639" type="beaconsVehicle">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">0</param>
+                                    <param id="2" name="Y">Self.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="917841094944087" type="beaconCamera">
+                                    <param id="0" name="X">beaconsVehicle.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="333017872636455">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="548479685097092" type="beaconsVehicle">
+                                    <param id="0" name="Which">1</param>
+                                    <param id="1" name="X">0</param>
+                                    <param id="2" name="Y">Self.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="326664086385661" type="beaconCamera">
+                                    <param id="0" name="Width">beaconsVehicle.X-self.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="551947333806973">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="552057120765867" type="beaconCar1" />
+                <condition id="-9" name="Is visible" sid="746759240947546" type="beaconCar2" />
+                <condition id="-9" name="Is visible" sid="345888878215669" type="beaconCar3" />
+                <condition id="-3" name="Is on-screen" sid="595691142599703" type="beaconCar1" />
+                <condition id="-3" name="Is on-screen" sid="113644164027375" type="beaconCar2" />
+                <condition id="-3" name="Is on-screen" sid="824724973795935" type="beaconCar3" />
+                <condition id="-5" name="Compare width" sid="398798613621701" type="beaconCamera">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">480</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="254294049236009" type="beaconCamera">
+                    <param id="0" name="Width">self.width*0.99</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="477838370306333">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="251689271287593" type="beaconCamera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Width">1200</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="135296003842161">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Is visible" sid="462175569084538" type="beaconCar1" />
+                        <condition id="-9" inverted="1" name="Is visible" sid="933862700959976" type="beaconCar2" />
+                        <condition id="-9" inverted="1" name="Is visible" sid="988760960655443" type="beaconCar3" />
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="880816602320348" type="beaconCar1" />
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="714574123357657" type="beaconCar2" />
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="622402383492037" type="beaconCar3" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="661123430569061" type="beaconCamera">
+                            <param id="0" name="Width">self.width*1.001</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="818669771649549">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="905458325081242" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="588897669986425" type="beaconCamera">
+                    <param id="0" name="Height">256</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

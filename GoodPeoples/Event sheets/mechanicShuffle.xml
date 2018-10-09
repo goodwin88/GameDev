@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicShuffle</name>
+    <events>
+        <event-block any="1" sid="189762513987992">
+            <conditions>
+                <condition id="2" name="Key is down" sid="878442651305919" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="2" name="Is in touch" sid="275141039978273" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="726674105724751" type="whiteoutGame">
+                    <param id="0" name="Opacity">self.Opacity-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="245641218922614">
+            <conditions>
+                <condition id="2" inverted="1" name="Key is down" sid="193589839594971" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is in touch" sid="388925972357551" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="100539897878436" type="whiteoutGame">
+                    <param id="0" name="Opacity">self.Opacity+2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="998323482711631">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Is visible" sid="779739564432749" type="logo" />
+                        <condition id="-4" name="Trigger once while true" sid="618894226510429" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="248433803889049" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="328798601854773" type="logo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="898831519154455">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="110941993640502" type="System" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="732773820599018" type="whiteoutGame">
+                    <param id="0" name="Width">invisZeroY.Width</param>
+                    <param id="1" name="Height">invisZeroX.Height</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="392797229220492" type="whiteoutGame">
+                    <param id="0" name="Object">anchorFace</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="204461060009256" type="logo">
+                    <param id="0" name="Object">invisZeroX</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="974495417775613" type="logo">
+                    <param id="0" name="Opacity">whiteoutGame.Opacity/2</param>
+                </action>
+                <action id="-3" name="Set position" sid="693362394063234" type="logo">
+                    <param id="0" name="X">anchorFace.X</param>
+                    <param id="1" name="Y">self.Opacity*6</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="961709996915831" type="textInstruction">
+                    <param id="0" name="Opacity">(logo.Opacity^2)/(logo.Y*0.5)</param>
+                </action>
+                <action id="-3" name="Set position" sid="887420445635716" type="textInstruction">
+                    <param id="0" name="X">anchorFace.x</param>
+                    <param id="1" name="Y">invisZeroX.Height-(logo.Y/2)</param>
+                </action>
+                <action id="-7" name="Set size" sid="767598203125994" type="textInstruction">
+                    <param id="0" name="Width">invisZeroY.Width</param>
+                    <param id="1" name="Height">Self.FaceSize*5</param>
+                </action>
+                <action id="-3" name="Set position" sid="229661600779994" type="textVersion">
+                    <param id="0" name="X">anchorFace.x</param>
+                    <param id="1" name="Y">invisZeroX.Height-(logo.Y/1.5)+textInstruction.height+self.FaceSize</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="999802476426948" type="textVersion">
+                    <param id="0" name="Opacity">textInstruction.Opacity*0.5</param>
+                </action>
+                <action id="-5" name="Set width" sid="404870400467018" type="textVersion">
+                    <param id="0" name="Width">textInstruction.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919844702186302">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="227471659425394" type="whiteoutGame">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="112942960688702" type="System" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="700942694296872" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="174796932019148">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="776341131537381" type="Keyboard">
+                    <param id="0" name="Key">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Snapshot canvas" sid="211883090039954" type="System">
+                    <param id="0" name="Format">0</param>
+                    <param id="1" name="JPEG quality">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="890879033052197">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="882632991321807" type="logo">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="721185057579033" type="logo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="718340729737835">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="432914741403152" type="logo" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="423044384433260" type="textInstruction">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="894976219101474" type="textVersion">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568330313481141">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="405125222425543" type="logo" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="120922171494205" type="textInstruction">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="779393417819924" type="textVersion">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="694937895338562">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="325435078734775" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="811784935934353" type="textInstruction">
+                    <param id="0" name="Text">newline&amp;&quot;Touch and hold&quot;&amp;newline&amp;&quot;to see a new friend.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="159754675917993" type="textVersion">
+                    <param id="0" name="Text">&quot;version &quot;&amp;projectversion</param>
+                </action>
+                <action id="2" name="Set font face" sid="217443999687538" type="textVersion">
+                    <param id="0" name="Font face">textInstruction.FaceName</param>
+                    <param id="1" name="Style">0</param>
+                </action>
+                <action id="3" name="Set font size" sid="316660323045946" type="textVersion">
+                    <param id="0" name="Size (pt)">textInstruction.FaceSize/2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

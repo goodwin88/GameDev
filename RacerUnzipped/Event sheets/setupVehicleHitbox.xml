@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupVehicleHitbox</name>
+    <events>
+        <event-block sid="394771680063615">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="444358121926027" type="visChassis">
+                    <param id="0" name="Instance variable">size</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="604992229417570" type="hitBox1">
+                    <param id="0" name="X">bumper1Rear.X</param>
+                    <param id="1" name="Y">invisFrame1.Y-invisFrame1.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="686125818827256" type="hitBox1">
+                    <param id="0" name="Width">invisAxle1.Width+wheelFront1.Width+100</param>
+                    <param id="1" name="Height">(wheelFront1.Height/2)+invisAxle1.Height+invisFrame1.Height</param>
+                </action>
+                <action behavior="Light" id="2" name="Point to object" sid="479984322477890" type="hitBox1">
+                    <param id="0" name="Obstacle">bumper1Front</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="519192249595596">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="394534783731581" type="visChassis">
+                    <param id="0" name="Instance variable">size</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="123712603706728" type="hitBox2">
+                    <param id="0" name="X">bumper2Rear.X</param>
+                    <param id="1" name="Y">invisFrame2.Y-invisFrame2.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="822835458976270" type="hitBox2">
+                    <param id="0" name="Width">invisAxle2.Width+wheelFront2.Width+100</param>
+                    <param id="1" name="Height">(wheelFront2.Height/2)+invisAxle2.Height+invisFrame2.Height</param>
+                </action>
+                <action behavior="Light" id="2" name="Point to object" sid="882524525746805" type="hitBox2">
+                    <param id="0" name="Obstacle">bumper2Front</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="665010047552360">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="585419287748318" type="visChassis">
+                    <param id="0" name="Instance variable">size</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="758443751476927" type="hitBox3">
+                    <param id="0" name="X">bumper3Rear.X</param>
+                    <param id="1" name="Y">invisFrame3.Y-invisFrame3.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="913075757751197" type="hitBox3">
+                    <param id="0" name="Width">invisAxle3.Width+wheelFront3.Width+100</param>
+                    <param id="1" name="Height">(wheelFront3.Height/2)+invisAxle3.Height+invisFrame3.Height</param>
+                </action>
+                <action behavior="Light" id="2" name="Point to object" sid="281134094056667" type="hitBox3">
+                    <param id="0" name="Obstacle">bumper3Front</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875876107240215">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="199410048681278" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="796828354283900" type="bumper1Front">
+                    <param id="0" name="X">wheelFront1.X+(wheelFront1.Width/2)</param>
+                    <param id="1" name="Y">wheelFront1.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="983948402323861" type="bumper1Rear">
+                    <param id="0" name="X">wheelRear1.X-(wheelRear1.Width/2)</param>
+                    <param id="1" name="Y">wheelRear1.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="407235844880531" type="bumper2Front">
+                    <param id="0" name="X">wheelFront2.X+(wheelFront2.Width/2)</param>
+                    <param id="1" name="Y">wheelFront2.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="136759900113549" type="bumper2Rear">
+                    <param id="0" name="X">wheelRear2.X-(wheelRear2.Width/2)</param>
+                    <param id="1" name="Y">wheelRear2.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="581354851377467" type="bumper3Front">
+                    <param id="0" name="X">wheelFront3.X+(wheelFront3.Width/2)</param>
+                    <param id="1" name="Y">wheelFront3.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="636435383854524" type="bumper3Rear">
+                    <param id="0" name="X">wheelRear3.X-(wheelRear3.Width/2)</param>
+                    <param id="1" name="Y">wheelRear3.Y</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="447875747924063" type="visWheel">
+                    <param id="0" name="Speed">150+(50*self.character)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

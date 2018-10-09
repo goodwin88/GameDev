@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicThoughtBubble</name>
+    <events>
+        <event-block sid="148732028385555">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="344091077500745" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="512634335982095" type="particleThoughtBubble">
+                    <param id="0" name="X">scrollx+(choose(1,-1)*random(scrollx*0.5))</param>
+                    <param id="1" name="Y">scrolly*0.27</param>
+                </action>
+                <action id="8" name="Set X randomiser" sid="602078526662745" type="particleThoughtBubble">
+                    <param id="0" name="X randomiser">scrollx*0.4</param>
+                </action>
+                <action id="9" name="Set Y randomiser" sid="266187772884407" type="particleThoughtBubble">
+                    <param id="0" name="Y randomiser">scrolly*0.1</param>
+                </action>
+                <action id="-3" name="Set position" sid="408678666947472" type="whiteoutThoughts">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="562789818650130" type="whiteoutThoughts">
+                    <param id="0" name="Width">scrollx*2</param>
+                    <param id="1" name="Height">scrolly</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="562703946384456" type="whiteoutThoughts">
+                    <param id="0" name="Layer">&quot;whitoutthoughbubble&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="202891589838384">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="660097454354169" type="System" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="111200664841558" type="whiteoutThoughts" />
+                <action id="-16" name="Set opacity" sid="646240984447353" type="bubblet">
+                    <param id="0" name="Opacity">self.Bullet.DistanceTravelled</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="579285138241547" type="bubblet">
+                    <param id="0" name="Speed">distance(self.X,self.Y,particleThoughtBubble.X,particleThoughtBubble.Y)*1.1</param>
+                </action>
+                <action behavior="Turret" id="9" name="Set rotate speed" sid="542112308471752" type="bubblet">
+                    <param id="0" name="Rotate speed">distance(self.X,self.Y,particleThoughtBubble.X,particleThoughtBubble.Y)</param>
+                </action>
+                <action id="9" name="Set scale" sid="199081457558563" type="bubblet">
+                    <param id="0" name="Scale">0.05+(self.bullet.DistanceTravelled*0.002)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="421999106579065">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="940311398599502" type="whiteoutGame">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="856751788580252" type="System">
+                    <param id="0" name="Interval (seconds)">0.3</param>
+                </condition>
+                <condition id="2" name="Is in touch" sid="812967470105784" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="807268531416546" type="eyeRight">
+                    <param id="0" name="Object">bubblet</param>
+                    <param id="1" name="Layer">&quot;thoughtbubble&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449206210598264">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="465150576333536" type="bubblet">
+                    <param id="0" name="Object">faceParts</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="6" name="Set distance travelled" sid="558605007880758" type="bubblet">
+                    <param id="0" name="Distance">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="751775153828436" type="bubblet">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="226902629362511" type="bubblet">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="519873381834983">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="620765802831049" type="particleThoughtBubble">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">anchorFace.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="704702902943596" type="bubblet">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="305925333826847">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="629530559952941" type="particleThoughtBubble">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">anchorFace.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="572272978532949" type="bubblet">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="702038712009840">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="322884440711034" type="bubblet">
+                    <param id="0" name="Object">faceParts</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="707132796622339" type="bubblet">
+                    <param id="0" name="Target">particleThoughtBubble</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632803729842108">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="410471733295089" type="bubblet">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">particleThoughtBubble.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="439222180259470" type="bubblet" />
+            </actions>
+        </event-block>
+        <event-block sid="574171957620608">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="331868526975701" type="Touch">
+                    <param id="0" name="Object">faceParts</param>
+                </condition>
+                <condition id="7" name="Compare touch speed" sid="544478021376122" type="Touch">
+                    <param id="0" name="Touch index">0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="610536640998773" type="whiteoutThoughts">
+                    <param id="0" name="Opacity">self.Opacity-0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="533308670734416">
+            <conditions>
+                <condition id="7" name="Compare touch speed" sid="524645900797062" type="Touch">
+                    <param id="0" name="Touch index">0</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Speed">300</param>
+                </condition>
+                <condition id="4" inverted="1" name="Is touching object" sid="360590352907032" type="Touch">
+                    <param id="0" name="Object">faceParts</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="767511463202439" type="whiteoutThoughts">
+                    <param id="0" name="Opacity">self.Opacity+0.5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

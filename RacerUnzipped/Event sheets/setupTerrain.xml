@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupTerrain</name>
+    <events>
+        <event-block sid="970545563081268">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="468671154294808" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="342013524662531" type="envGroundBeacon">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">ViewportBottom(&quot;invis&quot;)-envFgEarth.Height</param>
+                </action>
+                <action id="-3" name="Set position" sid="891819369212897" type="envGroundSpawn">
+                    <param id="0" name="X">ViewportRight(&quot;invis&quot;)</param>
+                    <param id="1" name="Y">ViewportBottom(&quot;invis&quot;)-(random(envFgEarth.Height/2))</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="401862490392266" type="invisPlatform">
+                    <param id="0" name="Object">envGroundSpawn</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-5" name="Set width" sid="877486599141578" type="invisPlatform">
+                    <param id="0" name="Width">distance(self.X,Self.Y,envGroundBeacon.X,envGroundBeacon.Y)*1.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="207566151675850">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="368435337681269" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="772337229175014" type="envGroundSpawn">
+                    <param id="0" name="X">envGroundBeacon.X</param>
+                    <param id="1" name="Y">envGroundBeacon.Y</param>
+                </action>
+                <action id="5" name="Set frame" sid="301279345836632" type="envFgEarth">
+                    <param id="0" name="Frame number">World</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="750455819816160" type="invisPlatform">
+                    <param id="0" name="X">envGroundBeacon.X</param>
+                    <param id="1" name="Y">envGroundBeacon.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="173201421136925">
+            <conditions>
+                <condition id="9" inverted="1" name="Is overlapping at offset" sid="266705892090104" type="envGroundSpawn">
+                    <param id="0" name="Object">envFgEarth</param>
+                    <param id="1" name="Offset X">10</param>
+                    <param id="2" name="Offset Y">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="255922924924390" type="envGroundSpawn">
+                    <param id="0" name="Object">envFgEarth</param>
+                    <param id="1" name="Layer">&quot;fg&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158786478875987">
+            <conditions>
+                <condition id="-18" name="On created" sid="412828698923775" type="envFgEarth" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="125010740726279" type="envFgTerrain" />
+                <action id="5" name="Set frame" sid="637148559958261" type="envFgTerrain">
+                    <param id="0" name="Frame number">World</param>
+                </action>
+                <action id="2" name="Stop" sid="420838384142485" type="envFgEarth" />
+                <action id="2" name="Stop" sid="711363719938810" type="envBgObject" />
+                <action id="-26" name="Move to layer" sid="264211242880032" type="envBgObject">
+                    <param id="0" name="Layer">&quot;bg&quot;</param>
+                </action>
+                <action id="-8" name="Set angle" sid="611517016280088" type="envBgObject">
+                    <param id="0" name="Angle">envFgEarth.Angle</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="558607548083222" type="envBgObject">
+                    <param id="0" name="Object">envFgEarth</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="602760148306951" type="envBgObject">
+                    <param id="0" name="Scale">0.75</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="197944417979501" type="envBgObject">
+                    <param id="0" name="Pin to">envFgEarth</param>
+                    <param id="1" name="ImagePoint">1</param>
+                    <param id="2" name="Mode">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="852563371526114">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="229549196919928" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="808670558957152" type="envFgTerrain">
+                            <param id="0" name="Angle">envFgEarth.Angle</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="117543056647596" type="envFgTerrain">
+                            <param id="0" name="Object">envFgEarth</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="237041579546357" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width</param>
+                        </action>
+                        <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="268779983514967" type="envFgTerrain">
+                            <param id="0" name="Pin to">envFgEarth</param>
+                            <param id="1" name="ImagePoint">1</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="260940019725862" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width</param>
+                            <param id="1" name="Height">random(32)*choose(-1,1)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="667720640959281" type="envBgObject">
+                            <param id="0" name="Frame number">choose(0,1,2)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="756153743681855" type="envBgObject">
+                            <param id="0" name="Width">envFgEarth.Width</param>
+                            <param id="1" name="Height">(32+random(48))*-2.5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="504815729615020">
+                            <conditions>
+                                <condition id="8" inverted="1" name="Is flipped" sid="766297714122769" type="envFgTerrain" />
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="249549234224539" type="envFgTerrain">
+                                    <param id="0" name="Width">self.Width*0.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="207226797721985">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="778130703461668" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="110392177202057" type="envFgTerrain">
+                            <param id="0" name="Angle">envFgEarth.Angle</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="405744097337092" type="envFgTerrain">
+                            <param id="0" name="Object">envFgEarth</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="664804965860368" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width</param>
+                        </action>
+                        <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="441044098864516" type="envFgTerrain">
+                            <param id="0" name="Pin to">envFgEarth</param>
+                            <param id="1" name="ImagePoint">1</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="259120333083989" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width*0.8</param>
+                            <param id="1" name="Height">random(32)*choose(-0.5,0.5)</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="405321041458742" type="envBgObject">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="138501337853687" type="envBgObject">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="630987262363744">
+                            <conditions>
+                                <condition id="8" name="Is flipped" sid="730714909141296" type="envFgTerrain" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="173245148878177" type="envFgTerrain">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="603784107792606">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="268093966791274" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="460032813453543" type="envBgObject">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="584405866527124">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="886376087838588" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="307629706622162" type="envFgTerrain">
+                            <param id="0" name="Angle">envFgEarth.Angle</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="287162800178259" type="envFgTerrain">
+                            <param id="0" name="Object">envFgEarth</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="352173550570970" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width</param>
+                        </action>
+                        <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="787206719874585" type="envFgTerrain">
+                            <param id="0" name="Pin to">envFgEarth</param>
+                            <param id="1" name="ImagePoint">1</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="575118509508958" type="envFgTerrain">
+                            <param id="0" name="Width">envFgEarth.Width*0.8</param>
+                            <param id="1" name="Height">random(32)*choose(-0.5,0.5)</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="698788250065931" type="envBgObject">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="442411819846355" type="envBgObject">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="914945510597910">
+                            <conditions>
+                                <condition id="8" name="Is flipped" sid="159137177921083" type="envFgTerrain" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="953996961943885" type="envFgTerrain">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="972639472550594">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="641978547860194" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="930467558161792" type="envBgObject">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="142723707006726">
+            <conditions>
+                <condition id="-4" inverted="1" name="Is outside layout" sid="249743635591504" type="envFgEarth" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="122675358535554" type="envFgEarth" />
+            </actions>
+        </event-block>
+        <event-block sid="610778780398973">
+            <conditions>
+                <condition behavior="PinToImagePoint" id="0" inverted="1" name="Is pinned" sid="650507511371269" type="envBgObject" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="230664640098362" type="envBgObject" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

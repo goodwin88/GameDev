@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupMouth</name>
+    <events>
+        <event-block sid="516059948586509">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="295469085750628" type="System" />
+                <condition id="-10" name="Compare opacity" sid="999747937440476" type="whiteoutGame">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="318028131865352" type="mouthLips">
+                    <param id="0" name="Object">mouthCrease</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="313410970790210" type="mouthLips">
+                    <param id="0" name="Width">distance(Self.X,Self.Y,mouthCrease.X,mouthCrease.Y)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="794111609218551" type="anchorMouthCorner">
+                    <param id="0" name="Object">mouthLips</param>
+                    <param id="1" name="Image point (optional)">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="848212992152955">
+            <conditions>
+                <condition id="-18" name="On created" sid="919737788093862" type="mouthLips" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="696549351067867" type="mouthCrease">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="2" name="Stop" sid="297053883019123" type="mouthLips" />
+                <action id="-16" name="Set opacity" sid="143848580510001" type="mouthLips">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-6" name="Set height" sid="762414804502568" type="mouthLips">
+                    <param id="0" name="Height">mouthCrease.Height*2.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172276822489878">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="264544288601584" type="System" />
+                <condition id="-8" name="Compare two values" sid="818842996654738" type="System">
+                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="220204586483575" type="faceChin">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="147808523135054">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="252688050155187" type="faceChin">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">mouthCrease.Width*2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="358624146814643" type="faceChin">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164351249968129">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="592424293717535" type="System">
+                    <param id="0" name="First value">faceChin.X-(faceChin.Width/2)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">mouthCrease.X-(mouthCrease.Width/2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="801312683547307" type="faceChin">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="118405834642700">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="182608766502096" type="anchorMouthCorner">
+                    <param id="0" name="Object">faceJaw</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="493905630789390" type="faceMouthBack">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="280239597526468" type="faceMouthBack">
+                    <param id="0" name="Object">mouthLips</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+                <action id="-7" name="Set size" sid="568756117866691" type="faceMouthBack">
+                    <param id="0" name="Width">(faceJaw.Width+mouthLips.Width)/2.5</param>
+                    <param id="1" name="Height">faceJaw.Width*0.8</param>
+                </action>
+                <action id="-8" name="Set angle" sid="208336245435856" type="faceMouthBack">
+                    <param id="0" name="Angle">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="778160618102755">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="289924123680575" type="anchorMouthCorner">
+                    <param id="0" name="Object">faceJaw</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="874934882670760" type="faceMouthBack">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

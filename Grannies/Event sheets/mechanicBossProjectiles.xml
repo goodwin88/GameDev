@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicBossProjectiles</name>
+    <events>
+        <event-block sid="724812727030697">
+            <conditions>
+                <condition id="-11" name="For Each" sid="947049376377798" type="System">
+                    <param id="0" name="Object">tileColorsGrannies</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="462465565926189" type="projectilesBoss">
+                    <param id="0" name="Object">tileColorsGrannies</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="118312411366933" type="projectilesBoss">
+                    <param id="0" name="Object">forcefieldGreen</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="463360550341555" type="tileColorsGrannies" />
+            </actions>
+        </event-block>
+        <event-block sid="241174296992949">
+            <conditions>
+                <condition id="-11" name="For Each" sid="650166654667420" type="System">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="927786876000636" type="bulletRed">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="116346874443185" type="bulletRed">
+                    <param id="0" name="Object">forcefieldGreen</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="633798702920825" type="tileRock">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="578003129862900" type="tileRock">
+                    <param id="0" name="Object">tileRed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="845039439823325" type="tileRock" />
+                <action id="0" name="Spawn another object" sid="765270302343390" type="block">
+                    <param id="0" name="Object">tileRed</param>
+                    <param id="1" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="312962796031277" type="tileRed">
+                    <param id="0" name="Pin to">block</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318837352663102">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="790019767623905" type="bulletRed">
+                    <param id="0" name="Object">tileRed</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="769602824533472" type="tileRed">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="956903450231969" type="tileRed">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="979282684711724" type="tileRed">
+                    <param id="0" name="Object">glowRed</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="293558883670909">
+            <conditions>
+                <condition id="-11" name="For Each" sid="358822654607661" type="System">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="598146638184777" type="bulletBlue">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="369478898059970" type="bulletBlue">
+                    <param id="0" name="Object">forcefieldGreen</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="923344466084251" type="tileRock">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="915273793142900" type="tileRock">
+                    <param id="0" name="Object">tileBlue</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="962500008315561" type="tileRock" />
+                <action id="0" name="Spawn another object" sid="989905205069082" type="block">
+                    <param id="0" name="Object">tileBlue</param>
+                    <param id="1" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="235903763024337" type="tileBlue">
+                    <param id="0" name="Pin to">block</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150166081732471">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="201716041193110" type="bulletBlue">
+                    <param id="0" name="Object">tileBlue</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="844827812872749" type="tileBlue">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="153302685789332" type="tileBlue">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="869236345159407" type="tileBlue">
+                    <param id="0" name="Object">glowRed</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="938836689063130">
+            <conditions>
+                <condition id="-11" name="For Each" sid="733407299042713" type="System">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="958979755170184" type="bulletYellow">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="181037021734613" type="bulletYellow">
+                    <param id="0" name="Object">forcefieldGreen</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="738856113186934" type="tileRock">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="859031120962708" type="tileRock">
+                    <param id="0" name="Object">tileYellow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="722958513112995" type="tileRock" />
+                <action id="0" name="Spawn another object" sid="523753036518497" type="block">
+                    <param id="0" name="Object">tileYellow</param>
+                    <param id="1" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="459882329146509" type="tileYellow">
+                    <param id="0" name="Pin to">block</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543583046364767">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="485229002781546" type="bulletYellow">
+                    <param id="0" name="Object">tileYellow</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="337425350829862" type="tileYellow">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="649430013926877" type="tileYellow">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="275042095306033" type="tileYellow">
+                    <param id="0" name="Object">glowRed</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="163619227371430">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="595006840131794" type="projectilesBoss">
+                    <param id="0" name="Object">greenMiningBase</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="114101042340451" type="greenMiningBase">
+                    <param id="0" name="Object">forcefieldGreen</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="234246772557417" type="forcefieldGreen">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

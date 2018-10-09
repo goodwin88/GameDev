@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicJump</name>
+    <events>
+        <event-block sid="118236430702099">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="802414653933449" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="639300955669958" type="carPrimBody">
+                    <param id="0" name="Jump strength">800-carPartChassis.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="664289686521935">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="331589837792176" type="Touch" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="430489570363745" type="carPrimBody">
+                    <param id="0" name="Gravity">1.75*(1000-self.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="348711769609709">
+            <conditions>
+                <condition id="2" inverted="1" name="Is in touch" sid="989030076410786" type="Touch" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="740148949063975" type="carPrimBody">
+                    <param id="0" name="Gravity">2000+self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

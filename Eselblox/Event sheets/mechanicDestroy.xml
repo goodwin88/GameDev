@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicDestroy</name>
+    <events>
+        <event-block sid="172215473242966">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="481288167268043" type="tileGreen" />
+                <condition id="-9" name="Is visible" sid="750039162821678" type="tileGreen" />
+                <condition id="1" name="Is overlapping another object" sid="143390826028450" type="tileGreen">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="290831505264918" type="tileGreen">
+                    <param id="0" name="Comparison">1</param>
+                    <param id="1" name="Number">6</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="124902250721573" type="tileGreen">
+                    <param id="0" name="Object">projectilesBoss</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="562193978427665" type="block">
+                    <param id="0" name="Object">textPopUp</param>
+                    <param id="1" name="Layer">&quot;text&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="294131229167073" type="block">
+                    <param id="0" name="Object">fxObj</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="2" name="Stop" sid="998646195205693" type="fxObj" />
+                <action id="5" name="Set frame" sid="988986801110582" type="fxObj">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="4" name="Set font color" sid="802363494586379" type="textPopUp">
+                    <param id="0" name="Color">rgb(125,195, 40)</param>
+                </action>
+                <action id="-11" name="Add to" sid="801466356281738" type="TextBox">
+                    <param id="0" name="Instance variable">scoreGreenRound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="204064027721514" type="textPopUp">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="864383838559587" type="textPopUp">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="501918413173037" type="textPopUp" />
+            </actions>
+            <sub-events>
+                <event-block sid="141450962354818">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="261355981598372" type="uiScenery">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="652480819696520" type="textPopUp">
+                            <param id="0" name="Text">&quot;+3&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="954236585127881" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="828078853395916">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="791933644117987" type="uiScenery">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="230945507150352" type="textPopUp">
+                            <param id="0" name="Text">&quot;+5&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="660968612469153" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="944168507947285">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="455282503412211" type="tileOrange" />
+                <condition id="-9" name="Is visible" sid="526306515549348" type="tileOrange" />
+                <condition id="1" name="Is overlapping another object" sid="755422448573484" type="tileOrange">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="862142725944542" type="tileOrange">
+                    <param id="0" name="Object">projectilesBoss</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="900312636886365" type="block">
+                    <param id="0" name="Object">textPopUp</param>
+                    <param id="1" name="Layer">&quot;text&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="683933720483281" type="block">
+                    <param id="0" name="Object">fxObj</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="2" name="Stop" sid="313610743944548" type="fxObj" />
+                <action id="5" name="Set frame" sid="823588482842075" type="fxObj">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="4" name="Set font color" sid="888717211519344" type="textPopUp">
+                    <param id="0" name="Color">rgb(245,163, 0)</param>
+                </action>
+                <action id="-11" name="Add to" sid="646740320229198" type="TextBox">
+                    <param id="0" name="Instance variable">scoreOrangeRound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="902707166008944" type="textPopUp">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="815956885427109" type="textPopUp">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="552790673544934" type="textPopUp" />
+            </actions>
+            <sub-events>
+                <event-block sid="988166992982786">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="208913009332527" type="uiScenery">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="641612613013396" type="textPopUp">
+                            <param id="0" name="Text">&quot;+3&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="669392905723827" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940290800095394">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="189888445313210" type="uiScenery">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="170396824827596" type="textPopUp">
+                            <param id="0" name="Text">&quot;+5&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="795828734265945" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="846064408002367">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="712941761723160" type="tilePurple" />
+                <condition id="-9" name="Is visible" sid="910672795102271" type="tilePurple" />
+                <condition id="1" name="Is overlapping another object" sid="694729132180319" type="tilePurple">
+                    <param id="0" name="Object">block</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="678353456081927" type="tilePurple">
+                    <param id="0" name="Object">projectilesBoss</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="517685913066853">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="440856058040758" type="tilePurple">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="916269040341882" type="tilePurple">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="712218125994060" type="tilePurple">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="645197303691424" type="block">
+                            <param id="0" name="Object">textPopUp</param>
+                            <param id="1" name="Layer">&quot;text&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="607621448848788" type="fxObj" />
+                        <action id="5" name="Set frame" sid="322821308820159" type="fxObj">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="476890439764174" type="textPopUp">
+                            <param id="0" name="Color">rgb(162,120, 196)</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="902462829329558" type="TextBox">
+                            <param id="0" name="Instance variable">scorePurpleRound</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="985608890166807" type="textPopUp">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="142500238181315" type="block">
+                            <param id="0" name="Object">fxObj</param>
+                            <param id="1" name="Layer">&quot;animations&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="284744372662462" type="textPopUp">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="672748998410235" type="textPopUp" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="947842472348538">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="797168839760580" type="uiScenery">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="667242831749737" type="textPopUp">
+                                    <param id="0" name="Text">&quot;+3&quot;</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="959763179717205" type="TextBox">
+                                    <param id="0" name="Instance variable">score</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="277322174882679">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="294462736063319" type="uiScenery">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="312031307763331" type="textPopUp">
+                                    <param id="0" name="Text">&quot;+5&quot;</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="612558946392969" type="TextBox">
+                                    <param id="0" name="Instance variable">score</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="322808164093552">
+            <conditions>
+                <condition id="-18" name="On created" sid="449930746145032" type="animationExplosion" />
+                <condition id="1" name="Is overlapping another object" sid="207510775999134" type="animationExplosion">
+                    <param id="0" name="Object">tileBlank</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="646142138091629" type="animationExplosion">
+                    <param id="0" name="From">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="536793826185625" type="animationExplosion">
+                    <param id="0" name="Width">tileBlank.Width*1.5</param>
+                    <param id="1" name="Height">tileBlank.Height*1.5</param>
+                </action>
+                <action id="6" name="Set speed" sid="893873304766582" type="animationExplosion">
+                    <param id="0" name="Speed">20</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

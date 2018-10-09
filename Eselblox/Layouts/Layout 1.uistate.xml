@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the layout was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <camera>
+        <position-x>334</position-x>
+        <position-y>183.757</position-y>
+        <position-z>100</position-z>
+        <lookat-x>334</lookat-x>
+        <lookat-y>183.757</lookat-y>
+        <lookat-z>0</lookat-z>
+    </camera>
+    <snap-to-grid>1</snap-to-grid>
+    <show-grid>0</show-grid>
+    <snap-width>20</snap-width>
+    <snap-height>20</snap-height>
+    <show-collision-polys>0</show-collision-polys>
+    <translucent-inactive-layers>0</translucent-inactive-layers>
+    <properties>
+        <property expanded="1" name="Layout properties" />
+        <property expanded="1" name="Layout Size" />
+        <property expanded="1" name="Margins" />
+        <property expanded="1" name="Effects" />
+    </properties>
+    <active-layer name="uiGrannies" />
+    <layers>
+        <layer locked="0" name="storage" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Floor" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="prims" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesInvis" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesBackdrop" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesMinedRocks" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesBg" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="animationsObj" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesBgSwitcher" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesBgObj" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesBgNPC" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesFg" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesActive" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesConverted" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tilesFgTerrain" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="projectiles" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="gloom" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="uiScenery" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="uiBaddies" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="uiGrannies" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="animations" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="blockSelect" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="bars" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="illustration" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invisTargetter" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invisShuttleTarget" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invisShuttle" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invisJumpers" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invis" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="text" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="buttons" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="buttonProgress" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="health" parallax-in-editor="0" visible="1" />
+    </layers>
+</c2uistate>

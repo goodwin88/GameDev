@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiCat</name>
+    <events>
+        <event-block sid="558235328622058">
+            <conditions>
+                <condition id="-18" name="On created" sid="884884250146275" type="uiSpinnerCat" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="699469429497271" type="uiSpinnerCat">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

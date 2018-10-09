@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicDialog</name>
+    <events>
+        <event-block disabled="1" sid="607095112700952">
+            <conditions>
+                <condition id="0" name="On function" sid="116780594255931" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogCenter&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="185677821374655" type="textDialog">
+                    <param id="0" name="Text">&quot;Player Turn&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="367559820347926" type="System">
+                    <param id="0" name="Seconds">uiDialogSlider.Param(0)</param>
+                </action>
+                <action id="-10" name="Set value" sid="260188981509923" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="880668897148004" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="452168202786818" type="dialogueState">
+                    <param id="0" name="Instance variable">spokenRecord</param>
+                    <param id="1" name="Value">10000*dialogueState.ranking</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="775743717201172">
+            <conditions>
+                <condition id="0" name="On function" sid="243696305330420" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="765890966124008" type="textDialog">
+                    <param id="0" name="Instance variable">textToPrint</param>
+                    <param id="1" name="Value">uiDialogSlider.Param(1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="177542065566999">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="970584630731263" type="uiDialogSlider">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="487421397196926" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="741211359044778" type="System">
+                            <param id="0" name="Seconds">uiDialogSlider.Param(0)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="197921700965758" type="uiDialogSlider">
+                            <param id="0" name="Name">&quot;DialogMoveRight&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}textDialog.textToPrint</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748514328833695">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="227501327005996" type="uiDialogSlider">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="411683811152219" type="textDialog">
+                            <param id="0" name="Text">Self.textToPrint</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="433629896201252" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="423030210115204">
+            <conditions>
+                <condition id="0" name="On function" sid="300773347156577" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveRight&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="900419903434891" type="textDialog">
+                    <param id="0" name="Instance variable">textToPrint</param>
+                    <param id="1" name="Value">uiDialogSlider.Param(1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="283263712056482">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="887578898881031" type="uiDialogSlider">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="545094344709042" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="410603815130460" type="System">
+                            <param id="0" name="Seconds">uiDialogSlider.Param(0)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="245911296780862" type="uiDialogSlider">
+                            <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}textDialog.textToPrint</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="328535171896573">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="906310285867098" type="uiDialogSlider">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="790485137167049" type="textDialog">
+                            <param id="0" name="Text">Self.textToPrint</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="756684573811564" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="952392122457422">
+            <conditions>
+                <condition id="0" name="On function" sid="691670394073071" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogShake&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="127864565348579" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueShaking</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="825381996682077" type="System">
+                    <param id="0" name="Seconds">dialogueState.spokenDuration</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602788141643398">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="855107455391381" type="textDialog" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="440228017655467" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveCenter&quot;</param>
+                    <param id="1" name="Parameter {n}">0{###}&quot;PLAYER TURN&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498059446851882">
+            <conditions>
+                <condition id="-18" name="On created" sid="191122744208473" type="dialoguePortraitLeft" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="312585809158526" type="dialoguePortraitLeft">
+                    <param id="0" name="Object">textDialog</param>
+                    <param id="1" name="Layer">&quot;text&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="325904051231107" type="textDialog">
+                    <param id="0" name="Pin to">dialoguePortraitLeft</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="565734251012984" type="dialoguePortraitLeft">
+                    <param id="0" name="Object">dialoguePortraitRight</param>
+                    <param id="1" name="Layer">self.LayerName</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="937750171429966" type="dialoguePortraitRight">
+                    <param id="0" name="X">590</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="109316781766846" type="dialoguePortraitRight">
+                    <param id="0" name="Pin to">dialoguePortraitLeft</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="604096110033063" type="dialoguePortraitLeft">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676424186460501">
+            <conditions>
+                <condition id="-18" name="On created" sid="258078107900251" type="textDialog" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="531672699063125" type="textDialog">
+                    <param id="0" name="Width">540</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="420314364071243">
+            <conditions>
+                <condition id="-18" name="On created" sid="153967236169087" type="dialoguePortraitRight" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="430164786509431" type="dialoguePortraitRight">
+                    <param id="0" name="Frame number">choose(1,2,3,4,5,6,7,8,9)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995197363114788">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="197641087837267" type="textDialog" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="914095219195591" type="textDialog" />
+            </actions>
+        </event-block>
+        <event-block sid="626056665520389">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="854000637463970" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="972837482663506" type="textDialog">
+                    <param id="0" name="Opacity">2*abs((dialoguePortraitLeft.x-(dialoguePortraitLeft.Width/2)))</param>
+                </action>
+                <action id="2" name="Stop" sid="258874018919947" type="dialoguePortraitLeft" />
+                <action id="2" name="Stop" sid="516920953998339" type="dialoguePortraitRight" />
+            </actions>
+            <sub-events>
+                <event-block sid="154176981274026">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="846548231923263" type="dialoguePortraitLeft">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="461085003988486" type="dialoguePortraitRight">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="132356057293243">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="977176448703377" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="297291431394169" type="dialoguePortraitLeft">
+                    <param id="0" name="X">self.Width/2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="504579682565914" type="textDialog">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919655422790468">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="479897272687861" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="520106878339280">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="719312055609857" type="dialoguePortraitLeft">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="2" name="Set speed" sid="627588385571010" type="dialoguePortraitLeft">
+                            <param id="0" name="Which">1</param>
+                            <param id="1" name="Speed">-10*self.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523525409527280">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="362259978812869" type="dialoguePortraitLeft">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="950721801545750" type="dialoguePortraitLeft" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="584639507517186">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="392252120859782" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="294688555510028">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="195903959901146" type="dialoguePortraitLeft">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">self.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="2" name="Set speed" sid="404524838121698" type="dialoguePortraitLeft">
+                            <param id="0" name="Which">1</param>
+                            <param id="1" name="Speed">10*(self.width-self.X)</param>
+                        </action>
+                        <action disabled="1" id="-16" name="Set opacity" sid="758428905924090" type="textDialog">
+                            <param id="0" name="Opacity">dialoguePortraitLeft.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="104139141830862">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="606431774859111" type="dialoguePortraitLeft">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">self.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="263998878856251" type="dialoguePortraitLeft" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="914787378539609">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="118996443553319" type="dialoguePortraitLeft">
+                    <param id="0" name="Instance variable">dialogueShaking</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="372752723877478">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="165970614517367" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="616529298112054" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">self.Width/4</param>
+                        </action>
+                        <action id="-17" name="Move forward" sid="676710016637182" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">-self.Width/3</param>
+                        </action>
+                        <action id="-17" name="Move forward" sid="502331106661610" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">self.Width/4</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="376622358218173">
+                            <conditions />
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="227182126463881" type="dialoguePortraitLeft">
+                                    <param id="0" name="Instance variable">dialogueShaking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="438803684268942">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="698862509167002" type="dialoguePortraitLeft">
+                            <param id="0" name="Instance variable">dialogueMoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="589907848731576" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">-self.Width/4</param>
+                        </action>
+                        <action id="-17" name="Move forward" sid="433276142667281" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">self.Width/3</param>
+                        </action>
+                        <action id="-17" name="Move forward" sid="329136249295759" type="dialoguePortraitLeft">
+                            <param id="0" name="Distance">-self.Width/4</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="966794477966826">
+                            <conditions />
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="531424144469293" type="dialoguePortraitLeft">
+                                    <param id="0" name="Instance variable">dialogueShaking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

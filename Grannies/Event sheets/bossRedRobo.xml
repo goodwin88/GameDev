@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>bossRedRobo</name>
+    <events>
+        <event-block sid="456303680013072">
+            <conditions>
+                <condition id="-18" name="On created" sid="829963705404917" type="bossRedRobo" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="279639355558125" type="bossRedRobo" />
+            </actions>
+        </event-block>
+        <event-block sid="364314115063225">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="638383706897656" type="bossRedRobo">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="953791840908011" type="bossHealthCurrent">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="298796218039421" type="bossHealthMax">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="892008745216633">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="761326673780115" type="tileRed">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="440391383797816" type="tileRed">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="928507822685268">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="862624353284455" type="tileRed">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="814869551927391" type="tileRed">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="271541812545373">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="745877762437394" type="tileRed">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="600810613709534" type="tileRed">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="516762063775165">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="756607855699774" type="tileRed">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="595510550795940" type="System">
+                            <param id="0" name="Object">tileRed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="286981621322278" type="tileRed">
+                            <param id="0" name="Speed">45</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="613210900503552" type="tileRed" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="930999968850828">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="786200050674005" type="tileRed">
+                                    <param id="0" name="Object">tileColorsGrannies</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="383500708490588" type="tileColorsGrannies" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="877912253823789">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="899183309732342" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="138186266662672" type="bossRedRobo">
+                            <param id="0" name="Instance variable">ammo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="842906951388290" type="System">
+                            <param id="0" name="Object">tileBlank</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="637352834162307" type="bossRedRobo">
+                            <param id="0" name="Instance variable">ammo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="233743628351503" type="bossRedRobo">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="815807763566540" type="tileBlank">
+                            <param id="0" name="Object">bulletRed</param>
+                            <param id="1" name="Layer">&quot;projectiles&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="558919031019281" type="bulletRed" />
+                        <action id="-8" name="Set angle" sid="619128853332521" type="bulletRed">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="678787127267156" type="bulletRed">
+                            <param id="0" name="X">LayoutWidth-1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="260237316928016" type="bulletRed">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="455252091465849">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="795536689129715" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="907146928656651" type="bossRedRobo">
+                            <param id="0" name="Instance variable">ammo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="545192126466544" type="System">
+                            <param id="0" name="Object">tileBlank</param>
+                        </condition>
+                        <condition id="-3" name="Is on-screen" sid="230635241311939" type="bulletRed" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="269923069088220">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="518276143952628" type="tileBlank">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Y co-ordinate">bulletRed.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="476265624773182" type="bossRedRobo">
+                                    <param id="0" name="Instance variable">ammo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="753470956818158" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="263816165164274" type="tileBlank">
+                                    <param id="0" name="Object">bulletRed</param>
+                                    <param id="1" name="Layer">&quot;projectiles&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="396174055799069" type="bulletRed" />
+                                <action id="-8" name="Set angle" sid="174234936529857" type="bulletRed">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="920058354438202" type="bulletRed">
+                                    <param id="0" name="X">LayoutWidth-1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="307754401728729" type="bulletRed">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="408258147356469" type="bossRedRobo">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="978254978534249">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="924339219280683" type="bulletRed" />
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Set flipped" sid="705906214831723" type="bulletRed">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="367563976591007">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="661728277172287" type="System">
+                                            <param id="0" name="First value">choose(1,2)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="513953293027995" type="bulletRed">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="529151271070512">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="275309868257905" type="glowRed" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="176936467355193" type="glowRed">
+                                    <param id="0" name="Angle">random(360)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="913603230419674">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="692698806829179" type="bulletRed" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="119179145968822" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708908782331051">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="173014916074114" type="bulletRed">
+                            <param id="0" name="Object">forcefieldGreen</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="872570338652039" type="bulletRed">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="471230306866747" type="System">
+                            <param id="0" name="Object">bulletRed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="395270516025221" type="bulletRed">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="241652533838178" type="bulletRed">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="979533531615476">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="332911528151217" type="bulletRed">
+                            <param id="0" name="Object">tileRed</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="866781115876529" type="bulletRed">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="256479371105930" type="tileRed" />
+                        <action id="-12" name="Subtract from" sid="916098033140844" type="tileRed">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="966420231999773">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="361716336440789" type="bossRedRobo">
+                            <param id="0" name="Instance variable">ammo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="358814346041001" type="System">
+                            <param id="0" name="First value">bulletRed.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="907287839598580" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="607150766337178">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="605380572152149" type="bulletRed" />
+                <condition id="3" name="Compare frame" sid="738560620622223" type="bulletRed">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="445068680080013" type="baddies">
+                    <param id="0" name="Instance variable">hpCurrent</param>
+                    <param id="1" name="Value">baddies.hpMax*0.1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

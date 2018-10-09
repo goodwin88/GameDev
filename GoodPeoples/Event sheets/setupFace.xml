@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupFace</name>
+    <events>
+        <event-block sid="734527138027008">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="467309472433703" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="354484807045862" type="faceCranium">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">random(0.4,0.6)</param>
+                </action>
+                <action id="-10" name="Set value" sid="751490283139051" type="faceJaw">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">self.scaleVertical*choose(0.5,0.6,0.7,0.8,0.9,1)</param>
+                </action>
+                <action id="-10" name="Set value" sid="934800805345012" type="faceMandible">
+                    <param id="0" name="Instance variable">scaleHorizontal</param>
+                    <param id="1" name="Value">self.scaleHorizontal*random(0.6,0.8)</param>
+                </action>
+                <action id="-10" name="Set value" sid="371751022156482" type="faceMandible">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">self.scaleVertical*choose(0.5,0.6,0.7,0.8,0.9,1)</param>
+                </action>
+                <action id="-10" name="Set value" sid="591024853126996" type="faceForehead">
+                    <param id="0" name="Instance variable">scaleHorizontal</param>
+                    <param id="1" name="Value">choose(0.6,0.7,0.8,1.2,1.3)</param>
+                </action>
+                <action id="-10" name="Set value" sid="682625049258303" type="eyeLeft">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">random(0.35,0.75)</param>
+                </action>
+                <action id="-10" name="Set value" sid="542572335930821" type="eyeRight">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">eyeRight.scaleVertical</param>
+                </action>
+                <action id="-10" name="Set value" sid="100676991949565" type="eyeLidLeftLower">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">random(0.5,0.8)</param>
+                </action>
+                <action id="-10" name="Set value" sid="119535243175328" type="eyeLidLeftUpper">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">random(0.5,1)</param>
+                </action>
+                <action id="-10" name="Set value" sid="926254806390343" type="eyeBrowLeft">
+                    <param id="0" name="Instance variable">scaleVertical</param>
+                    <param id="1" name="Value">random(0.5,0.8)</param>
+                </action>
+                <action id="-10" name="Set value" sid="867866735329129" type="eyeBrowLeft">
+                    <param id="0" name="Instance variable">scaleHorizontal</param>
+                    <param id="1" name="Value">random(0.8,1.2)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="534097771077186" type="faceCreases">
+                    <param id="0" name="Opacity">random(15,30)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="449423391039927" type="faceNoseBridge">
+                    <param id="0" name="Opacity">10</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="124352505045202" type="colorFaceRed">
+                    <param id="0" name="Opacity">choose(20,30,40,50,60,70,80,90)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="190622571168981" type="colorFaceYellow">
+                    <param id="0" name="Opacity">colorFaceRed.Opacity*0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="694088628855852" type="colorFaceBlue">
+                    <param id="0" name="Opacity">colorFaceRed.Opacity*0.4</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="561373803180970" type="colorNoseRed">
+                    <param id="0" name="Opacity">colorFaceRed.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="452317604543656" type="colorNoseBlue">
+                    <param id="0" name="Opacity">colorFaceBlue.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="320564629901197" type="colorNoseYellow">
+                    <param id="0" name="Opacity">colorFaceYellow.Opacity</param>
+                </action>
+                <action id="9" name="Set scale" sid="180651097933180" type="mouthCrease">
+                    <param id="0" name="Scale">random(0.16,0.4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599048207315488">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="922787067659240" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="554493470549078" type="anchorFace">
+                    <param id="0" name="Object">invisZeroY</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="469325775479845" type="faceCranium">
+                    <param id="0" name="Object">anchorFace</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="840052361160227" type="faceCranium">
+                    <param id="0" name="Width">scrollx*self.scaleHorizontal</param>
+                    <param id="1" name="Height">scrolly*self.scaleVertical</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="218961284423238" type="faceJaw">
+                    <param id="0" name="Object">anchorFace</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="628883415755421" type="faceJaw">
+                    <param id="0" name="Width">faceCranium.Width</param>
+                    <param id="1" name="Height">scrolly*self.scaleVertical</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="288358303684873" type="faceMandible">
+                    <param id="0" name="Object">anchorFace</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="589416131674130" type="faceMandible">
+                    <param id="0" name="Width">scrollx*self.scaleHorizontal</param>
+                    <param id="1" name="Height">faceJaw.Height</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="269329804325662" type="faceForehead">
+                    <param id="0" name="Object">faceCranium</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="542563668291662" type="faceForehead">
+                    <param id="0" name="Width">faceMandible.Width*self.scaleHorizontal</param>
+                    <param id="1" name="Height">self.Width</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="972666818314951" type="faceNoseBack">
+                    <param id="0" name="Object">anchorFace</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="625809835501616" type="faceEar" />
+                <action id="-3" name="Set position" sid="151769888202182" type="faceEar">
+                    <param id="0" name="X">anchorFace.X-(faceCranium.Width*0.8)</param>
+                    <param id="1" name="Y">anchorFace.Y-(faceEar.Height/2)</param>
+                </action>
+                <action id="-7" name="Set size" sid="390003559037626" type="faceEar">
+                    <param id="0" name="Width">(faceCranium.Height*0.3)-(nostril.Width*0.3)</param>
+                    <param id="1" name="Height">eyeLeft.Width+nostril.Width</param>
+                </action>
+                <action id="-24" name="Move to top" sid="611830841018346" type="earLines" />
+                <action id="-3" name="Set position" sid="114770166055614" type="earLines">
+                    <param id="0" name="X">faceEar.X</param>
+                    <param id="1" name="Y">faceEar.Y</param>
+                </action>
+                <action id="-7" name="Set size" sid="718389674373647" type="earLines">
+                    <param id="0" name="Width">faceEar.Width*0.8</param>
+                    <param id="1" name="Height">faceEar.Height*0.6</param>
+                </action>
+                <action id="-24" name="Move to top" sid="672839457779701" type="earShade" />
+                <action id="-4" name="Set position to another object" sid="512507869173085" type="earShade">
+                    <param id="0" name="Object">earLines</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="385346649857613" type="earShade">
+                    <param id="0" name="Width">faceEar.Width*0.7</param>
+                    <param id="1" name="Height">faceEar.Height*0.5</param>
+                </action>
+                <action id="-24" name="Move to top" sid="666498853533021" type="colorFace" />
+                <action id="-25" name="Move to bottom" sid="622901481001425" type="colorFaceBlack" />
+                <action id="-4" name="Set position to another object" sid="760123901071004" type="colorFace">
+                    <param id="0" name="Object">faceEar</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="880655400302038" type="colorFace">
+                    <param id="0" name="Y">faceCranium.Y-faceCranium.Height</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="281587034323386" type="colorNoseBlack" />
+                <action id="-4" name="Set position to another object" sid="832388576016565" type="colorNose">
+                    <param id="0" name="Object">faceNoseFill</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="581813016334244" type="colorNose">
+                    <param id="0" name="Width">faceNoseFill.Width</param>
+                    <param id="1" name="Height">faceNoseFill.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="451325743361720" type="eyeLeft">
+                    <param id="0" name="Width">(colorFaceBlack.Width-faceEar.Width)*0.25</param>
+                    <param id="1" name="Height">self.Width*self.scaleVertical-(distance(Self.X,Self.Y,Touch.X,Touch.Y)/80)</param>
+                </action>
+                <action id="-3" name="Set position" sid="247970175198239" type="eyeLeft">
+                    <param id="0" name="X">anchorFace.Y-(self.Width*1.5)</param>
+                    <param id="1" name="Y">(colorFaceBlack.Y+anchorFace.Y)/2</param>
+                </action>
+                <action id="5" name="Set frame" sid="829930793702013" type="eyeLeft">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="987898041221241" type="eyeRight">
+                    <param id="0" name="Width">eyeLeft.Width*0.7</param>
+                    <param id="1" name="Height">eyeLeft.Height*0.8</param>
+                </action>
+                <action id="5" name="Set frame" sid="816823186674320" type="eyeRight">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="579804325583312" type="eyeLidLeftLower">
+                    <param id="0" name="Object">eyeLeft</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="418205190295490" type="eyeLidLeftLower">
+                    <param id="0" name="Width">eyeLeft.Width</param>
+                    <param id="1" name="Height">eyeLeft.Height*Self.scaleVertical</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="215803955625324" type="eyeLidLeftUpper">
+                    <param id="0" name="Object">eyeLeft</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-7" name="Set size" sid="673292285996600" type="eyeLidLeftUpper">
+                    <param id="0" name="Width">eyelidLeftLower.Width*0.5</param>
+                    <param id="1" name="Height">eyelidLeftLower.Height*0.25</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="796608337178620" type="eyeBrowLeft">
+                    <param id="0" name="Object">eyeLidLeftUpper</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="762985186274322" type="eyeBrowLeft">
+                    <param id="0" name="Width">eyeLeft.Width*Self.scaleHorizontal</param>
+                    <param id="1" name="Height">eyelidLeftLower.Height*self.scaleVertical</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="149285770827245" type="eyeLidRightLower">
+                    <param id="0" name="Object">eyeRight</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="587344840034085" type="eyeLidRightLower">
+                    <param id="0" name="Width">eyeRight.Width</param>
+                    <param id="1" name="Height">eyeLidLeftLower.Height*0.7</param>
+                </action>
+                <action id="5" name="Set frame" sid="986933211387191" type="eyeLidRightLower">
+                    <param id="0" name="Frame number">eyeLidLeftLower.AnimationFrame</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="266618796594475" type="eyeLidRightUpper">
+                    <param id="0" name="Object">eyeRight</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-7" name="Set size" sid="801489658030726" type="eyeLidRightUpper">
+                    <param id="0" name="Width">eyeLidRightLower.Width*0.5</param>
+                    <param id="1" name="Height">eyeLidRightLower.Height*0.25</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="689430845213906" type="eyeBrowRight">
+                    <param id="0" name="Object">eyeLidRightUpper</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="415838999684462" type="eyeBrowRight">
+                    <param id="0" name="Width">eyeRight.Width</param>
+                    <param id="1" name="Height">eyeBrowLeft.Height*0.7</param>
+                </action>
+                <action id="5" name="Set frame" sid="504672918191186" type="eyeBrowRight">
+                    <param id="0" name="Frame number">eyeBrowLeft.AnimationFrame</param>
+                </action>
+                <action id="-3" name="Set position" sid="532866502539960" type="faceNoseBridge">
+                    <param id="0" name="X">eyeBrowRight.X-(eyeBrowRight.Width/2)</param>
+                    <param id="1" name="Y">anchorFace.Y-eyeLidRightUpper.Width</param>
+                </action>
+                <action id="-7" name="Set size" sid="952639807709555" type="faceNoseBridge">
+                    <param id="0" name="Width">eyeBrowRight.X-anchorFace.X-(eyeBrowRight.Width/2)</param>
+                    <param id="1" name="Height">anchorFace.Y-eyeBrowRight.Y-eyeLidRightUpper.width</param>
+                </action>
+                <action id="-3" name="Set position" sid="516732276001198" type="mouthCrease">
+                    <param id="0" name="X">faceMandible.X+(faceMandible.Width*eyeLidLeftLower.scaleVertical)</param>
+                    <param id="1" name="Y">faceMandible.Y+(faceMandible.Height*eyeLeft.scaleVertical*eyeBrowLeft.scaleVertical)-eyeLidRightUpper.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="589038564042004" type="earShade">
+                    <param id="0" name="Width">faceEar.Width*0.7</param>
+                    <param id="1" name="Height">faceEar.Height*0.5</param>
+                </action>
+                <action id="-3" name="Set position" sid="620503677142496" type="cheekbone">
+                    <param id="0" name="X">((eyeLeft.X-(eyeLeft.Width/2))+faceEar.x)/2</param>
+                    <param id="1" name="Y">nostril.Y</param>
+                </action>
+                <action id="-7" name="Set size" sid="146819109125244" type="cheekbone">
+                    <param id="0" name="Width">eyeLeft.Width*0.8</param>
+                    <param id="1" name="Height">faceNoseFill.Height</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="723101028237129" type="cheekbone">
+                    <param id="0" name="Opacity">10*faceForehead.scaleHorizontal</param>
+                </action>
+                <action id="-3" name="Set position" sid="729644613580726" type="faceEarLobe">
+                    <param id="0" name="X">faceEar.X</param>
+                    <param id="1" name="Y">faceEar.Y+nostril.Height</param>
+                </action>
+                <action id="-7" name="Set size" sid="674502040015588" type="faceEarLobe">
+                    <param id="0" name="Width">faceEar.Width/1.5</param>
+                    <param id="1" name="Height">nostril.Height</param>
+                </action>
+                <action id="5" name="Set frame" sid="645857986140688" type="faceEarLobe">
+                    <param id="0" name="Frame number">faceEar.AnimationFrame</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="890499120796100" type="faceEarLobe">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-24" name="Move to top" sid="868048051082416" type="faceEarLobe" />
+                <action id="-7" name="Set size" sid="815246312106583" type="faceChin">
+                    <param id="0" name="Width">(mouthCrease.Width*eyeBrowLeft.scaleHorizontal)+nostril.Width</param>
+                    <param id="1" name="Height">faceNoseFill.Height</param>
+                </action>
+                <action id="9" name="Set scale" sid="685656256522368" type="faceChin">
+                    <param id="0" name="Scale">eyeLidLeftUpper.scaleVertical/2.2</param>
+                </action>
+                <action id="-3" name="Set position" sid="879611026078993" type="faceChin">
+                    <param id="0" name="X">mouthCrease.X-(mouthCrease.Width/2)</param>
+                    <param id="1" name="Y">faceJaw.Y+faceJaw.Height+(nostril.Height/4)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="560564087594680">
+                    <conditions>
+                        <condition id="-5" name="Compare width" sid="520062869064449" type="faceForehead">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Width">faceMandible.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="628117475766725" type="faceNoseBack">
+                            <param id="0" name="Width">faceForehead.Width</param>
+                            <param id="1" name="Height">faceCranium.Height-faceForehead.Height</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="870899916776076" type="faceCheek">
+                            <param id="0" name="X">faceNoseBack.X+faceNoseBack.Width+(self.Width/2)</param>
+                            <param id="1" name="Y">faceNoseBack.Y-(faceNoseBack.Height/2)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="986534429982813" type="faceCheek">
+                            <param id="0" name="Width">faceMandible.Width-faceForehead.Width</param>
+                            <param id="1" name="Height">faceCranium.Height-faceForehead.Height+1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="878007452612040" type="faceCheek">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="197074364502031" type="colorFace">
+                            <param id="0" name="Width">faceCranium.Width+faceMandible.Width+faceCheek.Width+faceEar.Width-1</param>
+                            <param id="1" name="Height">faceCranium.Height+faceMandible.Height+faceChin.Height-1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="150967974232190" type="eyeRight">
+                            <param id="0" name="X">faceCheek.X-(faceCheek.Width/1.9)</param>
+                            <param id="1" name="Y">(colorFaceBlack.Y+anchorFace.Y)/2</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="133412398723591" type="faceNoseFill">
+                            <param id="0" name="Object">eyeBrowRight</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="517427267960481" type="faceNose">
+                            <param id="0" name="Frame number">faceNoseFill.AnimationFrame</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="158306551507553" type="faceNose">
+                            <param id="0" name="Object">faceNoseFill</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="903768663689241" type="nostril">
+                            <param id="0" name="Object">faceNose</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="523091184477892" type="faceNoseFill">
+                            <param id="0" name="Width">eyeRight.Width+faceNoseBridge.width</param>
+                            <param id="1" name="Height">faceNoseBridge.Height</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="353631638712931" type="faceNose">
+                            <param id="0" name="Width">faceNoseFill.Width*1.02+1</param>
+                            <param id="1" name="Height">faceNoseFill.Height*1.01</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="443621085769601" type="nostril">
+                            <param id="0" name="Width">faceNoseFill.Height*0.34</param>
+                            <param id="1" name="Height">faceNoseFill.Height*0.34</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="574817894178928">
+                    <conditions>
+                        <condition id="-5" name="Compare width" sid="726675005416710" type="faceForehead">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Width">faceMandible.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="995511079077910" type="faceNoseBack">
+                            <param id="0" name="Width">faceMandible.Width</param>
+                            <param id="1" name="Height">faceCranium.Height-faceForehead.Height</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="517312836526143" type="faceCheek">
+                            <param id="0" name="X">faceNoseBack.X+faceNoseBack.Width-(self.Width/2)</param>
+                            <param id="1" name="Y">faceNoseBack.Y-(faceNoseBack.Height/2)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="952884038402119" type="faceCheek">
+                            <param id="0" name="Width">faceMandible.Width-faceForehead.Width</param>
+                            <param id="1" name="Height">faceCranium.Height-faceForehead.Height+1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="388119217731602" type="faceCheek">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="768461952836739" type="colorFace">
+                            <param id="0" name="Width">faceCranium.Width+faceForehead.Width+faceEar.Width-1</param>
+                            <param id="1" name="Height">faceCranium.Height+faceMandible.Height+faceChin.Height-1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="142382312835362" type="eyeRight">
+                            <param id="0" name="X">faceCheek.X</param>
+                            <param id="1" name="Y">(colorFaceBlack.Y+anchorFace.Y)/2</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="415617554752859" type="faceNoseFill">
+                            <param id="0" name="Object">eyeBrowRight</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="310172279275942" type="faceNose">
+                            <param id="0" name="Frame number">faceNoseFill.AnimationFrame</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="763656947358387" type="faceNose">
+                            <param id="0" name="Object">faceNoseFill</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="332504038390687" type="nostril">
+                            <param id="0" name="Object">faceNose</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="531309101083033" type="faceNoseFill">
+                            <param id="0" name="Width">faceNoseBridge.width-eyeRight.Width+eyeLidRightUpper.Width</param>
+                            <param id="1" name="Height">faceNoseBridge.Height</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="423456425412614" type="faceNose">
+                            <param id="0" name="Width">faceNoseFill.Width*1.02+1</param>
+                            <param id="1" name="Height">faceNoseFill.Height*1.01</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="889155290029271" type="nostril">
+                            <param id="0" name="Width">faceNoseFill.Height*0.34</param>
+                            <param id="1" name="Height">faceNoseFill.Height*0.35</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="217638360718544">
+            <conditions>
+                <condition id="-18" name="On created" sid="642430914598931" type="faceParts" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="866908533908519" type="faceParts" />
+                <action id="5" name="Set frame" sid="677587573747336" type="faceParts">
+                    <param id="0" name="Frame number">int(random(1,self.AnimationFrameCount))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiVersion</name>
+    <events>
+        <variable constant="0" name="gameVersion" sid="946967953005632" static="0" type="number">3</variable>
+        <event-block sid="777679710149770">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="859520129288032" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="102952904226623" type="uiDebugText">
+                    <param id="0" name="Text">soul.phase&amp;&quot; &quot;&amp;soul.turn&amp;&quot; &quot;&amp;Browser.ExecJS(&quot;Date()&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122146047906503">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="241245479833790" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="799996714015369" type="uiDebugText">
+                    <param id="0" name="Text">&quot;Ph:&quot;&amp;soul.phase&amp;&quot; Act:&quot;&amp;soul.Activated&amp;&quot; &quot;&amp;Browser.ExecJS(&quot;Date()&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

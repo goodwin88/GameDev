@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicIllustration</name>
+    <events>
+        <event-block sid="661930198009479">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="230896769282196" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="500496800806764" type="turnIllustration">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">(uiJumperLeft.X-Self.X)*10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="617543679043860">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="616136983134348" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="508409235589351" type="turnIllustration">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">(uiJumperMiddle.X-Self.X)*10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887056964976659">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="979997742137345" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="909194161775161" type="turnIllustration">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">(uiJumperRight.X-Self.X)*10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="258681984750164">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="573695778564677" type="uiGloom" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="795854762064788" type="uiGloom">
+                    <param id="0" name="X">uiJumperMiddle.X</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="782154408124551" type="uiGloom">
+                    <param id="0" name="Opacity">100-distance(turnIllustration.X, turnIllustration.y,Self.X, Self.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="225292345464799">
+            <conditions>
+                <condition id="-18" name="On created" sid="106382338929623" type="turnIllustration" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="411076370861313" type="turnIllustration" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="478573331933427">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="882236257782346" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">321</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="869191214598193" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">312</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="116326215299704" type="turnIllustration">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="603082413133575">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="892747827543527" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">132</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="239711077828090" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">123</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="552028718288225" type="turnIllustration">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="896392617328114">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="210989114196521" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">213</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="511292849383857" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">231</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="578101536017405" type="turnIllustration">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355668149927065">
+            <conditions>
+                <condition id="3" name="On touched object" sid="225124066432040" type="Touch">
+                    <param id="0" name="Object">turnIllustration</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="949653525929513" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">choose(0,2)</param>
+                </action>
+                <action id="-10" name="Set value" sid="667696582199947" type="soul">
+                    <param id="0" name="Instance variable">phase</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="761428700126628">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="136736710119467" type="turnIllustration" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="716520989997183" type="soul">
+                    <param id="0" name="Instance variable">phase</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="679007516277659">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="825006744888599" type="turnIllustration" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="242928685699623" type="soul">
+                    <param id="0" name="Instance variable">phase</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

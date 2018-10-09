@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiDebug</name>
+    <events>
+        <event-block sid="989467353394777">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="547888170535200" type="Keyboard">
+                    <param id="0" name="Key">56 (8)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="795601665872163" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318581350975071">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="861250668018419" type="Keyboard">
+                    <param id="0" name="Key">57 (9)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="738116262033056" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="561571650323730">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="806683576868228" type="Keyboard">
+                    <param id="0" name="Key">48 (0)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="976827869187321" type="turnIllustration">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="711186132801877">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="958315635915514" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="470900925281072" type="tileRock" />
+            </actions>
+        </event-block>
+        <event-block sid="711402825178424">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="929896318558950" type="Keyboard">
+                    <param id="0" name="Key">81 (Q)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="398145717430429" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveLeft&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922644801494748">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="743982026499103" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="911496612746682" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogCenter&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="547304187728856">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="746380443419425" type="Keyboard">
+                    <param id="0" name="Key">69 (E)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="674632611101940" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogMoveRight&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538169691517843">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="560309274405928" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="622921008406525" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;DialogShake&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="863556768042768">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="296734802670941" type="Keyboard">
+                    <param id="0" name="Key">49 (1)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="236920183958946">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="633591486534672" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="566490415551842" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="154602103007383" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283696353635831">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="670950997900707" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="916886484523097" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="422574410555009" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">-180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="152710160606126">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="550444754399445" type="Keyboard">
+                    <param id="0" name="Key">50 (2)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="999310283333101">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="346390525661213" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="110773979820980" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="786567077728927" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="700598413989815">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="679571124681960" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="508017992453139" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="399986605287373" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">-180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="713696760208690">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="655384304894036" type="Keyboard">
+                    <param id="0" name="Key">51 (3)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="907367771826391">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="507571030718449" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="979992826028692" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="498622964948799" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="245948942440716">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="857376391672434" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="200720201630280" type="uiPositioner01Gr">
+                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="852848058216661" type="uiPositioner01Gr">
+                            <param id="0" name="Speed">-180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

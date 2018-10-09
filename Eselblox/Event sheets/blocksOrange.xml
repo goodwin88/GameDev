@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>blocksOrange</name>
+    <events>
+        <event-block sid="187429954194603">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="819911654716022" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="330838347414843" type="tileRock">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="289952035195362" type="tileRock">
+                    <param id="0" name="Instance variable">mined</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="689034228918791" type="bulletOrange" />
+                <action id="-12" name="Subtract from" sid="700896723543970" type="tileRock">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="406857410891808">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="628428007469709" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="214981902813684" type="tileRed">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="244177073883199" type="bulletOrange" />
+                <action id="-12" name="Subtract from" sid="253458130216036" type="tileRed">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="489812548335035">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="164368957134596" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="121334735639221" type="tileYellow">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="645247268277281" type="bulletOrange" />
+                <action id="-12" name="Subtract from" sid="141898905235699" type="tileYellow">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="370624491810103">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="972002963003593" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="383785644869360" type="tileBlue">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="359872347308285" type="bulletOrange" />
+                <action id="-12" name="Subtract from" sid="180394033084900" type="tileBlue">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="278486377592894">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="183434022776570" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="670004402405936" type="tileGreen">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="758757379374743">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="925963400829692" type="tileGreen">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="868761122641836" type="bulletOrange" />
+                        <action id="-15" name="Set visible" sid="483778148249358" type="tileGreen">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="942404039259362" type="tileGreen" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="215851612143038">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="104984467289869" type="bulletOrange" />
+                <condition id="1" name="Is overlapping another object" sid="213379345700422" type="tilePurple">
+                    <param id="0" name="Object">bulletOrange</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="176603724450634">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="878027187377472" type="tilePurple">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="127341975526606" type="bulletOrange" />
+                        <action id="-15" name="Set visible" sid="923903023682695" type="tilePurple">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="261223720074236" type="tilePurple" />
+                    </actions>
+                </event-block>
+                <event-block sid="829746309936608">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="507715573545104" type="tilePurple">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="227053746221713" type="bulletOrange" />
+                        <action id="-12" name="Subtract from" sid="458106139107636" type="tilePurple">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="593506745651811">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="199920458295798" type="soul">
+                    <param id="0" name="Instance variable">turnOrange</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="828599660591831" type="soul">
+                    <param id="0" name="Instance variable">phase</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="704177532847288">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="915495664898415" type="Touch">
+                            <param id="0" name="Object">tileOrange</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="344529233124815" type="tileOrange">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="241300847586206">
+                            <conditions>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="742663736426432" type="tileOrange">
+                                    <param id="0" name="Object">tileTarget</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="998569920607691" type="tileTarget">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Fade" id="0" name="Restart fade" sid="382429208902873" type="tileTarget" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="377994945376501">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="665548807905081" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="811125161371770" type="tileOrange">
+                                    <param id="0" name="Instance variable">active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="430579873618044" type="tileOrange">
+                                    <param id="0" name="Frame number">choose(2,3,4)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="365366179500834" type="uiGrannyOrange">
+                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="364007245964060" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenRecord</param>
+                                    <param id="1" name="Value">1*self.spokenTurn</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="984917116766753" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenRecord</param>
+                                    <param id="1" name="Value">1000</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="952221717906431" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenTurn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="383589526236430">
+                                    <conditions>
+                                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="941935275740921" type="tileOrange">
+                                            <param id="0" name="Object">block</param>
+                                        </condition>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="237103942559974" type="block">
+                                            <param id="0" name="Object">bulletOrange</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="541960577329698" type="block">
+                                            <param id="0" name="Object">bulletOrange</param>
+                                            <param id="1" name="Layer">&quot;illustration&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="558343359114458" type="bulletOrange">
+                                            <param id="0" name="Pin to">block</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="471513968441911">
+                    <conditions>
+                        <condition id="2" name="Is in touch" sid="826734107833405" type="Touch" />
+                        <condition id="1" name="Is overlapping another object" sid="247604172943790" type="tileOrange">
+                            <param id="0" name="Object">tileTarget</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="931774267156203" type="tileTarget">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="631890745220643" type="tileTarget">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="761288990785289" type="tileTarget" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="466916866007549">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="126285181027926" type="tileTarget" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="283761733783475" type="tileTarget">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="474331872811177">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="629931664699034" type="Touch" />
+                <condition id="-11" name="For Each" sid="679594357015246" type="System">
+                    <param id="0" name="Object">tileTarget</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="312257263076096" type="tileTarget">
+                    <param id="0" name="Object">tileOrange</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="691391691087355" type="tileTarget">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="659081291946596" type="tileOrange">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="476912465144983" type="tileOrange">
+                    <param id="0" name="Frame number">choose(2,3,4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="948781742610110">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="615313978102320" type="uiScenery">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="830584062922014" type="tileOrange">
+                    <param id="0" name="Width">50</param>
+                    <param id="1" name="Height">50</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

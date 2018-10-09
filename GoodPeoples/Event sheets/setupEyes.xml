@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupEyes</name>
+    <events>
+        <event-block sid="325448799340744">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="871641750642557" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="446420005321279" type="irisLeft">
+                    <param id="0" name="Object">eyeLeft</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+                <action id="-7" name="Set size" sid="550004238970825" type="irisLeft">
+                    <param id="0" name="Width">eyeLeft.Height</param>
+                    <param id="1" name="Height">eyeLeft.Height</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="775409192721360" type="irisRight">
+                    <param id="0" name="Object">eyeRight</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+                <action id="-7" name="Set size" sid="806299079856378" type="irisRight">
+                    <param id="0" name="Width">eyeRight.Height</param>
+                    <param id="1" name="Height">eyeRight.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="935881336363362">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="270608997116929" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="842425529325965" type="irisLeft">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="414932322406910" type="irisRight">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="132404315222196">
+            <conditions>
+                <condition id="2" inverted="1" name="Is in touch" sid="732721769096466" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="789099048055135" type="irisLeft">
+                    <param id="0" name="X">earShade.X</param>
+                    <param id="1" name="Y">eyeLidLeftUpper.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="109986360813996" type="irisRight">
+                    <param id="0" name="X">earShade.X</param>
+                    <param id="1" name="Y">eyeLidLeftUpper.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="298602949073856">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="189642985573004" type="Touch">
+                    <param id="0" name="Object">eyeLeft</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="205849072474471" type="Touch">
+                    <param id="0" name="Object">eyeLidLeftLower</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="633632303253189" type="Touch">
+                    <param id="0" name="Object">eyeLidLeftUpper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="124990366505547" type="eyeLeft">
+                    <param id="0" name="Width">(colorFaceBlack.Width-faceEar.Width)*0.25</param>
+                    <param id="1" name="Height">4</param>
+                </action>
+                <action id="5" name="Set frame" sid="697087922788391" type="eyeLeft">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="283945560236640">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="708692569156345" type="Touch">
+                    <param id="0" name="Object">eyeRight</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="116219273601235" type="Touch">
+                    <param id="0" name="Object">eyeLidRightLower</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="135350379106835" type="Touch">
+                    <param id="0" name="Object">eyeLidRightUpper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="773300747226723" type="eyeRight">
+                    <param id="0" name="Width">eyeLeft.Width*0.7</param>
+                    <param id="1" name="Height">4</param>
+                </action>
+                <action id="5" name="Set frame" sid="124030226358191" type="eyeRight">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="723281343748567">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="768560335111189" type="anchorEyeRightCorner">
+                    <param id="0" name="Object">faceCranium</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="732681115864484" type="faceEyeRightBack">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="691546784978001" type="faceEyeRightBack">
+                    <param id="0" name="Object">eyeRight</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="856707580062655" type="faceEyeRightBack">
+                    <param id="0" name="Width">eyeRight.Width*1.25</param>
+                    <param id="1" name="Height">self.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="500914527475372">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="466700016499070" type="anchorEyeRightCorner">
+                    <param id="0" name="Object">faceCranium</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="489552511882234" type="faceEyeRightBack">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

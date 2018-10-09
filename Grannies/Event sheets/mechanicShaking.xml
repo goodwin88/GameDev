@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicShaking</name>
+    <events>
+        <event-block any="1" sid="843750563080256">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="746225206832596" type="tileRock">
+                    <param id="0" name="Object">projectilesGrannies</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="759778610852499" type="tileRock">
+                    <param id="0" name="Object">projectilesBoss</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine2" id="0" name="Set active" sid="495438012992060" type="tileRock">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine2" id="1" name="Set period" sid="955501076723684" type="tileRock">
+                    <param id="0" name="Period">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="727410069437869">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="598269851298124" type="tileRock">
+                    <param id="0" name="Object">projectilesGrannies</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="655456165209678" type="tileRock">
+                    <param id="0" name="Object">projectilesBoss</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine2" id="0" name="Set active" sid="969409469431836" type="tileRock">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="873529773307816" type="tileRock">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808498613956192">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="828932992893254" type="tileOrange">
+                    <param id="0" name="Object">bulletPurple</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="344497228173459" type="tileOrange">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine2" id="0" name="Set active" sid="497017685701976" type="tileOrange">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine2" id="1" name="Set period" sid="331096356806329" type="tileRock">
+                    <param id="0" name="Period">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504288006208378">
+            <conditions>
+                <condition id="-11" name="For Each" sid="254387001813908" type="System">
+                    <param id="0" name="Object">tileOrange</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="720055856165359" type="tileOrange">
+                    <param id="0" name="Object">bulletPurple</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine2" id="0" name="Set active" sid="872123836576953" type="tileOrange">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="944710234488679" type="tileOrange">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

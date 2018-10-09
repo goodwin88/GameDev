@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiScoreFloaties</name>
+    <events>
+        <event-block sid="918852222546235">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="994886519295001" type="fxObj">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="877673312953438" type="fxObj">
+                    <param id="0" name="Target">uiGrannyGreen</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="113185916295428" type="fxObj">
+                    <param id="0" name="X">uiGrannyGreen.X+(random(-10,10))</param>
+                    <param id="1" name="Y">uiGrannyGreen.Y+(random(-10,10))</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="627530857476428" type="fxObj">
+                    <param id="0" name="Opacity">distance(self.X,self.Y,uiGrannyGreen.X,uiGrannyGreen.Y)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="104748060995174">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="757931953606077" type="fxObj">
+                            <param id="0" name="Object">uiGrannyGreen</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="845818937909902" type="fxObj" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="442404664279125">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="325281020773778" type="fxObj">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="255998968398213" type="fxObj">
+                    <param id="0" name="Target">uiGrannyOrange</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="381231214199658" type="fxObj">
+                    <param id="0" name="X">uiGrannyOrange.X+(random(-10,10))</param>
+                    <param id="1" name="Y">uiGrannyOrange.Y+(random(-10,10))</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="591333755919597" type="fxObj">
+                    <param id="0" name="Opacity">distance(self.X,self.Y,uiGrannyOrange.X,uiGrannyOrange.Y)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="226307452394423">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="800455039839829" type="fxObj">
+                            <param id="0" name="Object">uiGrannyOrange</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="845350689936947" type="fxObj" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="573517217620007">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="191705328766616" type="fxObj">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="488006568774437" type="fxObj">
+                    <param id="0" name="Target">uiGrannyPurple</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="996097099274748" type="fxObj">
+                    <param id="0" name="X">uiGrannyPurple.X+(random(-10,10))</param>
+                    <param id="1" name="Y">uiGrannyPurple.Y+(random(-10,10))</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="659121410472627" type="fxObj">
+                    <param id="0" name="Opacity">distance(self.X,self.Y,uiGrannyPurple.X,uiGrannyPurple.Y)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="565169224437361">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="613854227830374" type="fxObj">
+                            <param id="0" name="Object">uiGrannyPurple</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="399907007367558" type="fxObj" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="936067102945837">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="846786176753056" type="textPopUp" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="393249794238441" type="textPopUp">
+                    <param id="0" name="Fade-out time">choose(0.5,1,1.5)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

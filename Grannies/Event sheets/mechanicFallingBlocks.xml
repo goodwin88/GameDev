@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicFallingBlocks</name>
+    <events>
+        <event-block sid="241915138432096">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="903698591978625" type="invisIndicatorDrop" />
+                <condition id="-4" name="Trigger once while true" sid="962586465589519" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="920541118624795" type="invisIndicatorDrop" />
+            </actions>
+        </event-block>
+        <event-block sid="439383566975538">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="883488422462353" type="tileRock" />
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="513272185444343" type="tileRock">
+                    <param id="0" name="Object">tileYellow</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="137494782959040" type="tileRock">
+                    <param id="0" name="Object">tileRed</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="393049010217894" type="tileRock">
+                    <param id="0" name="Object">tileBlue</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="860764506940517">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="216809785035901" type="tileRock">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="161843932323855" type="tileRock">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="380832809228866" type="tileRock">
+                            <param id="0" name="Instance variable">doomed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="850296558059277" type="tileRock">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="820031122816151" type="tileRock">
+                            <param id="0" name="Instance variable">doomed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="226072861458235" type="tileRock">
+                            <param id="0" name="Frame number">6</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="560427688784588" type="tileRock">
+                            <param id="0" name="Object">invisIndicatorDrop</param>
+                            <param id="1" name="Layer">&quot;invis&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="106785944420184" type="invisIndicatorDrop">
+                            <param id="0" name="Pin to">tileRock</param>
+                            <param id="1" name="Mode">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971093511882693">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="121807510652247" type="tileRock">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="141130558398647" type="tileRock">
+                            <param id="0" name="Object">invisIndicatorDrop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="608821226799265" type="invisIndicatorDrop" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="156393927340688">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="187793471927664" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="755677134840138" type="tileRock" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="486670702343045">
+            <conditions>
+                <condition id="-18" name="On created" sid="273040612174750" type="tileRock" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="363474905815701" type="tileRock">
+                    <param id="0" name="Object">invisIndicatorDamageBomb</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="347967102881171" type="invisIndicatorDamageBomb">
+                    <param id="0" name="Pin to">tileRock</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="379697912357819" type="tileRock">
+                    <param id="0" name="Object">invisIndicatorDamageProjectile</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="351352133625277" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="X">tileRock.X</param>
+                    <param id="1" name="Y">tileRock.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="228512553557614" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="Pin to">tileRock</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="919628542454620" type="tileRock">
+                    <param id="0" name="Object">invisIndicatorDamageProjectile</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="636885071438567" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="X">tileRock.X</param>
+                    <param id="1" name="Y">tileRock.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="927881303868941" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="Pin to">tileRock</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="502409996615254" type="tileRock">
+                    <param id="0" name="Object">invisIndicatorDamageProjectile</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="167227800957617" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="X">tileRock.X</param>
+                    <param id="1" name="Y">tileRock.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="736405120311387" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="Pin to">tileRock</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="559627141213468" type="tileRock">
+                    <param id="0" name="Object">invisIndicatorDamageProjectile</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="781655908195045" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="X">tileRock.X</param>
+                    <param id="1" name="Y">tileRock.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="582479271170554" type="invisIndicatorDamageProjectile">
+                    <param id="0" name="Pin to">tileRock</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="166015560723841">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="620883359514226" type="invisIndicatorDamageProjectile" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="874178459555253" type="invisIndicatorDamageProjectile" />
+            </actions>
+        </event-block>
+        <event-block sid="794692383243105">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="693343080450376" type="invisIndicatorDamageBomb" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="737708745951880" type="invisIndicatorDamageBomb" />
+            </actions>
+        </event-block>
+        <event-block sid="128919334105206">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="756278821869295" type="invisIndicatorDrop">
+                    <param id="0" name="Object">invisEdge</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="210032008987876" type="invisIndicatorDrop">
+                    <param id="0" name="X">Self.X</param>
+                    <param id="1" name="Y">Self.Y-40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="750880935875773">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="333649175780700" type="tileRock">
+                    <param id="0" name="Object">tileYellow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="119632356236403" type="tileRock">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

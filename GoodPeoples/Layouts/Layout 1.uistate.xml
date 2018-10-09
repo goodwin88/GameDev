@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the layout was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <camera>
+        <position-x>105.166</position-x>
+        <position-y>225.5</position-y>
+        <position-z>100</position-z>
+        <lookat-x>105.166</lookat-x>
+        <lookat-y>225.5</lookat-y>
+        <lookat-z>0</lookat-z>
+    </camera>
+    <snap-to-grid>0</snap-to-grid>
+    <show-grid>0</show-grid>
+    <snap-width>32</snap-width>
+    <snap-height>32</snap-height>
+    <show-collision-polys>0</show-collision-polys>
+    <translucent-inactive-layers>0</translucent-inactive-layers>
+    <properties>
+        <property expanded="1" name="Layout properties" />
+        <property expanded="0" name="Layout Size" />
+        <property expanded="0" name="Margins" />
+        <property expanded="1" name="Effects" />
+    </properties>
+    <active-layer name="whitoutthoughbubble" />
+    <layers>
+        <layer locked="0" name="storage" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="bd" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="thoughtbubble" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="path" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="whitoutthoughbubble" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="head" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="ears" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="cheekbones" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="mouth" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="eyesockets" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="eyes" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="iris" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="eyelids" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="eyebrows" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="nose" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="chin" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="whiteout" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="grid" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="invis" parallax-in-editor="0" visible="1" />
+    </layers>
+</c2uistate>

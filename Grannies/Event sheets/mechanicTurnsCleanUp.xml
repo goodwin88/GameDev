@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicTurnsCleanUp</name>
+    <events>
+        <event-block sid="666580099705261">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="257252325917363" type="soul">
+                    <param id="0" name="Instance variable">turn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="947754060926068">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="856041031529408" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="941758219787422">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="803739596774080" type="System">
+                                    <param id="0" name="Object">tileRock</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="742257522155781" type="tileRock">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="498007437181365" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="905024989997430" type="tileRock" />
+                                <action id="-16" name="Wait" sid="358988198987957" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="468089372174081">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="601994913698036" type="tilePurple">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Move to layer" sid="874870716519281" type="tilePurple">
+                                    <param id="0" name="Layer">&quot;tilesConverted&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="517062814779338">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="783269591311408" type="System">
+                                    <param id="0" name="Object">tilePurple</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="626770974261037" type="tilePurple">
+                                    <param id="0" name="Instance variable">hp</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-19" name="Pick all" sid="949817995122834" type="System">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="476346228211864" type="tilePurple">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="160023353696786" type="tilePurple">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="549718719099579" type="tilePurple">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="281079347828695" type="tilePurple">
+                                    <param id="0" name="Object">tileBlue</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="539821162827189" type="tilePurple" />
+                                <action id="0" name="Spawn another object" sid="465794041711164" type="block">
+                                    <param id="0" name="Object">corpse</param>
+                                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="462788620971267" type="block" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="649783618898559">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="403676915328459" type="soul">
+                                            <param id="0" name="Instance variable">turnPurple</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="535647283714016">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="872001711158018" type="tileOrange">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Move to layer" sid="410766800948234" type="tileOrange">
+                                    <param id="0" name="Layer">&quot;tilesConverted&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102176882877956">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="637637073203603" type="System">
+                                    <param id="0" name="Object">tileOrange</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="993762847892111" type="tileOrange">
+                                    <param id="0" name="Instance variable">hp</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-19" name="Pick all" sid="349197809336317" type="System">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="878613952294394" type="tileOrange">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="976453217371799" type="tileOrange">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="494460605946280" type="tileOrange">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="468613544255635" type="tileOrange">
+                                    <param id="0" name="Object">tileBlue</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="531280024524880" type="tileOrange" />
+                                <action id="5" name="Set frame" sid="813991183660873" type="tileTarget">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="528469055089410" type="block">
+                                    <param id="0" name="Object">corpse</param>
+                                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="916287623167938" type="block" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="446848469402676">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="948227636095848" type="soul">
+                                            <param id="0" name="Instance variable">turnOrange</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="657304228056961">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="269584435642766" type="tileGreen">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Move to layer" sid="662066260176789" type="tileGreen">
+                                    <param id="0" name="Layer">&quot;tilesConverted&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="427394744091843">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="521261424042122" type="System">
+                                    <param id="0" name="Object">tileGreen</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="241632151411833" type="tileGreen">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                                <condition id="-19" name="Pick all" sid="921042508847624" type="System">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="841837978652678" type="tileGreen">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="250763893430167" type="tileGreen">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="808410936508116" type="tileGreen">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="880529910254782" type="tileGreen">
+                                    <param id="0" name="Object">tileBlue</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="672340060685868" type="tilePurple">
+                                    <param id="0" name="Instance variable">hp</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="180777817932858" type="tileGreen" />
+                                <action id="-9" name="Destroy" sid="634432554842992" type="bulletGreen" />
+                                <action id="0" name="Spawn another object" sid="583047549156783" type="block">
+                                    <param id="0" name="Object">corpse</param>
+                                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="468040364600469" type="block" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="277987655684320">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="200585647123199" type="soul">
+                                            <param id="0" name="Instance variable">turnGreen</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="762583174133229">
+                            <conditions>
+                                <condition id="-38" name="Layer is empty" sid="663780826378516" type="System">
+                                    <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="273706231932647" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="350403533904162" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="625688500209848" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="270087853521444" type="soul">
+                                    <param id="0" name="Instance variable">turnRocks</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="747047392389460">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="652935352820962" type="block">
+                                    <param id="0" name="Object">placedObj</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="845851121272798" type="block">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="690382812135540" type="block">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="674344075339514" type="block">
+                                    <param id="0" name="Object">tileBlue</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="777260856554681" type="block" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="702435036505550">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="996470648778516" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="948761549428591" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="560693916445594" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="383423020922550" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="619361897180934" type="soul">
+                                    <param id="0" name="Instance variable">Activated</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="697851846908139">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="123193526063480" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="533918213391581">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Set value" sid="356778989107950" type="TextBox">
+                                    <param id="0" name="Instance variable">scorePurpleTotal</param>
+                                    <param id="1" name="Value">self.scorePurpleTotal+self.scorePurpleRound</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="682269407677941" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                    <param id="1" name="Value">self.scoreOrangeTotal+self.scoreOrangeRound</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="878801533420918" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                    <param id="1" name="Value">self.scoreGreenTotal+self.scoreGreenRound</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="890458063248174">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="319783812636372" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">self.scorePurpleTotal</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="792292178227863" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">self.scoreOrangeTotal</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="134548139492685" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="532827605049055" type="uiPositioner01Gr">
+                                    <param id="0" name="Instance variable">scoreHighGranny</param>
+                                    <param id="1" name="Value">choose(1,2,3)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="697568124563246">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="954894780155177" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="252686306999439" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">choose(2,3)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="652573276887337">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="967496473654511" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="280882502471676" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="562143502690412">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="592780816752713" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="124991917964487" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="378202884240318">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="159742670191189" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="498778136548821" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">choose(1,3)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="820902529453698">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="365272240672555" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="553215728764769" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="402423728040337">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="334364986856055" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="582957347617077" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="828482307644041">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="897000078646389" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">uiProminentGranny</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="666860302881916" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">choose(1,2)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="387325868839764">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="326823084780459" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="748449973060619" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="948185371052073">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="609326704811476" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="269545212026287" type="uiPositioner01Gr">
+                                                    <param id="0" name="Instance variable">scoreLowGranny</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="119099638344841">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="183786779503221" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scorePurpleTotal</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="501669545713479" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scoreOrangeTotal</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="246881718923462" type="uiPositioner01Gr">
+                                    <param id="0" name="Instance variable">scoreHighGranny</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="834706600412003">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="433324399500246" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">self.scorePurpleTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="597122040407127" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="819706824472646" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="419480536652543">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="838147924896756" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">self.scorePurpleTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="743451985552119" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="208574720401723" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="417561857368144">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="555226992608347" type="TextBox">
+                                    <param id="0" name="Instance variable">scorePurpleTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scoreGreenTotal</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="518062569492755" type="TextBox">
+                                    <param id="0" name="Instance variable">scorePurpleTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scoreOrangeTotal</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="786524249585224" type="uiPositioner01Gr">
+                                    <param id="0" name="Instance variable">scoreHighGranny</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="137107719184697">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="688280306454664" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">self.scoreGreenTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="289716910089257" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="896287287022198" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="917081238835936">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="262538881468642" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">self.scoreGreenTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="201473592235252" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="219825676572895" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="625560837408904">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="293695113349998" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scoreGreenTotal</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="458960774970597" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreOrangeTotal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">self.scorePurpleTotal</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="983262447875441" type="uiPositioner01Gr">
+                                    <param id="0" name="Instance variable">scoreHighGranny</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="542414159997562">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="919810152849558" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">self.scorePurpleTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="840607267064853" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="357523914522942" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="392366910190021">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="778226770303515" type="TextBox">
+                                            <param id="0" name="Instance variable">scoreGreenTotal</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">self.scorePurpleTotal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="724298434112183" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreMiddleGranny</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="303619449476415" type="uiPositioner01Gr">
+                                            <param id="0" name="Instance variable">scoreLowGranny</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="415151976025917">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="460335000739970" type="System">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="974581376767148" type="block">
+                                    <param id="0" name="Object">placedObj</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="787633498738104" type="block">
+                                    <param id="0" name="Object">revealedNPC</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="357586352299861" type="block">
+                                    <param id="0" name="Object">tileRed</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="604459695897032" type="block">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="121361332317641" type="block">
+                                    <param id="0" name="Object">tileBlue</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="169392821608149" type="block">
+                                    <param id="0" name="Object">corpse</param>
+                                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="546998153846776" type="block" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="992266501276624">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Set value" sid="351308274875902" type="TextBox">
+                                    <param id="0" name="Instance variable">scorePurpleRound</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="230163445362847" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreOrangeRound</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="584593737172590" type="TextBox">
+                                    <param id="0" name="Instance variable">scoreGreenRound</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="720355335528973" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="463056286936964" type="soul">
+                                    <param id="0" name="Instance variable">Activated</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="526969513925978" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="845059755871285" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="926778935292802" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="400260634932865" type="soul">
+                                    <param id="0" name="Instance variable">turnRocks</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="840300782130545" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenTurn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="894089460247142" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenRecord</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="468347101175613" type="dialogueState">
+                                    <param id="0" name="Instance variable">ranking</param>
+                                    <param id="1" name="Value">(100*uiPositioner01Gr.scoreLowGranny)+(10*uiPositioner01Gr.scoreMiddleGranny)+uiPositioner01Gr.scoreHighGranny</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="986224382384703" type="System">
+                                    <param id="0" name="Variable">currentActiveGreen</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="295159725191297" type="System">
+                                    <param id="0" name="Variable">formerActiveGreen</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="805971049241427" type="dialogueState">
+                                    <param id="0" name="Instance variable">spokenRecord</param>
+                                    <param id="1" name="Value">10000*dialogueState.ranking</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="960667602614033" type="tileRock">
+                                    <param id="0" name="Instance variable">mined</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="575063966581563" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="794076073997955" type="soul">
+                                    <param id="0" name="Instance variable">turn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="334326294737139" type="bossRedRobo">
+                                    <param id="0" name="Instance variable">ammo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="327661956363659" type="bossYellowKing">
+                                    <param id="0" name="Instance variable">ammo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="407067071640686" type="bossBlueRival">
+                                    <param id="0" name="Instance variable">ammo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

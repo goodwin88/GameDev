@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game</name>
+    <events>
+        <include>setupAxis</include>
+        <include>setupFace</include>
+        <include>setupMouth</include>
+        <include>setupEyes</include>
+        <include>setupColor</include>
+        <include>setup9grid</include>
+        <include>mechanicShuffle</include>
+        <include>mechanicThoughtBubble</include>
+        <include>mechanicMiniGrid</include>
+    </events>
+</c2eventsheet>

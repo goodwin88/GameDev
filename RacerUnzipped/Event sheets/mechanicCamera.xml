@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicCamera</name>
+    <events>
+        <event-block sid="479728683640946">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="170139362600533" type="System">
+                    <param id="0" name="First value">beaconCameraLazy.Count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="192768237134882" type="beaconCar1">
+                    <param id="0" name="Object">beaconCameraLazy</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="812330428038664">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="418799745112131" type="beaconCar1" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="509756737815472" type="beaconCameraLazy" />
+            </actions>
+        </event-block>
+        <event-block sid="456116759535853">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="140449895462619" type="beaconCar2" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="505528097554209">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="509714492469018" type="beaconCar3" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="263575141337699">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="252681430426447" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="691204441577087" type="beaconCamera">
+                    <param id="0" name="Y">(hitBox1.y+hitBox2.Y+hitBox3.Y+invisAxisZeroX.X)/4</param>
+                </action>
+                <action id="-2" name="Set Y" sid="744080783384693" type="beaconCameraLazy">
+                    <param id="0" name="Y">beaconCamera.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="338173150734362" type="beaconCameraLazy">
+                    <param id="0" name="X">beaconCamera.X+(beaconCamera.Width/2)</param>
+                    <param id="1" name="Y">beaconCamera.y+(beaconCamera.Height/2)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="838667265291922" type="beaconCameraLazy">
+                    <param id="0" name="Speed">distance(self.X,self.Y,(beaconCamera.X+beaconCamera.Width)/2,(beaconCamera.y+beaconCamera.Height)/2)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="998984509533418" type="Camera">
+                    <param id="0" name="Speed">distance(self.X,self.Y,beaconCameraLazy.X,beaconCameraLazy.Y)*0.75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="100622270783344">
+            <conditions>
+                <condition id="-18" name="On created" sid="298115675496913" type="Camera" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="458338743993291" type="Camera">
+                    <param id="0" name="Target">beaconCameraLazy</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="933557996734576">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="936084776056199" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="121082600862562" type="Camera">
+                    <param id="0" name="Object">momentStart</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

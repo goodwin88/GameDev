@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiBars</name>
+    <events>
+        <event-block sid="336962752525927">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="395851613754473" type="soul">
+                    <param id="0" name="Instance variable">phase</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="565077561039489">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="760908667609988" type="Touch">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="743540054640567" type="barVert">
+                            <param id="0" name="X">block.x</param>
+                            <param id="1" name="Y">WindowHeight/2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="643386000846114" type="barHori">
+                            <param id="0" name="X">WindowWidth/2</param>
+                            <param id="1" name="Y">block.Y</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="339352770371808" type="barHori">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="627732376042155" type="barVert">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="640824413309300" type="barVert">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="860733217957686" type="barHori">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="435236046216274">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="458134286607372" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="134689138717323" type="barHori">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.3</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="286201219112086" type="barVert">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="974583204018530">
+                            <conditions>
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="622454094425451" type="barHori" />
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="388579803508877" type="barHori">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="158573943812689" type="barVert">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="655628070485408">
+            <conditions>
+                <condition id="-18" name="On created" sid="387786920305404" type="barVert" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="130846364907158" type="barVert">
+                    <param id="0" name="Height">WindowHeight</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150899308366917">
+            <conditions>
+                <condition id="-18" name="On created" sid="495314169466979" type="barHori" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="601308139590587" type="barHori">
+                    <param id="0" name="Width">WindowWidth</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="661837527706888">
+            <conditions>
+                <condition behavior="Flash" id="1" name="On flash ended" sid="993178964710873" type="barHori" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="529394708827689" type="barHori">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="817716009156271">
+            <conditions>
+                <condition behavior="Flash" id="1" name="On flash ended" sid="972567417572480" type="barVert" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="672874907764761" type="barVert">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

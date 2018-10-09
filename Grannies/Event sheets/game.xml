@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game</name>
+    <events>
+        <include>uiScoreFloaties</include>
+        <include>spawnPlanet</include>
+        <include>mechanicTurnsGrannies</include>
+        <include>mechanicTurnsCleanUp</include>
+        <include>mechanicShaking</include>
+        <include>mechanicFallingBlocks</include>
+        <include>mechanicDestroy</include>
+        <include>mechanicBossProjectiles</include>
+        <include>bossYellowKing</include>
+        <include>bossRedRobo</include>
+        <include>bossBlueRival</include>
+        <include>blocksPurple</include>
+        <include>blocksRock</include>
+        <include>blocksOrange</include>
+        <include>blocksGreen</include>
+        <include>uiVersion</include>
+        <include>bossHP</include>
+        <include>bossNone</include>
+        <include>mechanicIllustration</include>
+        <include>uiDebug</include>
+        <include>uiAnimations</include>
+        <include>uiGrannies</include>
+        <include>mechanicDialog</include>
+        <include>uiCat</include>
+        <include>uiDialogText</include>
+        <include>spawnTerrain</include>
+        <include>uiBars</include>
+        <include>mechanicPinning</include>
+        <comment>Update the &apos;IsOnGround&apos; and &apos;IsFalling&apos; flags of all the blocks every tick.</comment>
+        <event-block sid="8023646453671544">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8403153807851121" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="8107229019999973" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;UpdateOnGround&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>This function is called when we want to update the state of all the blocks. First of all we start by setting all the blocks &apos;IsOnGround&apos; to false, and then later set it to true for the ones which are connected to the ground. In other words, assume disconnected from the ground until proven connected.</comment>
+        <event-block sid="4503001910356705">
+            <conditions>
+                <condition id="0" name="On function" sid="8348436463940381" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;UpdateOnGround&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6074238735804092" type="block">
+                    <param id="0" name="Instance variable">IsOnGround</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>Then we start at the ground, and mark all adjacent blocks as also on the ground using a recursive function.</comment>
+                <event-block sid="493125264410785">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="7280277229630261" type="block">
+                            <param id="0" name="Object">screenFloor</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">1</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="8088366419741226" type="System">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="8009100976340009" type="uiDialogSlider">
+                            <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                            <param id="1" name="Parameter {n}">tileBlank.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Once all blocks&apos; &apos;IsOnGround&apos; flags have been updated, set any which are not on the ground to start falling.</comment>
+                <event-block sid="3783868005962771">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9954852907943673" type="block">
+                            <param id="0" name="Instance variable">IsOnGround</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="8381798130987622" type="block">
+                            <param id="0" name="Instance variable">IsFalling</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>This function marks a block as on the ground, then also marks any adjacent blocks. This means the blocks immediately on the ground are marked, then they mark all the connected blocks in a chain; any &apos;islands&apos; of blocks free-floating (which need to fall) are never reached, so their &apos;IsOnGround&apos; flags are left &apos;false&apos;.</comment>
+        <event-block sid="3916220619424994">
+            <conditions>
+                <condition id="0" name="On function" sid="844384607170701" type="uiDialogSlider">
+                    <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="3395548568245607" type="block">
+                    <param id="0" name="Unique ID">uiDialogSlider.Param(0)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="8085021735971956" type="block">
+                    <param id="0" name="Instance variable">IsOnGround</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>Mark any blocks to the left or to the right as also on the ground. Note we have to use a family to be able to pick instances of &apos;Block&apos; and refer to them separately.</comment>
+                <event-block sid="4540517703375247">
+                    <conditions />
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7710693145600582">
+                            <conditions>
+                                <condition id="-36" name="Pick overlapping point" sid="5508344765734832" type="System">
+                                    <param id="0" name="Object">prims</param>
+                                    <param id="1" name="X">tileBlank.X - 22</param>
+                                    <param id="2" name="Y">tileBlank.Y</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4873053285358347" type="prims">
+                                    <param id="0" name="Instance variable">IsOnGround</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="2696656298413718" type="uiDialogSlider">
+                                    <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                                    <param id="1" name="Parameter {n}">prims.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2572378178494357">
+                            <conditions>
+                                <condition id="-36" name="Pick overlapping point" sid="5204717220201044" type="System">
+                                    <param id="0" name="Object">prims</param>
+                                    <param id="1" name="X">tileBlank.X + 22</param>
+                                    <param id="2" name="Y">tileBlank.Y</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8650751404816855" type="prims">
+                                    <param id="0" name="Instance variable">IsOnGround</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7908118504001666" type="uiDialogSlider">
+                                    <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                                    <param id="1" name="Parameter {n}">prims.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Note the check is slightly different for blocks which are not falling. This is so if a block is falling past a block connected to the ground, the block connected to the ground doesn&apos;t mark the falling block as now also connected to the ground. That should only happen when the falling block lands vertically on another block.</comment>
+                <event-block sid="8814120669507612">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9889274148107315" type="block">
+                            <param id="0" name="Instance variable">IsFalling</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9512022589470917">
+                            <conditions>
+                                <condition id="-36" name="Pick overlapping point" sid="1854618478052917" type="System">
+                                    <param id="0" name="Object">prims</param>
+                                    <param id="1" name="X">tileBlank.X - 22</param>
+                                    <param id="2" name="Y">tileBlank.Y</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="227377553879615" type="prims">
+                                    <param id="0" name="Instance variable">IsOnGround</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2413380742902352" type="prims">
+                                    <param id="0" name="Instance variable">IsFalling</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7830356380172821" type="uiDialogSlider">
+                                    <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                                    <param id="1" name="Parameter {n}">prims.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2408317233615005">
+                            <conditions>
+                                <condition id="-36" name="Pick overlapping point" sid="2155557360497259" type="System">
+                                    <param id="0" name="Object">prims</param>
+                                    <param id="1" name="X">tileBlank.X + 22</param>
+                                    <param id="2" name="Y">tileBlank.Y</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4865003565016755" type="prims">
+                                    <param id="0" name="Instance variable">IsOnGround</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5121974110579626" type="prims">
+                                    <param id="0" name="Instance variable">IsFalling</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="3973684476900288" type="uiDialogSlider">
+                                    <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                                    <param id="1" name="Parameter {n}">prims.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Also mark blocks above and below as on the ground.</comment>
+                <event-block sid="7729736629218624">
+                    <conditions>
+                        <condition id="-36" name="Pick overlapping point" sid="3725579990548774" type="System">
+                            <param id="0" name="Object">prims</param>
+                            <param id="1" name="X">tileBlank.X</param>
+                            <param id="2" name="Y">tileBlank.Y - 22</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9054078313574659" type="prims">
+                            <param id="0" name="Instance variable">IsOnGround</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9876106038678224" type="uiDialogSlider">
+                            <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                            <param id="1" name="Parameter {n}">prims.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9788675430044555">
+                    <conditions>
+                        <condition id="-36" name="Pick overlapping point" sid="1990689119473198" type="System">
+                            <param id="0" name="Object">prims</param>
+                            <param id="1" name="X">tileBlank.X</param>
+                            <param id="2" name="Y">tileBlank.Y + 22</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8327309318656368" type="prims">
+                            <param id="0" name="Instance variable">IsOnGround</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="6108044966388494" type="uiDialogSlider">
+                            <param id="0" name="Name">&quot;MarkAsOnGround&quot;</param>
+                            <param id="1" name="Parameter {n}">prims.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>This block is on the ground, so stop it falling. We have to do this after the above events, since the collision checks are done differently depending on the &apos;IsFalling&apos; flag.</comment>
+                <event-block sid="1112160098945935">
+                    <conditions />
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="8024027524937223" type="block">
+                            <param id="0" name="Instance variable">IsFalling</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>If a block is marked as falling, move it down at 50 pixels per second as long as it is in free fall (i.e. it does not have another block or the ground beneath it). Note we order the movements from bottom to top, so we don&apos;t get &apos;jiggling&apos; as blocks think they&apos;ve landed on another block which is itself still falling.</comment>
+        <event-block sid="2398838445191114">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="6316925441451417" type="block">
+                    <param id="0" name="Instance variable">IsFalling</param>
+                </condition>
+                <condition id="-24" name="For Each (ordered)" sid="3139897571699763" type="System">
+                    <param id="0" name="Object">tileBlank</param>
+                    <param id="1" name="Expression">tileBlank.Y</param>
+                    <param id="2" name="Order">1</param>
+                </condition>
+                <condition id="9" inverted="1" name="Is overlapping at offset" sid="8525382276142128" type="block">
+                    <param id="0" name="Object">prims</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">150 * dt</param>
+                </condition>
+                <condition id="9" inverted="1" name="Is overlapping at offset" sid="7291301686176145" type="block">
+                    <param id="0" name="Object">screenFloor</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">150 * dt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="1394400134595628" type="block">
+                    <param id="0" name="Y">Self.Y + Self.fallspeed* dt</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

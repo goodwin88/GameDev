@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicParticle</name>
+    <events>
+        <event-block sid="290078444559631">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="481998985228486" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="842342235240223">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="259598229586749" type="wheels1">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="346408734774151" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="452113258326492" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="424145413515930" type="invisAxle1">
+                            <param id="0" name="Object">particlesMud</param>
+                            <param id="1" name="Layer">&quot;Vehicle1&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="341215878994225" type="particlesMud">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="769614509828890" type="particlesMud" />
+                        <action id="8" name="Set X randomiser" sid="844983541222447" type="particlesMud">
+                            <param id="0" name="X randomiser">invisAxle1.Width</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="395562205061112" type="particlesMud">
+                            <param id="0" name="Y">wheels1.Y+(wheels1.Height/2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="731300797625769">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="218464142278702" type="wheels2">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="494071312343604" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="187195133616797" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="446931249159976" type="invisAxle2">
+                            <param id="0" name="Object">particlesMud</param>
+                            <param id="1" name="Layer">&quot;Vehicle2&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="738373102578700" type="particlesMud">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="231783878695109" type="particlesMud" />
+                        <action id="8" name="Set X randomiser" sid="598143214189718" type="particlesMud">
+                            <param id="0" name="X randomiser">invisAxle2.Width</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="660464322765758" type="particlesMud">
+                            <param id="0" name="Y">wheels2.Y+(wheels2.Height/2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="761876384952416">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="522133608972941" type="wheels3">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="254688374500917" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="251622615025912" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="607837343882720" type="invisAxle3">
+                            <param id="0" name="Object">particlesMud</param>
+                            <param id="1" name="Layer">&quot;Vehicle3&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="831660695928552" type="particlesMud">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="543302311648260" type="particlesMud" />
+                        <action id="-2" name="Set Y" sid="777550086952328" type="particlesMud">
+                            <param id="0" name="Y">wheels3.Y+(wheels3.Height/2)</param>
+                        </action>
+                        <action id="8" name="Set X randomiser" sid="124088130067993" type="particlesMud">
+                            <param id="0" name="X randomiser">invisAxle3.Width</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="551916019213095">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="727042322817413" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="245715630508418">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="163840576231822" type="wheels1">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="770553504155366" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="934070722661821" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="8" inverted="1" name="Is flipped" sid="439108049555430" type="envFgTerrain" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="718588594728683" type="invisAxle1">
+                            <param id="0" name="Object">particlesWater</param>
+                            <param id="1" name="Layer">&quot;Vehicle1&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="352971278039735" type="particlesWater">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="306095141730689" type="particlesWater" />
+                        <action id="8" name="Set X randomiser" sid="420611992493857" type="particlesWater">
+                            <param id="0" name="X randomiser">invisAxle1.Width</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="766964135058019" type="particlesWater">
+                            <param id="0" name="Y">wheels1.Y+(wheels1.Height/2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="966451405447398">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="723968409665357" type="wheels2">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="209707290366376" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="219783583639169" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="8" inverted="1" name="Is flipped" sid="228124013942412" type="envFgTerrain" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="675786003869136" type="invisAxle2">
+                            <param id="0" name="Object">particlesWater</param>
+                            <param id="1" name="Layer">&quot;Vehicle2&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="664433766716380" type="particlesWater">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="363833133725167" type="particlesWater" />
+                        <action id="8" name="Set X randomiser" sid="124439110381728" type="particlesWater">
+                            <param id="0" name="X randomiser">invisAxle2.Width</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="277441271664269" type="particlesWater">
+                            <param id="0" name="Y">wheels2.Y+(wheels2.Height/2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="927789541280686">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="561581582725942" type="wheels3">
+                            <param id="0" name="Object">envFgTerrain</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">16</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="936198493053036" type="partsVehicle" />
+                        <condition id="-7" name="Compare instance variable" sid="113522172005399" type="partsVehicle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="8" inverted="1" name="Is flipped" sid="932227121462167" type="envFgTerrain" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="760743405389374" type="invisAxle3">
+                            <param id="0" name="Object">particlesWater</param>
+                            <param id="1" name="Layer">&quot;Vehicle3&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="160819133625828" type="particlesWater">
+                            <param id="0" name="Angle">200</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="413142608820495" type="particlesWater" />
+                        <action id="-2" name="Set Y" sid="577508867662166" type="particlesWater">
+                            <param id="0" name="Y">wheels3.Y+(wheels3.Height/2)</param>
+                        </action>
+                        <action id="8" name="Set X randomiser" sid="928397720661439" type="particlesWater">
+                            <param id="0" name="X randomiser">invisAxle3.Width</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>dataBase</name>
+    <events>
+        <event-block sid="476090164735840">
+            <conditions>
+                <condition id="-18" name="On created" sid="919688785344642" type="dataWheel" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Tire look string information Frame / Size / Weight / Speed / Bounce</comment>
+                <event-block sid="466508742921371">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="641727429123534" type="dataWheel">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="236005367126153" type="dataWheel">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">32</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="123113035097400" type="dataWheel">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="405726303162580" type="dataWheel">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="843620691404675" type="dataWheel">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="841239082087216">
+            <conditions>
+                <condition id="-18" name="On created" sid="374428434475938" type="dataWheel" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Chassis look string information Frame / Scale / Weight / Fuel / LowBack / LowCenter / LowFront / HighBack / HighCenter / HighFront</comment>
+                <event-block sid="473248053300223">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Set at XY" sid="546943152133696" type="dataChassis">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="650053597244519" type="dataChassis">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0.2</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="899959952745974" type="dataChassis">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">1000</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="157539209515511" type="dataChassis">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">1000</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="203307817572584" type="dataChassis">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="105244199999799" type="dataChassis">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="928419786617936" type="dataChassis">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="713311795838911" type="dataChassis">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="330449794177752" type="dataChassis">
+                            <param id="0" name="X">8</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="558127004017816" type="dataChassis">
+                            <param id="0" name="X">9</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

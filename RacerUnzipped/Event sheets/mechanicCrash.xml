@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicCrash</name>
+    <events>
+        <event-block sid="414675817416245">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="293154979619175" type="hitBox1">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="176671760353128" type="hitBox1" />
+                <condition id="-7" name="Compare instance variable" sid="653999485634748" type="invisVehicle1">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="758165543818942" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="223397571383550" type="beaconCar1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="520280483535506" type="Camera">
+                    <param id="0" name="Magnitude">20</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Fast Vehicle</comment>
+        <event-block sid="548944212975449">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="426826548721549" type="hitBox2">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="291449405091053" type="hitBox2" />
+                <condition id="-7" name="Compare instance variable" sid="900040148184285" type="invisVehicle2">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="160383697328895" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="506696518870325" type="beaconCar2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="741398446244914" type="Camera">
+                    <param id="0" name="Magnitude">20</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Quirky Vehicle</comment>
+        <event-block sid="686603585240048">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="310145943891245" type="hitBox3">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="424782997476993" type="hitBox3" />
+                <condition id="-7" name="Compare instance variable" sid="103548941577513" type="invisVehicle3">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="193591925900642" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="600403505503505" type="beaconCar3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="634838572203883" type="Camera">
+                    <param id="0" name="Magnitude">20</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

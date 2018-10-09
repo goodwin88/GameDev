@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <event-sheet order="1">game</event-sheet>
+        <event-sheet order="2">mechanicWheel</event-sheet>
+        <event-sheet order="3">mechanicChassis</event-sheet>
+        <event-sheet active="1" order="4">setupCar</event-sheet>
+        <event-sheet order="5">mechanicSupport</event-sheet>
+        <event-sheet order="6">setupTerrain</event-sheet>
+        <event-sheet order="7">garage</event-sheet>
+        <event-sheet order="8">mechanicJump</event-sheet>
+        <event-sheet order="9">uiDebug</event-sheet>
+        <event-sheet order="10">dataBase</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="carPrim" />
+        <family expanded="1" name="support" />
+        <family expanded="1" name="carPart" />
+        <family expanded="1" name="carPrimLow" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/setup/" />
+        <folder expanded="1" path="event-folder/mechanics/" />
+        <folder expanded="1" path="event-folder/New folder/" />
+        <folder expanded="1" path="event-folder/data/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/carPrimBody/" />
+        <folder expanded="1" path="animation-folder/spawnerCar/" />
+        <folder expanded="1" path="animation-folder/carPrimChassis/" />
+        <folder expanded="1" path="animation-folder/carPartChassis/" />
+        <folder expanded="1" path="animation-folder/carPartWheel/" />
+        <folder expanded="1" path="animation-folder/carPrimLowFront/" />
+        <folder expanded="1" path="animation-folder/soul/" />
+        <folder expanded="1" path="animation-folder/carPrimLowBack/" />
+        <folder expanded="1" path="animation-folder/carPrimLowCenter/" />
+        <folder expanded="1" path="animation-folder/support01/" />
+        <folder expanded="1" path="animation-folder/carPrimHighBack/" />
+        <folder expanded="1" path="animation-folder/carPrimHighCenter/" />
+        <folder expanded="1" path="animation-folder/carPrimHighFront/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>spawnPlanet</name>
+    <events>
+        <event-block sid="539532581793456">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="399054764456058" type="System" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Move to layer" sid="338276143778055" type="baddies">
+                    <param id="0" name="Layer">&quot;storage&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="831951157338258">
+            <conditions>
+                <condition id="-18" name="On created" sid="765676004120623" type="uiScenery" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="768586150117855" type="uiScenery" />
+                <action id="5" name="Set frame" sid="948927832747096" type="uiScenery">
+                    <param id="0" name="Frame number">random(self.AnimationFrameCount)</param>
+                </action>
+                <action id="-10" name="Set value" sid="652357054833463" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action disabled="1" id="-10" name="Set value" sid="472264573717053" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Value">int(random(1,4))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346279026053953">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="730596344864615" type="uiScenery" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="181334140248408" type="uiScenery">
+                    <param id="0" name="Object">uiBox600x90</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501912973977338">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="777294786984469" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="455565054821517" type="uiScenery">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808528778894421">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="900024081041957" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="835941391530411" type="uiScenery">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="288216233362458" type="bossRedRobo">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="903509227645285">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="904558466124287" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="471177700770900" type="uiScenery">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="105363845387850" type="bossYellowKing">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="190262077574105">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="944853065991834" type="soul">
+                    <param id="0" name="Instance variable">planet</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="293406964912143" type="uiScenery">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="646738304591988" type="bossBlueRival">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

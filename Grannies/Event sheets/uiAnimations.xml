@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiAnimations</name>
+    <events>
+        <event-block any="1" sid="967129528383540">
+            <conditions>
+                <condition id="4" name="On finished" sid="838939936662561" type="uiGrannyGreen">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                </condition>
+                <condition id="4" name="On finished" sid="480303797013684" type="uiGrannyGreen">
+                    <param id="0" name="Animation">&quot;Attitude&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="305659244611608" type="uiGrannyGreen">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="983031027240199">
+            <conditions>
+                <condition id="4" name="On finished" sid="403607229034959" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                </condition>
+                <condition id="4" name="On finished" sid="280252036329720" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Attitude&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="302764413636546" type="uiGrannyPurple">
+                    <param id="0" name="Scale">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="343669722556196" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="823872440122744">
+            <conditions>
+                <condition id="4" name="On finished" sid="738857673243948" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                </condition>
+                <condition id="4" name="On finished" sid="152962654348765" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Attitude&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="913789522061074" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="547866909855236">
+            <conditions>
+                <condition id="4" name="On finished" sid="315712714217791" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="484166543294114" type="uiGrannyPurple">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="459933178282233">
+            <conditions>
+                <condition id="4" name="On finished" sid="795145625412309" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="429395360713847" type="uiGrannyOrange">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="441488714450816">
+            <conditions>
+                <condition id="2" name="Is playing" sid="623737219502089" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="432143777285976" type="uiGrannyOrange">
+                    <param id="0" name="Scale">0.5+(self.Sine.Value)</param>
+                </action>
+                <action id="6" name="Set speed" sid="175328464195609" type="uiGrannyOrange">
+                    <param id="0" name="Speed">0.4+self.Sine.Value</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="233409264816380">
+            <conditions>
+                <condition id="2" name="Is playing" sid="552803858942360" type="uiGrannyOrange">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="465755709157054" type="uiGrannyOrange">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="888836444135825">
+            <conditions>
+                <condition id="2" name="Is playing" sid="611477244828821" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="249516911346875" type="uiGrannyPurple">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="614541579453349">
+            <conditions>
+                <condition id="2" name="Is playing" sid="524437040632590" type="uiGrannyPurple">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="848990662433082" type="uiGrannyPurple">
+                    <param id="0" name="Scale">0.5+(self.Sine.Value)</param>
+                </action>
+                <action id="6" name="Set speed" sid="471219273587798" type="uiGrannyPurple">
+                    <param id="0" name="Speed">0.5+self.Sine.Value</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

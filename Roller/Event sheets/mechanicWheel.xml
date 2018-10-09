@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicWheel</name>
+    <events>
+        <event-block sid="980480818254903">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="791512370015102" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="895758877762465" type="carPrimChassis">
+                    <param id="0" name="X">carPrimBody.X</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="946304515706502" type="carPrimChassis">
+                    <param id="0" name="Speed">10*distance(self.X,self.Y,carPrimBody.X,carPrimBody.Y)</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="174436143033926" type="carPrimChassis">
+                    <param id="0" name="X">carPrimBody.X</param>
+                    <param id="1" name="Y">carPrimBody.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167764350142521">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="330788372094869" type="carPrimBody" />
+                <condition id="1" name="Is overlapping another object" sid="718320105994139" type="carPrimLowFront">
+                    <param id="0" name="Object">carPartWheel</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="308917321424878" type="carPrimLowFront">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="197915464370859" type="carPrimLowFront">
+                    <param id="0" name="Y">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="610840573808190">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="429218321788403" type="carPrimBody" />
+                <condition id="1" name="Is overlapping another object" sid="434858564079824" type="carPrimLowCenter">
+                    <param id="0" name="Object">carPartWheel</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="917335897227265" type="carPrimLowCenter">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="261882620653191" type="carPrimLowCenter">
+                    <param id="0" name="Y">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709475157169070">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="248104409805876" type="carPrimBody" />
+                <condition id="1" name="Is overlapping another object" sid="252146482633291" type="carPrimLowBack">
+                    <param id="0" name="Object">carPartWheel</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="335251545050580" type="carPrimLowBack">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="783707292925697" type="carPrimLowBack">
+                    <param id="0" name="Y">carPrimBody.Y+(carPrimBody.Height/2)-(carPartWheel.Height/2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="916761863802474">
+            <conditions />
+            <actions>
+                <action id="-9" name="Destroy" sid="295380680438287" type="carPrimLowFront" />
+            </actions>
+        </event-block>
+        <event-block sid="622027582707052">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="721702678902826" type="carPartWheel" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="403995404278136" type="carPartWheel" />
+            </actions>
+        </event-block>
+        <event-block sid="562218249428727">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="394738942687371" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="501100318119908" type="carPrimBody">
+                    <param id="0" name="Max Speed">carPrimLowBack.wheelSpeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="316547865755096" type="Block">
+                    <param id="0" name="Speed">carPrimBody.Platform.MaxSpeed</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="932776063098654">
+                    <conditions />
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="450431166023511" type="carPrimBody">
+                            <param id="0" name="Max Speed">-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

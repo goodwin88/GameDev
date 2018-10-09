@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicChassis</name>
+    <events>
+        <event-block sid="423481906529150">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="527714357313011" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="807785647639207" type="carPartChassis">
+                    <param id="0" name="Frame number">soul.chassisStyle</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Lazy Follow of carPrimChassis to carPrim and &quot;suspension&quot;</comment>
+        <event-block sid="706355777062859">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="484762662049294" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="827774822586301" type="carPrimChassis">
+                    <param id="0" name="X">carPrimBody.X</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="551345368537934" type="carPrimChassis">
+                    <param id="0" name="Speed">10*distance(self.X,self.Y,carPrimBody.X,carPrimBody.Y)</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="189399320563176" type="carPrimChassis">
+                    <param id="0" name="X">carPrimBody.X</param>
+                    <param id="1" name="Y">carPrimBody.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>blocksRock</name>
+    <events>
+        <event-block sid="167555718004106">
+            <conditions>
+                <condition id="-18" name="On created" sid="362201468120109" type="tileRock" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="601947723254803" type="tileRock" />
+            </actions>
+            <sub-events>
+                <event-block sid="868472922519389">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="619313816431598" type="soul">
+                            <param id="0" name="Instance variable">planet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="945353896893294" type="tileRock">
+                            <param id="0" name="Frame number">choose(3,4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221379750830428">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="410328088029749" type="soul">
+                            <param id="0" name="Instance variable">planet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="911453166642465" type="tileRock">
+                            <param id="0" name="Frame number">choose(5,6)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="177519834649560">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="121041461373241" type="soul">
+                            <param id="0" name="Instance variable">planet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="424321547908626" type="tileRock">
+                            <param id="0" name="Frame number">choose(7,8)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="306079800013262">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="719757999786893" type="System">
+                            <param id="0" name="First value">choose(0,1)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="126592657037996" type="tileRock">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848401801684094">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="268775143106719" type="tileRock">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="708937189351459" type="tileRock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="206891536184235" type="tileRock">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="114114309690790">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="955509731438439" type="tileRock">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="990621669238121" type="tileRock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310566659578049">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="218726432182479" type="tileRock" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="778889762892825" type="tileRock">
+                    <param id="0" name="Object">animationExplosion</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="281367703145028">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="339184776443119" type="tileRock">
+                    <param id="0" name="Instance variable">active</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="606739139154932">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="620584873764476" type="tileRock">
+                            <param id="0" name="Instance variable">mined</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="983391721482880" type="tileRock">
+                            <param id="0" name="Layer">&quot;tilesMinedRocks&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

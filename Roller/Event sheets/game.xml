@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game</name>
+    <events>
+        <include>uiDebug</include>
+        <include>mechanicJump</include>
+        <include>garage</include>
+        <include>setupTerrain</include>
+        <include>mechanicSupport</include>
+        <include>setupCar</include>
+        <include>mechanicChassis</include>
+        <include>mechanicWheel</include>
+        <variable comment="The total distance run so far, in pixels." constant="0" name="TotalDistance" sid="259916846947253" static="0" type="number">0</variable>
+        <variable comment="Counts up to &apos;NextBlock&apos;, at which point a new block is created." constant="0" name="CurrentDistance" sid="747986136005648" static="0" type="number">0</variable>
+        <variable comment="The distance after which to create the next block." constant="0" name="NextBlock" sid="552797968712074" static="0" type="number">600</variable>
+        <comment>Make sure everything moves left across the screen (since the default 0 degrees is right)</comment>
+        <event-block sid="634520957591104">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="478998208740363" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="273275439830539" type="TiledBackground">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="870840347987101" type="Block">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Wrap the scrolling background infinitely by moving it back after it&apos;s scrolled the width of the main image to the left.</comment>
+        <event-block sid="113202246220874">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="549498279709022" type="TiledBackground">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-Self.Width / 2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="741455205606309" type="TiledBackground">
+                    <param id="0" name="X">Self.X + Self.Width / 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>While on floor, keep holding the &quot;run right&quot; control, so the character keeps running.</comment>
+        <event-block sid="270805200417324">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="381435446966931" type="carPrimBody" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="917292494074973" type="carPrimBody">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>On any user input at all, make the character jump.</comment>
+        <event-block any="1" sid="414400412070297">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="851331341967213" type="Touch" />
+                <condition id="1" name="On any key pressed" sid="881749936431177" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="279150856673551" type="carPrimBody">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Keep incrementing the current and total distances, and display the total distance in a text object.</comment>
+        <event-block sid="576101292930753">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="258912884795169" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="191793801763896" type="System">
+                    <param id="0" name="Variable">CurrentDistance</param>
+                    <param id="1" name="Value">Block.Bullet.Speed * dt</param>
+                </action>
+                <action id="-10" name="Add to" sid="924426241393635" type="System">
+                    <param id="0" name="Variable">TotalDistance</param>
+                    <param id="1" name="Value">Block.Bullet.Speed * dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If the player falls off the bottom of the screen, restart the game.</comment>
+        <event-block any="1" sid="596492637923860">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="872465873778066" type="carPrimBody">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="660714250041237" type="carPrimBody">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="860207985202821" type="System" />
+                <action id="-26" name="Restart layout" sid="745969729883785" type="System" />
+            </actions>
+        </event-block>
+        <comment>Due to the acceleration of the platform movement, we need to do some tweaks to make sure the player doesn&apos;t gradually get pushed off to the left of the screen over time.</comment>
+        <event-block sid="109845340460859">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="361410525162710" type="carPrimBody">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">105</param>
+                </condition>
+                <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="839565226954698" type="carPrimBody" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="931058564965929" type="carPrimBody">
+                    <param id="0" name="X">Self.X + 5 * dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150514541550498">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="797510739244347" type="carPrimBody" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="538554942944262" type="carPrimBody">
+                    <param id="0" name="X">Self.X + 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="282865718919779">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="373256244695184" type="carPrimBody" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>bossYellowKing</name>
+    <events>
+        <event-block sid="816851967036957">
+            <conditions>
+                <condition id="-18" name="On created" sid="920632312547692" type="bossYellowKing" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="851889004313363" type="bossYellowKing" />
+            </actions>
+        </event-block>
+        <event-block sid="140896724047537">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="318407089778036" type="bossYellowKing">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="840979338289813" type="bossHealthCurrent">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="5" name="Set frame" sid="540967324977650" type="bossHealthMax">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="112807673356644">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="531624688710111" type="tileYellow">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="700092512453180" type="tileYellow">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="240963874554967">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="235853359263977" type="tileYellow">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="510463386211326" type="tileYellow">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="112122147032296">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="559165557283232" type="tileYellow">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="934964409788264" type="tileYellow">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="939777863697770">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="348349259250709" type="tileYellow">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="804156202858744" type="System">
+                            <param id="0" name="Object">tileYellow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="539048786082093" type="tileYellow">
+                            <param id="0" name="Speed">45</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="300086011719320" type="tileYellow" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="664926350773241">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="946849150267630" type="tileYellow">
+                                    <param id="0" name="Object">tileColorsGrannies</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="501779660291031" type="tileColorsGrannies" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="444182417358533">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="748020086356501" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="915297938464577">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="653484905540003" type="bossYellowKing">
+                                    <param id="0" name="Instance variable">ammo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="977950279212275" type="bossYellowFailStateTimer" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="668568398850089">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="793057070202215" type="System">
+                                            <param id="0" name="First value">tileRock.Count</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="825496780585341" type="System">
+                                            <param id="0" name="First value">bossYellowFailStateTimer.Count</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="368580281499690" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Flash" id="0" name="Flash" sid="756387298885219" type="bossYellowKing">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="809466821476328" type="bossYellowKing">
+                                            <param id="0" name="Instance variable">ammo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="908807862316307" type="baddies">
+                                            <param id="0" name="Instance variable">hpCurrent</param>
+                                            <param id="1" name="Value">baddies.hpMax*0.1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="553856839331271">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="423890835259273" type="tileRock">
+                                            <param id="0" name="Object">tileYellow</param>
+                                        </condition>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="543929960510007" type="tileRock">
+                                            <param id="0" name="Object">greenMiningBase</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="836247709176163" type="tileRock">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Fade" id="0" name="Restart fade" sid="148030708700542" type="bossYellowFailStateTimer" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="905436669977880">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="565036604486144" type="System" />
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="223056274959048" type="tileRock">
+                                            <param id="0" name="Object">tileYellow</param>
+                                        </condition>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="411279440720928" type="tileRock">
+                                            <param id="0" name="Object">greenMiningBase</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="402334762424396" type="tileRock">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                        <condition id="-16" name="Pick random instance" sid="502118218282242" type="System">
+                                            <param id="0" name="Object">tileRock</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="164633298609524" type="bossYellowKing">
+                                            <param id="0" name="Instance variable">ammo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="623998620768252" type="tileRock">
+                                            <param id="0" name="Object">tileYellow</param>
+                                            <param id="1" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="790026296540329" type="tileYellow" />
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="949745440816017" type="tileYellow">
+                                            <param id="0" name="Pin to">tileRock</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="726231375685215" type="tileYellow">
+                                            <param id="0" name="Object">bulletYellow</param>
+                                            <param id="1" name="Layer">&quot;animationsObj&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="133384647736181" type="bulletYellow">
+                                            <param id="0" name="Pin to">tileYellow</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="764878462195413" type="bulletYellow">
+                                            <param id="0" name="Angle">45</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="402782242698346" type="bossYellowKing">
+                                            <param id="0" name="Instance variable">ammo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="436842062270309" type="tileYellow">
+                                            <param id="0" name="Object">bulletYellow</param>
+                                            <param id="1" name="Layer">&quot;animationsObj&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="985406345262073" type="bulletYellow">
+                                            <param id="0" name="Pin to">tileYellow</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="682298588539051" type="bulletYellow">
+                                            <param id="0" name="Angle">135</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="936545728427008" type="bossYellowKing">
+                                            <param id="0" name="Instance variable">ammo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="978339411136813" type="tileYellow">
+                                            <param id="0" name="Object">bulletYellow</param>
+                                            <param id="1" name="Layer">&quot;animationsObj&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="306673994556911" type="bulletYellow">
+                                            <param id="0" name="Pin to">tileYellow</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="315592976433673" type="bulletYellow">
+                                            <param id="0" name="Angle">-135</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="949096097317036" type="bossYellowKing">
+                                            <param id="0" name="Instance variable">ammo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="410512674669503" type="tileYellow">
+                                            <param id="0" name="Object">bulletYellow</param>
+                                            <param id="1" name="Layer">&quot;animationsObj&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="754525126923048" type="bulletYellow">
+                                            <param id="0" name="Pin to">tileYellow</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="110786667423383" type="bulletYellow">
+                                            <param id="0" name="Angle">-45</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="488659253469369">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="201252254999300" type="bulletYellow" />
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="164621681266622" type="bulletYellow">
+                                    <param id="0" name="Object">invisEdge</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="893069593614355" type="bulletYellow">
+                                    <param id="0" name="Object">forcefieldGreen</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="628360679409222" type="bulletYellow">
+                                    <param id="0" name="Width">self.width*1.1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="571887317059814">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="674291272595328" type="bulletYellow">
+                                    <param id="0" name="Object">tileRock</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="432064843325847" type="bulletYellow">
+                                    <param id="0" name="Object">greenMiningBase</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="115704722305687" type="tileRock">
+                                    <param id="0" name="Object">tileYellow</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="923215198982534" type="tileRock">
+                                    <param id="0" name="Instance variable">hp</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="303621915306316" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="915216655248633" type="tileRock" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="465916378036583">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="662947723933658" type="bulletYellow">
+                                    <param id="0" name="Object">tileOrange</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="234501140650571">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="933864714840314" type="tileOrange">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="849219283488835" type="tileOrange">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="863107957608987" type="tileOrange" />
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="529930099648253">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="432860476979884" type="tileOrange">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">2</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="632707841294069" type="tileOrange">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">3</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="536526494846520" type="tileOrange">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="945566877935308" type="tileOrange">
+                                            <param id="0" name="Frame number">5</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="282848776251120">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="590383042257559" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Fade" id="2" name="Set fade-in time" sid="985894315133112" type="tileOrange">
+                                                    <param id="0" name="Fade-in time">0</param>
+                                                </action>
+                                                <action behavior="Fade" id="4" name="Set fade-out time" sid="349754120981951" type="tileOrange">
+                                                    <param id="0" name="Fade-out time">0.3</param>
+                                                </action>
+                                                <action behavior="Fade" id="1" name="Start fade" sid="157934970972472" type="tileOrange" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="341215697936713">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="269105205012678" type="bulletYellow">
+                                    <param id="0" name="Object">tileGreen</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="584599713764321">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="251808463499938" type="tileGreen">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="874028183670669" type="tileGreen">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="945352107829264" type="tileGreen" />
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="702005382978391">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="459919579441586" type="tileGreen">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">2</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="839489925248964" type="tileGreen">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">3</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="237007487197493" type="tileGreen">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-5" name="Set width" sid="789748912935732" type="bulletYellow">
+                                            <param id="0" name="Width">self.Width/2</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="176495927598177" type="tileGreen">
+                                            <param id="0" name="Object">forcefieldGreen</param>
+                                            <param id="1" name="Layer">&quot;animations&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="170757443331760" type="forcefieldGreen">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="966659278863612">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="861307991746191" type="bulletYellow">
+                                    <param id="0" name="Object">tilePurple</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="361623030426298">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="819724303227292" type="tilePurple">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="403801534791614" type="tilePurple">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="158459629682156" type="tilePurple" />
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="937957322843778">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="500215227818123" type="tilePurple">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">2</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="184470075566049" type="tilePurple">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">3</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="209090595031550" type="tilePurple">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="602940120955411" type="tilePurple">
+                                            <param id="0" name="Frame number">5</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="519542562318998">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="574651220602776" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Fade" id="2" name="Set fade-in time" sid="468061328045754" type="tilePurple">
+                                                    <param id="0" name="Fade-in time">0</param>
+                                                </action>
+                                                <action behavior="Fade" id="4" name="Set fade-out time" sid="224506532806204" type="tilePurple">
+                                                    <param id="0" name="Fade-out time">0.3</param>
+                                                </action>
+                                                <action behavior="Fade" id="1" name="Start fade" sid="245515613064956" type="tilePurple" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="594184482430045">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="174878946873506" type="bulletYellow">
+                            <param id="0" name="Object">invisEdge</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="160885283266246" type="bulletYellow" />
+                    </actions>
+                </event-block>
+                <event-block sid="799977997690826">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="670109105065539" type="System">
+                            <param id="0" name="First value">bulletYellow.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="191351473417737" type="bossYellowKing">
+                            <param id="0" name="Instance variable">ammo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="214975199478428" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="948787682761401">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="878431258827891" type="bulletYellow">
+                            <param id="0" name="Object">forcefieldGreen</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="560684663512403" type="System">
+                            <param id="0" name="Object">bulletYellow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="734970252120554" type="bulletYellow" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="748819162569880">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="218885705991910" type="bulletYellow" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="816185406715910" type="bossYellowKing">
+                    <param id="0" name="Instance variable">ammo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

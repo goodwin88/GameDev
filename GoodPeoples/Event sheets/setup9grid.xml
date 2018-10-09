@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setup9grid</name>
+    <events>
+        <event-block sid="861056957349661">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="849161804919836" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="989321902952570" type="invis9Grid" />
+                <action id="-7" name="Set size" sid="369285252043787" type="invis9Grid">
+                    <param id="0" name="Width">(scrollx*2)*0.33</param>
+                    <param id="1" name="Height">(scrolly*2)*0.33</param>
+                </action>
+                <action id="-3" name="Set position" sid="172861263272055" type="invis9GridAsset1">
+                    <param id="0" name="X">((scrollx*2)*0.25)-(self.Width*0.25)</param>
+                    <param id="1" name="Y">((scrolly*2)*0.25)-(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="684071525421079" type="invis9GridAsset2">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">((scrolly*2)*0.25)-(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="963027948952443" type="invis9GridAsset3">
+                    <param id="0" name="X">((scrollx*2)*0.75)+(self.Width*0.25)</param>
+                    <param id="1" name="Y">((scrolly*2)*0.25)-(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="287742274354654" type="invis9GridAsset4">
+                    <param id="0" name="X">((scrollx*2)*0.25)-(self.Width*0.25)</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-3" name="Set position" sid="113856683028138" type="invis9GridAsset5">
+                    <param id="0" name="X">((scrollx*2)*0.5)</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-3" name="Set position" sid="199278868558890" type="invis9GridAsset6">
+                    <param id="0" name="X">((scrollx*2)*0.75)+(self.Width*0.25)</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-3" name="Set position" sid="391298429046230" type="invis9GridAsset7">
+                    <param id="0" name="X">((scrollx*2)*0.25)-(self.Width*0.25)</param>
+                    <param id="1" name="Y">((scrolly*2)*0.75)+(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="756355667638598" type="invis9GridAsset8">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">((scrolly*2)*0.75)+(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="479463504289217" type="invis9GridAsset9">
+                    <param id="0" name="X">((scrollx*2)*0.75)+(self.Width*0.25)</param>
+                    <param id="1" name="Y">((scrolly*2)*0.75)+(Self.Height*0.25)</param>
+                </action>
+                <action id="-3" name="Set position" sid="186998299816411" type="invisWallLeft">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-8" name="Set angle" sid="507661388175537" type="invisWallLeft">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="374957653215505" type="invisWallRight">
+                    <param id="0" name="X">2*scrollx</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-8" name="Set angle" sid="109822367513318" type="invisWallRight">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-3" name="Set position" sid="846421129779138" type="invisWallTop">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="729655715276541" type="invisWallTop">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-3" name="Set position" sid="781256117371137" type="invisWallBottom">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">2*scrolly</param>
+                </action>
+                <action id="-8" name="Set angle" sid="650485432651275" type="invisWallBottom">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-7" name="Set size" sid="503052864908095" type="invisWall">
+                    <param id="0" name="Width">64</param>
+                    <param id="1" name="Height">2.1*scrolly</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="238688403226774">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="272028145195852" type="invis9Grid">
+                    <param id="0" name="Object">beaconPath</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="881920719502154" type="invis9Grid">
+                    <param id="0" name="Object">beaconPath</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="325276689635492">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="147986002469612" type="invis9Grid">
+                    <param id="0" name="Object">invis9GridBar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="642260741822719" type="invis9Grid">
+                    <param id="0" name="Object">invis9GridBar</param>
+                    <param id="1" name="Layer">&quot;path&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692753527858959">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="719741806932697" type="invis9GridBar">
+                    <param id="0" name="Object">invis9GridBar</param>
+                </condition>
+                <condition id="-11" name="For Each" sid="577785532713400" type="System">
+                    <param id="0" name="Object">invis9GridBar</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="584999421378936">
+            <conditions>
+                <condition id="-18" name="On created" sid="517875792651632" type="invis9GridBar" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="959485180663999" type="invis9GridBar" />
+                <action id="-8" name="Set angle" sid="526189169106008" type="invis9GridBar">
+                    <param id="0" name="Angle">choose(0,90,180,270)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="202307708430296">
+            <conditions>
+                <condition id="-11" name="Is within angle" sid="659539297756798" type="invis9GridBar">
+                    <param id="0" name="Within">0.5</param>
+                    <param id="1" name="Angle">0</param>
+                </condition>
+                <condition id="-11" name="Is within angle" sid="555709768064270" type="invis9GridBar">
+                    <param id="0" name="Within">0.5</param>
+                    <param id="1" name="Angle">180</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="178658296104422" type="invis9GridBar">
+                    <param id="0" name="Width">invis9Grid.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="808437584228866">
+            <conditions>
+                <condition id="-11" name="Is within angle" sid="297809261045696" type="invis9GridBar">
+                    <param id="0" name="Within">0.5</param>
+                    <param id="1" name="Angle">90</param>
+                </condition>
+                <condition id="-11" name="Is within angle" sid="983753223861142" type="invis9GridBar">
+                    <param id="0" name="Within">0.5</param>
+                    <param id="1" name="Angle">270</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="419615417870176" type="invis9GridBar">
+                    <param id="0" name="Width">invis9Grid.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="690308810828512">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="867974303083483" type="invis9GridBar">
+                    <param id="0" name="Object">invisWall</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="850349827997972" type="invis9GridBar">
+                    <param id="0" name="Object">invis9GridBar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="893651552952688" type="invis9GridBar" />
+            </actions>
+        </event-block>
+        <event-block sid="670379160107930">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="323030950479544" type="invis9GridBar">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="988430582103926" type="System">
+                    <param id="0" name="Layer">&quot;path&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

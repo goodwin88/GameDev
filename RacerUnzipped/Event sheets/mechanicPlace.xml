@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicPlace</name>
+    <events>
+        <event-block sid="119721355822496">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="920164117881727" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="465209960425929" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="707638811879767" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="388313246483297" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="780839289407041" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-3" name="Create object" sid="757550731971272" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="822125307371252" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-3" name="Create object" sid="117952295527972" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="920737213007864" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-3" name="Create object" sid="637234874905126" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="367143217037654" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-3" name="Create object" sid="575918964202254" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="780745066890403" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-3" name="Create object" sid="598533267397333" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="677915677997894" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="-3" name="Create object" sid="738611749978211" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="834313053180113" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-3" name="Create object" sid="825549499640135" type="System">
+                    <param id="0" name="Object to create">uiPortraits</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">beaconCamera.X</param>
+                    <param id="3" name="Y">beaconCamera.y</param>
+                </action>
+                <action id="-10" name="Set value" sid="405217395464992" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924102892209447">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="601662973616809" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="952517230464756" type="invisVehicle1">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisFrame1.character</param>
+                </action>
+                <action id="-10" name="Set value" sid="847511349277086" type="invisVehicle2">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisFrame2.character</param>
+                </action>
+                <action id="-10" name="Set value" sid="229760668042254" type="invisVehicle3">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisFrame3.character</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="181384494540233" type="uiPortraitsWinLose">
+                    <param id="0" name="Object">uiPortraits</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="2" name="Stop" sid="681155534153952" type="uiPortraitsWinLose" />
+                <action id="5" name="Set frame" sid="260872726106777" type="uiPortraits">
+                    <param id="0" name="Frame number">self.character</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="743602568000423" type="uiPortraits">
+                    <param id="0" name="Opacity">10</param>
+                </action>
+                <action id="-10" name="Set value" sid="544182929452321" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="118682079274077" type="uiPortraits">
+                    <param id="0" name="Width">64/Zoom</param>
+                    <param id="1" name="Height">64/zoom</param>
+                </action>
+                <action id="-7" name="Set size" sid="924702467188314" type="uiPortraitsWinLose">
+                    <param id="0" name="Width">uiPortraits.Width</param>
+                    <param id="1" name="Height">uiPortraits.Height</param>
+                </action>
+                <action id="-3" name="Set position" sid="196134482743806" type="uiPortraits">
+                    <param id="0" name="X">((self.character*Self.Width)-(OriginalWindowWidth/Zoom*0.25)+scrollx)-(8*65)/zoom</param>
+                    <param id="1" name="Y">scrolly-(Self.height*8)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="487239675486287">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="590048062588578" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">invisVehicle1.character</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="974435030881112" type="uiPortraits">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="989745575633943">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="322082033095615" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">invisVehicle2.character</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="841682938099681" type="uiPortraits">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="528018382963799">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="954975813726915" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">invisVehicle3.character</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="158492909701204" type="uiPortraits">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="717646875728900">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="854986481229651" type="beaconCar1">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">beaconCar2.X</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="127897369726043">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="793128018481759" type="beaconCar1">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="354086145870825" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="205994587251200">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="485792042310889" type="beaconCar2">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="567078701394315" type="beaconCar2">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="134046761317592" type="beaconCar3">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="743960007963303">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="470129414856575" type="beaconCar2">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="309185853964680" type="beaconCar2">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="129710659137967" type="beaconCar3">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="213650239452159">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="262949815414013" type="beaconCar1">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="920966369123877" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="691930161363024" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="202048169737050" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="171565986937245">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="826558676843843" type="beaconCar2">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="790832210201826">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="534382005085243" type="beaconCar2">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">beaconCar1.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="196378660988766" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="624474739265173">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="482506686309671" type="beaconCar1">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="398628517677002" type="beaconCar1">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="868428769018149" type="beaconCar3">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="920765340226684">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="715279671165037" type="beaconCar1">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">beaconCar3.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="210990665216655" type="beaconCar1">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="456917460738877" type="beaconCar3">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="421995302328929">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="784421055397696" type="beaconCar2">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">beaconCar1.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="259316636567874" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="840736900984004" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="226053931828723" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="588357997303849">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="258609935199976" type="beaconCar3">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">beaconCar1.X</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="120310424686136">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="301259698191726" type="beaconCar3">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">beaconCar2.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="888517889194120" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="713823253006613">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="857314817411344" type="beaconCar1">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">beaconCar2.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="440171016292044" type="beaconCar1">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="642264001772224" type="beaconCar2">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="414825716232237">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="455590394299895" type="beaconCar1">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">beaconCar2.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="440018872012020" type="beaconCar1">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="611915147208265" type="beaconCar2">
+                                            <param id="0" name="Instance variable">place</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="609806908790237">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="957045392477217" type="beaconCar3">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">beaconCar2.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="694617126807924" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="610909226481582" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="997124959981149" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="572116818662736">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="931303365197715" type="uiPortraits">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="583749867848070" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959572803153367">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="244075778395479" type="uiPortraits">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="162879834000232">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="329604540333404" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="915195550612671" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="607351884799761" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="205096856072652" type="uiPortraitsWinLose">
+                            <param id="0" name="Frame number">beaconCar1.place</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="767762731442943">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="438702000986799" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="113808832180878" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="629661045947907" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="792226553880112" type="uiPortraitsWinLose">
+                            <param id="0" name="Frame number">beaconCar2.place</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="573906817642105">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="981391346288229" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="746434038557661" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="704731383450091" type="uiPortraits">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="865197911650344" type="uiPortraitsWinLose">
+                            <param id="0" name="Frame number">beaconCar3.place</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="337253631472933">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="173582542564788" type="System">
+                    <param id="0" name="First value">racer1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="372095095764677" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="628345993846047" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="134772554249883" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="927412181913872" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="176099303451954">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="766837350524453" type="System">
+                    <param id="0" name="First value">racer2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="921630855198741" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="244623413623464" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="970066015817592" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="241456709798790" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="836708069226707">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="594664834834993" type="System">
+                    <param id="0" name="First value">racer3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="368271610104116" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="500240797436219" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="704740378477182" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="824017433150918" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287873761112930">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="130573715843305" type="System">
+                    <param id="0" name="First value">racer4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="518799626823065" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="641970755196300" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="139986221958355" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="955114957602867" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605255566335236">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="424546004884939" type="System">
+                    <param id="0" name="First value">racer5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="754912314876239" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="875392783346455" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="583001304729190" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="405763897615961" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="649514026552263">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="843113019089091" type="System">
+                    <param id="0" name="First value">racer6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="950847287527552" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="249753976429986" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="500650069063262" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="700111078836142" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="547098909910438">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="719955276608027" type="System">
+                    <param id="0" name="First value">racer7</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="157677592355166" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="352481512533132" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="646288815844345" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="816443436863186" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="587365854401980">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="501320381628547" type="System">
+                    <param id="0" name="First value">racer8</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="958863064723460" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="586630407082991" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="608320518574020" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="791244992962398" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318865436803028">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="836971368708358" type="System">
+                    <param id="0" name="First value">racer9</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="587718035555580" type="uiPortraits">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="317751483877713" type="uiPortraitsWinLose">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="551912539559682" type="uiPortraits">
+                    <param id="0" name="Opacity">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="356474662493656" type="uiPortraitsWinLose">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

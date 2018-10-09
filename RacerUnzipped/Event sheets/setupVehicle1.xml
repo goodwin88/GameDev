@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupVehicle1</name>
+    <events>
+        <event-block sid="335170622414061">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="761988492484474" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="886610384610168" type="wheels1">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-10" name="Set value" sid="560116964602978" type="invisFrame1">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">choose(1,2,3)</param>
+                </action>
+                <action id="-10" name="Set value" sid="763888458455461" type="invisVehicle1">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisFrame1.character</param>
+                </action>
+                <action id="-10" name="Set value" sid="408382505192703" type="beaconCar1">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisVehicle1.character</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="958361020004792">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="551734853294897" type="invisAxle1">
+                            <param id="0" name="Object">visAxle</param>
+                            <param id="1" name="Layer">&quot;vehicle1&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="216401650259678" type="visAxle">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Value">invisVehicle1.character</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="273774468179753" type="visAxle">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="319425188435620" type="visAxle">
+                            <param id="0" name="Angle">invisAxle1.Angle+180</param>
+                        </action>
+                        <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="954517960494866" type="visAxle">
+                            <param id="0" name="Pin to">invisAxle1</param>
+                            <param id="1" name="ImagePoint">3</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="929122039601421" type="visAxle" />
+                        <action id="7" name="Set mirrored" sid="553995562363653" type="visAxle">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="570840186963864" type="visAxle">
+                            <param id="0" name="Object">visChassis</param>
+                            <param id="1" name="Layer">&quot;vehicle1&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="189606324488374" type="visChassis">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Value">invisVehicle1.character</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="163829006161056" type="visChassis">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="525646124791812" type="visChassis">
+                            <param id="0" name="Angle">visAxle.Angle</param>
+                        </action>
+                        <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="929863329345282" type="visChassis">
+                            <param id="0" name="Pin to">visAxle</param>
+                            <param id="1" name="ImagePoint">0</param>
+                            <param id="2" name="Mode">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="922271047933955" type="visChassis">
+                            <param id="0" name="Width">230</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="442585189931280" type="visChassis" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="296966877211926">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="387711091309276" type="System" />
+                <condition id="-11" name="For Each" sid="434389724758584" type="System">
+                    <param id="0" name="Object">wheels1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="886666770116474" type="wheels1">
+                    <param id="0" name="Object">visWheel</param>
+                    <param id="1" name="Layer">&quot;vehicle1&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="666021619558283" type="visWheel">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisVehicle1.character</param>
+                </action>
+                <action id="-10" name="Set value" sid="276562281010698" type="visWheel">
+                    <param id="0" name="Instance variable">size</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="390603969974498" type="visWheel">
+                    <param id="0" name="Pin to">wheels1</param>
+                    <param id="1" name="ImagePoint">0</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="221305062911744">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="840466325758322" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="292527650162566" type="wheelFront1">
+                    <param id="0" name="X">beaconCar1.X+(invisAxle1.Width/2)</param>
+                </action>
+                <action id="-1" name="Set X" sid="886127406271144" type="wheelRear1">
+                    <param id="0" name="X">beaconCar1.X-(invisAxle1.Width/2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="452388686235332" type="invisAxle1">
+                    <param id="0" name="X">wheelFront1.X</param>
+                    <param id="1" name="Y">wheelFront1.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="143325131835909" type="invisAxle1">
+                    <param id="0" name="X">wheelRear1.X</param>
+                    <param id="1" name="Y">wheelRear1.Y</param>
+                </action>
+                <action behavior="PinToImagePoint" id="1" name="Pin to image point" sid="200643745504820" type="wheelRear1">
+                    <param id="0" name="Pin to">invisAxle1</param>
+                    <param id="1" name="ImagePoint">1</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="766707615400624" type="invisFrame1">
+                    <param id="0" name="Object">invisAxle1</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-8" name="Set angle" sid="353892781928828" type="invisFrame1">
+                    <param id="0" name="Angle">invisAxle1.Angle+180</param>
+                </action>
+                <action id="-10" name="Set value" sid="528132039465568" type="beaconCar1">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">invisVehicle1.character</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875674814731409">
+            <conditions>
+                <condition id="-6" name="Compare height" sid="717150365640722" type="wheelRear1">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Height">wheelFront1.Height</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="666566702716626" type="invisAxle1">
+                    <param id="0" name="Height">wheelFront1.Height</param>
+                </action>
+                <action id="-6" name="Set height" sid="977510665924153" type="invisFrame1">
+                    <param id="0" name="Height">wheelRear1.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="129966744862319">
+            <conditions>
+                <condition id="-6" name="Compare height" sid="779602538944845" type="wheelFront1">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Height">wheelRear1.Height</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="604122003771385" type="invisAxle1">
+                    <param id="0" name="Height">wheelRear1.Height</param>
+                </action>
+                <action id="-6" name="Set height" sid="722062256035065" type="invisFrame1">
+                    <param id="0" name="Height">wheelFront1.Height</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

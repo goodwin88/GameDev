@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>spawnTerrain</name>
+    <events>
+        <comment></comment>
+        <event-block sid="4707658458187396">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="8293058330776132" type="spawner">
+                    <param id="0" name="Object">block</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5767586491530082">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6710904188722632" type="buttonDrop">
+                            <param id="0" name="Instance variable">doom</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6370166754671233" type="spawner">
+                            <param id="0" name="Instance variable">levelDensity</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="7704813545305166" type="spawner">
+                            <param id="0" name="Object">block</param>
+                            <param id="1" name="Layer">&quot;prims&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1162760001982276">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="9361970339738954" type="buttonDrop">
+                            <param id="0" name="Instance variable">doom</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="8997391719387842" type="spawner">
+                            <param id="0" name="Instance variable">levelDensity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6420826337685822" type="spawner">
+                            <param id="0" name="Object">block</param>
+                            <param id="1" name="Layer">&quot;prims&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="347538400621745">
+            <conditions>
+                <condition id="-18" name="On created" sid="9719839158531656" type="block" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3437913269767041" type="block">
+                    <param id="0" name="Instance variable">feature</param>
+                    <param id="1" name="Value">floor(random(100))</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3333258739594364" type="block">
+                    <param id="0" name="Object">tileBlank</param>
+                    <param id="1" name="Layer">&quot;tilesBackdrop&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6145681988429847" type="tileBlank">
+                    <param id="0" name="Pin to">block</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5511283006110571">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="637780832306172" type="block">
+                            <param id="0" name="Instance variable">feature</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">spawner.levelDensity</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3047726549260093" type="block">
+                            <param id="0" name="Instance variable">feature</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="674462682865456" type="block">
+                            <param id="0" name="Object">placedObj</param>
+                            <param id="1" name="Layer">&quot;tilesFg&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="placedObjPin" id="0" name="Pin to object" sid="6660633035755289" type="placedObj">
+                            <param id="0" name="Pin to">block</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6624747857631468">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1163654584318978" type="block">
+                            <param id="0" name="Instance variable">feature</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">spawner.levelDensity</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="1028111541869844" type="block">
+                            <param id="0" name="Instance variable">feature</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2746099334606131">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="2112681819460463" type="tileBlank">
+                    <param id="0" name="Object">spawner</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="429889209376488" type="tileBlank" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="6396788288451556" type="tileBlank">
+                    <param id="0" name="Fade-in time">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875042922154517">
+            <conditions>
+                <condition id="-18" name="On created" sid="144555696632523" type="tileRock" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="152327668001445" type="tileRock">
+                    <param id="0" name="Instance variable">contains</param>
+                    <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="826725816216147">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="919933082489705" type="tileRock">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="667646845559746">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="300967330351382" type="tileRock">
+                                    <param id="0" name="Instance variable">contains</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="607278016727043" type="tileRock">
+                                    <param id="0" name="Frame number">choose(1,2,3,4,5,6,7,8)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="673717886105365">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="715067507600540" type="tileRock">
+                                    <param id="0" name="Instance variable">contains</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="109710187095962" type="tileRock">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="990962538927580">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="705737286014820" type="tileRock">
+                                    <param id="0" name="Instance variable">contains</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="318573598962407" type="tileRock">
+                                    <param id="0" name="Instance variable">contains</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="784568831563135" type="tileRock">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="464381339414738" type="tileRock">
+                                    <param id="0" name="Instance variable">active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629785481501378">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="697019100507630" type="tileRock">
+                                    <param id="0" name="Instance variable">contains</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="923561003421502" type="tileRock">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="565309169033323">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="920714268530487" type="tileRock">
+                    <param id="0" name="Object">tileBlank</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="823884790471386" type="tileBlank">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="996601462067410">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="567303722526198" type="tileBlank">
+                    <param id="0" name="Object">uiBox600x90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="727098875656162" type="tileBlank">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="630686452371037">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="537267825184350" type="tileBlank">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="379164392735385" type="tileBlank">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="242084058909763">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="129374428628728" type="tileBlank">
+                            <param id="0" name="Object">uiBox600x90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="729034451778553" type="tileBlank">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="311974442745602">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="153274214558487" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="157132902487202" type="block">
+                    <param id="0" name="Instance variable">fallspeed</param>
+                    <param id="1" name="Value">(self.y/20)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4722812627292624">
+            <conditions>
+                <condition id="-38" name="Layer is empty" sid="7579046252832306" type="System">
+                    <param id="0" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                </condition>
+                <condition id="-38" name="Layer is empty" sid="4242249080668761" type="System">
+                    <param id="0" name="Layer">&quot;tilesFg&quot;</param>
+                </condition>
+                <condition id="-38" name="Layer is empty" sid="874589961581688" type="System">
+                    <param id="0" name="Layer">&quot;tilesBgNPC&quot;</param>
+                </condition>
+                <condition id="-38" name="Layer is empty" sid="568043315540495" type="System">
+                    <param id="0" name="Layer">&quot;tilesBg&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2417720868935706" type="block" />
+                <action id="-11" name="Add to" sid="109954908701581" type="TextBox">
+                    <param id="0" name="Instance variable">roundNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="2928738181843826" type="TextBox">
+                    <param id="0" name="Instance variable">score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="8939056386429513" type="TextBox">
+                    <param id="0" name="Text">&quot;ROUND: &quot;&amp;TextBox.roundNumber&amp;&quot;  SCORE: &quot;&amp;TextBox.score</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="1084073448735725" type="buttonDrop">
+                    <param id="0" name="Instance variable">doom</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="480916248503263">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="230759005073204" type="block">
+                    <param id="0" name="Instance variable">colorSet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="210466061067255" type="block">
+                    <param id="0" name="Frame number">self.overlapValue</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="382802354082553">
+                    <conditions />
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="479826618798737" type="tileRock">
+                            <param id="0" name="Layer">&quot;tilesFgTerrain&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="673394543946445" type="tile00Ore1">
+                            <param id="0" name="Layer">&quot;tilesBg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="233538385141707" type="tile00Ore2">
+                            <param id="0" name="Layer">&quot;tilesBg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="114857598660159" type="tile00Ore3">
+                            <param id="0" name="Layer">&quot;tilesBg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="922597739216185" type="tile00Ore4">
+                            <param id="0" name="Layer">&quot;tilesBg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="300953116960033" type="tilePurple">
+                            <param id="0" name="Layer">&quot;tilesFg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="656597658602009" type="tileOrange">
+                            <param id="0" name="Layer">&quot;tilesFg&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="753861958467679" type="tileGreen">
+                            <param id="0" name="Layer">&quot;tilesFg&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="972442731043649" type="block">
+                            <param id="0" name="Instance variable">colorSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="685339560483383">
+            <conditions>
+                <condition id="-18" name="On created" sid="281546163018600" type="tileBlank" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="487142067444632" type="tileTarget">
+                    <param id="0" name="Pin to">tileBlank</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="398436128658370">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="377189318392607" type="uiJumperMiddle" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="475398799417003" type="uiJumperMiddle">
+                    <param id="0" name="X">LayoutWidth/2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

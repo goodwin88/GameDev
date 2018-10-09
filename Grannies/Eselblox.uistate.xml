@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <event-sheet order="1">game</event-sheet>
+        <event-sheet order="2">mechanicPinning</event-sheet>
+        <event-sheet active="1" order="3">spawnTerrain</event-sheet>
+        <event-sheet order="4">uiBars</event-sheet>
+        <event-sheet order="5">blocksGreen</event-sheet>
+        <event-sheet order="6">blocksPurple</event-sheet>
+        <event-sheet order="7">mechanicFallingBlocks</event-sheet>
+        <event-sheet order="8">uiDebug</event-sheet>
+        <event-sheet order="9">mechanicDestroy</event-sheet>
+        <event-sheet order="10">blocksOrange</event-sheet>
+        <event-sheet order="11">mechanicTurnsGrannies</event-sheet>
+        <event-sheet order="12">blocksRock</event-sheet>
+        <event-sheet order="13">uiGrannies</event-sheet>
+        <event-sheet order="14">uiCat</event-sheet>
+        <event-sheet order="15">mechanicShaking</event-sheet>
+        <event-sheet order="16">mechanicDialog</event-sheet>
+        <event-sheet order="17">uiAnimations</event-sheet>
+        <event-sheet order="18">uiDialogText</event-sheet>
+        <event-sheet order="19">spawnPlanet</event-sheet>
+        <event-sheet order="20">mechanicIllustration</event-sheet>
+        <event-sheet order="21">bossRedRobo</event-sheet>
+        <event-sheet order="22">mechanicTurnsCleanUp</event-sheet>
+        <event-sheet order="23">bossYellowKing</event-sheet>
+        <event-sheet order="24">bossNone</event-sheet>
+        <event-sheet order="25">bossHP</event-sheet>
+        <event-sheet order="26">uiVersion</event-sheet>
+        <event-sheet order="27">bossBlueRival</event-sheet>
+        <event-sheet order="28">mechanicBossProjectiles</event-sheet>
+        <event-sheet order="29">uiScoreFloaties</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="0" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="1" name="prims" />
+        <family expanded="1" name="tileTextures" />
+        <family expanded="1" name="placedObj" />
+        <family expanded="1" name="revealedNPC" />
+        <family expanded="1" name="projectilesGrannies" />
+        <family expanded="1" name="tileColorsGrannies" />
+        <family expanded="1" name="warpInvisObj" />
+        <family expanded="1" name="shookObj" />
+        <family expanded="1" name="indicatorDamage" />
+        <family expanded="1" name="barriers" />
+        <family expanded="1" name="baddies" />
+        <family expanded="1" name="projectilesBoss" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/ui/" />
+        <folder expanded="0" path="event-folder/mechanics/" />
+        <folder expanded="0" path="event-folder/setup/" />
+        <folder expanded="0" path="event-folder/blocks/" />
+        <folder expanded="0" path="event-folder/baddies/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/tileBlank/" />
+        <folder expanded="1" path="animation-folder/block/" />
+        <folder expanded="1" path="animation-folder/spawner/" />
+        <folder expanded="1" path="animation-folder/tilePurple/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/corpse/" />
+        <folder expanded="1" path="animation-folder/ghost/" />
+        <folder expanded="1" path="animation-folder/buttonDrop/" />
+        <folder expanded="1" path="animation-folder/superFlash/" />
+        <folder expanded="1" path="animation-folder/tileOrange/" />
+        <folder expanded="1" path="animation-folder/tileGreen/" />
+        <folder expanded="1" path="animation-folder/tile00Ore1/" />
+        <folder expanded="1" path="animation-folder/barHori/" />
+        <folder expanded="1" path="animation-folder/barVert/" />
+        <folder expanded="1" path="animation-folder/bulletPurple/" />
+        <folder expanded="1" path="animation-folder/bulletOrange/" />
+        <folder expanded="1" path="animation-folder/bulletGreen/" />
+        <folder expanded="1" path="animation-folder/invisEdge/" />
+        <folder expanded="1" path="animation-folder/tileRock/" />
+        <folder expanded="1" path="animation-folder/invisIndicatorDrop/" />
+        <folder expanded="1" path="animation-folder/warpObject/" />
+        <folder expanded="1" path="animation-folder/invisTargetter/" />
+        <folder expanded="1" path="animation-folder/invisSwarmTarget/" />
+        <folder expanded="1" path="animation-folder/warpSubject/" />
+        <folder expanded="1" path="animation-folder/tile00Ore2/" />
+        <folder expanded="1" path="animation-folder/tile00Ore3/" />
+        <folder expanded="1" path="animation-folder/tile00Ore4/" />
+        <folder expanded="1" path="animation-folder/fxObj/" />
+        <folder expanded="1" path="animation-folder/tileTarget/" />
+        <folder expanded="1" path="animation-folder/invisStatusPopUp/" />
+        <folder expanded="1" path="animation-folder/tile06Monster/" />
+        <folder expanded="1" path="animation-folder/invisIndicatorDamageProjectile/" />
+        <folder expanded="1" path="animation-folder/invisIndicatorDamageBomb/" />
+        <folder expanded="1" path="animation-folder/soul/" />
+        <folder expanded="1" path="animation-folder/animationExplosion/" />
+        <folder expanded="1" path="animation-folder/uiGrannyPurple/" />
+        <folder expanded="1" path="animation-folder/uiGrannyOrange/" />
+        <folder expanded="1" path="animation-folder/uiGrannyGreen/" />
+        <folder expanded="1" path="animation-folder/uiPositioner01Gr/" />
+        <folder expanded="1" path="animation-folder/uiGrannyGreenCat/" />
+        <folder expanded="1" path="animation-folder/uiSpinnerCat/" />
+        <folder expanded="1" path="animation-folder/forcefieldGreen/" />
+        <folder expanded="1" path="animation-folder/uiScenery/" />
+        <folder expanded="1" path="animation-folder/uiBox600x90/" />
+        <folder expanded="1" path="animation-folder/greenMiningBase/" />
+        <folder expanded="1" path="animation-folder/dialoguePortraitLeft/" />
+        <folder expanded="1" path="animation-folder/dialoguePortraitRight/" />
+        <folder expanded="1" path="animation-folder/dialogueState/" />
+        <folder expanded="1" path="animation-folder/uiPositioner02Pu/" />
+        <folder expanded="1" path="animation-folder/uiPositioner03Or/" />
+        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/turnIllustration/" />
+        <folder expanded="1" path="animation-folder/uiJumperLeft/" />
+        <folder expanded="1" path="animation-folder/uiJumperMiddle/" />
+        <folder expanded="1" path="animation-folder/uiJumperRight/" />
+        <folder expanded="1" path="animation-folder/uiGloom/" />
+        <folder expanded="1" path="animation-folder/bossRedRobo/" />
+        <folder expanded="1" path="animation-folder/bulletRed/" />
+        <folder expanded="1" path="animation-folder/tileRed/" />
+        <folder expanded="1" path="animation-folder/glowRed/" />
+        <folder expanded="1" path="animation-folder/tileYellow/" />
+        <folder expanded="1" path="animation-folder/bossYellowKing/" />
+        <folder expanded="1" path="animation-folder/bulletYellow/" />
+        <folder expanded="1" path="animation-folder/bossYellowFailStateTimer/" />
+        <folder expanded="1" path="animation-folder/bossHealthCurrent/" />
+        <folder expanded="1" path="animation-folder/bossHealthMax/" />
+        <folder expanded="1" path="animation-folder/bossBlueRival/" />
+        <folder expanded="1" path="animation-folder/tileBlue/" />
+        <folder expanded="1" path="animation-folder/bossBlueTrack/" />
+        <folder expanded="1" path="animation-folder/bulletBlue/" />
+        <folder expanded="1" path="animation-folder/bossBlueCheckpoint/" />
+        <folder expanded="1" path="animation-folder/bossBlueFailStateTimer/" />
+    </folders-expanded>
+</c2uistate>

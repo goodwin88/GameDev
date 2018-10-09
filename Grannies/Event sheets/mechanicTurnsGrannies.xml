@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicTurnsGrannies</name>
+    <events>
+        <include>mechanicDialog</include>
+        <event-block sid="433801735042161">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="817790263962986" type="soul">
+                    <param id="0" name="Instance variable">turn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="253377100469386">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="856083131967715" type="tilePurple">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="300819737961278" type="tilePurple">
+                            <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="128287887180272">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="697459693375102" type="tileOrange">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="397986250899753" type="tileOrange">
+                            <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="598739982823580">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="774843203314296" type="tileRock">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="540132811779866" type="tileRock">
+                            <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="200433858776271">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="574220160870656" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="575967601720273">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="848367627835356" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="700861801086351" type="uiDialogSlider">
+                                    <param id="0" name="Name">&quot;DialogMoveCenter&quot;</param>
+                                    <param id="1" name="Parameter {n}">1{###}&quot;Player Turn&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="953970322184655">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="401586067677070" type="tilePurple">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="118752262196969" type="tileOrange">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="894696115452386" type="tileGreen">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="663709801154414" type="tileRock">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="945726235893913" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="828217812210942" type="soul">
+                                    <param id="0" name="Instance variable">Activated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="663525158024649">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="764140063377118" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="144063649554952">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="245007682655472" type="tilePurple">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="313881367249049">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="870185892572827" type="System">
+                                            <param id="0" name="First value">bulletPurple.Count</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="533969632842801" type="soul">
+                                            <param id="0" name="Instance variable">turnPurple</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="944475058137844">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="235427872388883" type="System">
+                                            <param id="0" name="First value">bulletPurple.Count</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="338862005329871" type="soul">
+                                            <param id="0" name="Instance variable">turnPurple</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="976630308195015">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="454927793408707" type="tileOrange">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="270519239553686">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="896610459673522" type="soul">
+                                            <param id="0" name="Instance variable">turnOrange</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="754306647796725">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="194462096916673" type="tileGreen">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="572184646693945">
+                                    <conditions>
+                                        <condition id="-16" inverted="1" name="Is on layer" sid="505807946283623" type="tileGreen">
+                                            <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="979072669124305" type="System">
+                                            <param id="0" name="Variable">currentActiveGreen</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-26" name="Move to layer" sid="521406343542063" type="tileGreen">
+                                            <param id="0" name="Layer">&quot;tilesActive&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="753080529393963">
+                                    <conditions>
+                                        <condition id="-16" inverted="1" name="Is on layer" sid="285016378966484" type="tileGreen">
+                                            <param id="0" name="Layer">&quot;tilesFg&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="974070628464737" type="System">
+                                            <param id="0" name="Variable">formerActiveGreen</param>
+                                            <param id="1" name="Value">currentActiveGreen</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="132842594832441">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="912951778163698" type="System">
+                                            <param id="0" name="First value">currentActiveGreen</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">formerActiveGreen</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="785401162304082" type="soul">
+                                            <param id="0" name="Instance variable">turnGreen</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="841479245394594">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="217789376471022" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="833108748168850" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="504329038266376" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="929579186816739" type="soul">
+                                    <param id="0" name="Instance variable">turnRocks</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="877998814791118">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="772356580500756" type="tileRock">
+                                            <param id="0" name="Instance variable">active</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="987548536158331" type="soul">
+                                            <param id="0" name="Instance variable">turnRocks</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="884634021391851" type="tileRock" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="174903569494455">
+                                            <conditions>
+                                                <condition behavior="Fade" id="0" name="On fade-out finished" sid="526836595111251" type="tileRock" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="127284261612869" type="soul">
+                                                    <param id="0" name="Instance variable">turnRocks</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="175743908820462">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="510703793945345" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="664259794326724" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="755983667648875" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="969928083870892" type="soul">
+                                    <param id="0" name="Instance variable">turnRocks</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="837913630899587" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="152296681619705" type="soul">
+                                    <param id="0" name="Instance variable">Activated</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="211079244411766">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="195898041322045" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="962239376706404" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="412989409341370" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="446582841013002" type="soul">
+                            <param id="0" name="Instance variable">turn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="380824219098602">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="140460163133298" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="627537989842684">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="976475828767928" type="soul">
+                            <param id="0" name="Instance variable">Activated</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="960673314797487">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="344520610736420" type="System">
+                                    <param id="0" name="First value">tileOrange.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="969267902763475" type="soul">
+                                    <param id="0" name="Instance variable">turnOrange</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="271302769636855">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="642967406728645" type="System">
+                                    <param id="0" name="First value">tileGreen.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="649561182851952" type="soul">
+                                    <param id="0" name="Instance variable">turnGreen</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="398819139346500">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="796640317613801" type="System">
+                                    <param id="0" name="First value">tilePurple.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="452128412714573" type="soul">
+                                    <param id="0" name="Instance variable">turnPurple</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="430046484982282">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="555211908504074" type="System">
+                                    <param id="0" name="First value">tileRock.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="572372365803396" type="soul">
+                                    <param id="0" name="Instance variable">turnRocks</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

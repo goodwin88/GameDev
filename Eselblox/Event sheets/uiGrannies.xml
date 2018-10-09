@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiGrannies</name>
+    <events>
+        <event-block sid="832388419962945">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="439416761839344" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="708913181274471" type="uiSpinnerCat">
+                    <param id="0" name="Object">uiGrannyGreen</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="281359719510734" type="uiSpinnerCat">
+                    <param id="0" name="Pin to">uiGrannyGreen</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="595352421934930" type="uiGrannyGreenCat">
+                    <param id="0" name="Object">uiSpinnerCat</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="661866498322377" type="uiGrannyGreenCat">
+                    <param id="0" name="Pin to">uiSpinnerCat</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="783190451786547" type="uiPositioner02Pu">
+                    <param id="0" name="Object">uiPositioner01Gr</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="259690447704899" type="uiPositioner03Or">
+                    <param id="0" name="Object">uiPositioner01Gr</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="939880693490357" type="uiPositioner01Gr">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="330060372946768" type="uiPositioner02Pu">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-8" name="Set angle" sid="377187838125212" type="uiPositioner03Or">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697185676307383">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="425324668800437" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="405405565591965" type="uiGrannyGreen">
+                    <param id="0" name="X">uiPositioner01Gr.ImagePointX(1)</param>
+                    <param id="1" name="Y">uiPositioner01Gr.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="522861295671179" type="uiGrannyPurple">
+                    <param id="0" name="X">uiPositioner02Pu.ImagePointX(1)</param>
+                    <param id="1" name="Y">uiPositioner02Pu.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="340207699383300" type="uiGrannyOrange">
+                    <param id="0" name="X">uiPositioner03Or.ImagePointX(1)</param>
+                    <param id="1" name="Y">uiPositioner03Or.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="313991827487464" type="uiGrannyGreenCat">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="980289971433507" type="uiGrannyGreen">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="564288155768954" type="uiGrannyPurple">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="446777003128295" type="uiGrannyOrange">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Equal Team Pose</comment>
+        <comment>Green in front</comment>
+        <event-block sid="201922854286966">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="584594978154200" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">321</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="566979100679009" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">2*(0-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="524687116358637" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">2*(90-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="725684226468443" type="uiPositioner03Or">
+                    <param id="0" name="Speed">2*(180-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="241240408115293" type="uiBox600x90">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Green in front</comment>
+        <event-block sid="134453344699995">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="907825786252431" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">231</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="611828990012110" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">3*(0-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="189205318154968" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">3*(180-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="227964403516893" type="uiPositioner03Or">
+                    <param id="0" name="Speed">3*(90-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="396075758488249" type="uiBox600x90">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Purple in front</comment>
+        <event-block sid="510901404254136">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="456777617124183" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">312</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="129123095186567" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">3*(90-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="757656647176220" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">3*(0-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="790674899803768" type="uiPositioner03Or">
+                    <param id="0" name="Speed">3*(180-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="811344647879850" type="uiBox600x90">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Purple in front</comment>
+        <event-block sid="825533856512719">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="218848290208393" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">132</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="871980040072288" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">3*(180-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="846656556473654" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">3*(0-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="195572550787517" type="uiPositioner03Or">
+                    <param id="0" name="Speed">3*(90-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="951326885560604" type="uiBox600x90">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Orange in front</comment>
+        <event-block sid="864785782365789">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="947454077251318" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">123</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="972500744327842" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">3*(180-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="103884655783258" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">3*(90-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="992217646182430" type="uiPositioner03Or">
+                    <param id="0" name="Speed">3*(0-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="817208053993118" type="uiBox600x90">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Orange in front</comment>
+        <event-block sid="545487029374469">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="254618420733173" type="dialogueState">
+                    <param id="0" name="Instance variable">ranking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">213</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="109118815468497" type="uiPositioner01Gr">
+                    <param id="0" name="Speed">3*(90-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="420142430691035" type="uiPositioner02Pu">
+                    <param id="0" name="Speed">3*(180-self.Angle)</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="745390050287556" type="uiPositioner03Or">
+                    <param id="0" name="Speed">3*(0-self.Angle)</param>
+                </action>
+                <action id="5" name="Set frame" sid="658626686984915" type="uiBox600x90">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="824631475270801">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="251297781864357" type="System">
+                    <param id="0" name="First value">uiPositioner01Gr.Rotate.Speed</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="245655431311105" type="uiGrannyGreen">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="196197601329836">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="580813123722592" type="System">
+                    <param id="0" name="First value">uiPositioner02Pu.Rotate.Speed</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="868225031553847" type="uiGrannyPurple">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692612352231260">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="889015030941642" type="System">
+                    <param id="0" name="First value">uiPositioner03Or.Rotate.Speed</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="226573546332161" type="uiGrannyOrange">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="157619600574056">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="562566002037823" type="System">
+                    <param id="0" name="First value">uiPositioner01Gr.Rotate.Speed</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="750525047260508" type="uiGrannyGreen">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="165023193051776">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="857868176789562" type="System">
+                    <param id="0" name="First value">uiPositioner02Pu.Rotate.Speed</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="495349661815128" type="uiGrannyPurple">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499087392353685">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="596542084409266" type="System">
+                    <param id="0" name="First value">uiPositioner03Or.Rotate.Speed</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="190286348443160" type="uiGrannyOrange">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>bossHP</name>
+    <events>
+        <event-block sid="142089331956061">
+            <conditions>
+                <condition id="-18" name="On created" sid="942353655849757" type="bossHealthMax" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="752406277764929" type="bossHealthMax">
+                    <param id="0" name="Object">bossHealthCurrent</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="441195873295300" type="bossHealthCurrent" />
+                <action id="-24" name="Move to top" sid="779052887090155" type="bossHealthMax" />
+                <action id="2" name="Stop" sid="897658560389543" type="bossHealthCurrent" />
+                <action id="2" name="Stop" sid="745526287899611" type="bossHealthMax" />
+            </actions>
+        </event-block>
+        <event-block sid="256582468629920">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="978832256683797" type="uiGloom">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="842230157697734" type="bossHealthCurrent">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="630059059746917" type="bossHealthMax">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="479345331818729">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="121984414529507" type="uiGloom">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="434764701473534" type="bossHealthCurrent">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="550450553562584" type="bossHealthMax">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="198014703335979">
+            <conditions>
+                <condition id="-16" inverted="1" name="Is on layer" sid="577297996556969" type="baddies">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="646528486106260" type="bossHealthCurrent">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="813459371560525" type="bossHealthMax">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596705005865079">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="332619765337572" type="baddies">
+                    <param id="0" name="Layer">&quot;uiBaddies&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="730399530566086" type="bossHealthCurrent">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="291555335222528" type="bossHealthMax">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="397893564975669">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="273542660682551" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="448261119425467" type="bossHealthCurrent">
+                    <param id="0" name="Height">baddies.hpCurrent</param>
+                </action>
+                <action id="-6" name="Set height" sid="308902725855519" type="bossHealthMax">
+                    <param id="0" name="Height">baddies.hpMax</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316250652802605">
+            <conditions>
+                <condition id="-6" name="Compare height" sid="964521719477328" type="bossHealthCurrent">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Height">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="357868980009402" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
