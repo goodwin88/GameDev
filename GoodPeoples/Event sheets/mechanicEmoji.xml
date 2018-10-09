@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicEmoji</name>
+    <events>
+        <event-block sid="384811082211219">
+            <conditions>
+                <condition id="-18" name="On created" sid="918203673092558" type="emoji" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="227018922914868" type="emoji" />
+                <action id="5" name="Set frame" sid="549024919134314" type="emoji">
+                    <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="524809000450211" type="emoji">
+                    <param id="0" name="Layer">&quot;emoji&quot;</param>
+                </action>
+                <action id="-7" name="Set size" sid="802047913839106" type="emoji">
+                    <param id="0" name="Width">60</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+                <action id="-10" name="Set value" sid="213521193030434" type="emoji">
+                    <param id="0" name="Instance variable">order</param>
+                    <param id="1" name="Value">self.Count</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287089353550430">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="741789796807381" type="System">
+                    <param id="0" name="First value">emoji.Count</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="506865388154690" type="System">
+                    <param id="0" name="Object to create">emoji</param>
+                    <param id="1" name="Layer">&quot;emoji&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784275702061402">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="928471988721486" type="emoji">
+                    <param id="0" name="Instance variable">order</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="284953776323503" type="emoji">
+                    <param id="0" name="X">particleThoughtBubble.X+(invis9GridAsset4.X*0.20)-(scrollx*0.20)</param>
+                    <param id="1" name="Y">particleThoughtBubble.Y+(invis9GridAsset4.Y*0.15)-(scrolly*0.15)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="462244522214734" type="emoji">
+                    <param id="0" name="Opacity">invis9GridBar.Opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="677277010966920">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="499402915677216" type="emoji">
+                    <param id="0" name="Instance variable">order</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="120359311368421" type="emoji">
+                    <param id="0" name="X">particleThoughtBubble.X+(invis9GridAsset6.X*0.20)-(scrollx*0.20)</param>
+                    <param id="1" name="Y">particleThoughtBubble.Y+(invis9GridAsset6.Y*0.15)-(scrolly*0.15)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="606010555919680" type="emoji">
+                    <param id="0" name="Opacity">invis9GridBar.Opacity</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

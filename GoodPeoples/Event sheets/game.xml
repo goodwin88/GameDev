@@ -12,5 +12,7 @@
         <include>mechanicShuffle</include>
         <include>mechanicThoughtBubble</include>
         <include>mechanicMiniGrid</include>
+        <include>mechanicEmoji</include>
+        <include>mechanicThoughts</include>
     </events>
 </c2eventsheet>

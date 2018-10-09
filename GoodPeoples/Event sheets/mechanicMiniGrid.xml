@@ -24,25 +24,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="684032002593233">
-            <conditions>
-                <condition id="-9" name="Is visible" sid="821667163301585" type="invis9GridBar" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="708876941455048" type="mini9GridBar">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="436434098973921">
-            <conditions>
-                <condition id="-9" inverted="1" name="Is visible" sid="302462354307616" type="invis9GridBar" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="612357577167323" type="mini9GridBar">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
