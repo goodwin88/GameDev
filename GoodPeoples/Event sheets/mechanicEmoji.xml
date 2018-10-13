@@ -10,7 +10,7 @@
             <actions>
                 <action id="2" name="Stop" sid="227018922914868" type="emoji" />
                 <action id="5" name="Set frame" sid="549024919134314" type="emoji">
-                    <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                    <param id="0" name="Frame number">int(random(274,self.AnimationFrameCount))</param>
                 </action>
                 <action id="-26" name="Move to layer" sid="524809000450211" type="emoji">
                     <param id="0" name="Layer">&quot;emoji&quot;</param>
@@ -52,11 +52,11 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="284953776323503" type="emoji">
-                    <param id="0" name="X">particleThoughtBubble.X+(invis9GridAsset4.X*0.20)-(scrollx*0.20)</param>
-                    <param id="1" name="Y">particleThoughtBubble.Y+(invis9GridAsset4.Y*0.15)-(scrolly*0.15)</param>
+                    <param id="0" name="X">particleThoughtBubble.X-(emoji.Width*0.6)</param>
+                    <param id="1" name="Y">particleThoughtBubble.Y</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="462244522214734" type="emoji">
-                    <param id="0" name="Opacity">invis9GridBar.Opacity</param>
+                    <param id="0" name="Opacity">100-whiteoutThoughts.Opacity</param>
                 </action>
             </actions>
         </event-block>
@@ -70,11 +70,11 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="120359311368421" type="emoji">
-                    <param id="0" name="X">particleThoughtBubble.X+(invis9GridAsset6.X*0.20)-(scrollx*0.20)</param>
-                    <param id="1" name="Y">particleThoughtBubble.Y+(invis9GridAsset6.Y*0.15)-(scrolly*0.15)</param>
+                    <param id="0" name="X">particleThoughtBubble.X+(emoji.Width*0.6)</param>
+                    <param id="1" name="Y">particleThoughtBubble.Y</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="606010555919680" type="emoji">
-                    <param id="0" name="Opacity">invis9GridBar.Opacity</param>
+                    <param id="0" name="Opacity">100-whiteoutThoughts.Opacity</param>
                 </action>
             </actions>
         </event-block>

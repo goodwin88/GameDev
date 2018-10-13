@@ -8,7 +8,7 @@
     <author-website>http://goodwinillustration.com</author-website>
     <app-id>goodwinillustration.com</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
-    <saved-with-version>25900</saved-with-version>
+    <saved-with-version>26200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -1915,20 +1915,7 @@
                 <instance-variable name="order" sid="367416791814810" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1640" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250467461098638" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1627" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250467461098638" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -3559,6 +3546,38 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="uiButtonLeft" sid="546786984819399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821309090211838" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiButtonRight" sid="899156936139329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736270430722754" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" />
+                    <frame duration="1" hotspotX="1" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="faceParts" plugin-id="Sprite" sid="174395641413104">
@@ -3658,6 +3677,15 @@
                 <member>invis9GridAsset9</member>
             </members>
         </family>
+        <family name="uiButtons" plugin-id="Sprite" sid="746698491412142">
+            <members>
+                <member>uiButtonLeft</member>
+                <member>uiButtonRight</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="buttonNumber" sid="578874787413930" type="number" />
+            </instance-variables>
+        </family>
     </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
@@ -3674,7 +3702,7 @@
         <event-sheet>mechanicThoughtBubble.xml</event-sheet>
         <event-sheet>mechanicMiniGrid.xml</event-sheet>
         <event-sheet>mechanicEmoji.xml</event-sheet>
-        <event-sheet>mechanicThoughts.xml</event-sheet>
+        <event-sheet>setupUI.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />

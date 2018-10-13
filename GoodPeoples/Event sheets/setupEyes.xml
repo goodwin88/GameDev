@@ -76,6 +76,9 @@
                 <action id="5" name="Set frame" sid="697087922788391" type="eyeLeft">
                     <param id="0" name="Frame number">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="433525784658954" type="uiButtonLeft">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="283945560236640">
@@ -97,6 +100,9 @@
                 </action>
                 <action id="5" name="Set frame" sid="124030226358191" type="eyeRight">
                     <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="885003793867726" type="uiButtonRight">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupUI</name>
+    <events>
+        <event-block sid="674665023543730">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="227805266798383" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="901693737287899" type="uiButtonLeft">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">scrolly*0.5*Self.buttonNumber</param>
+                </action>
+                <action id="-3" name="Set position" sid="626675501412699" type="uiButtonRight">
+                    <param id="0" name="X">uiButtonLeft.X+(scrollx*2)</param>
+                    <param id="1" name="Y">scrolly*0.5*Self.buttonNumber</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="284397319743715" type="uiButtons">
+                    <param id="0" name="Opacity">(self.Width/64)*100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="330712966229778">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="369088581971227" type="uiButtons" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="635547247653744" type="uiButtons">
+                    <param id="0" name="Width">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558679442571711">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="369694454127978" type="Touch" />
+                <condition id="7" name="Compare touch speed" sid="463746890323048" type="Touch">
+                    <param id="0" name="Touch index">0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="529087155058072">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="176792785339785" type="System">
+                            <param id="0" name="First value">distance(Touch.X,Touch.Y,uiButtonLeft.X,uiButtonLeft.Y)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">distance(Touch.X,Touch.Y,uiButtonRight.X,uiButtonRight.Y)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="330534577845535">
+                            <conditions>
+                                <condition id="-5" name="Compare width" sid="858860863301301" type="uiButtonLeft">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Width">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="128576333234301" type="uiButtonLeft">
+                                    <param id="0" name="Width">self.Width*0.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="958467233300433">
+                            <conditions>
+                                <condition id="-5" name="Compare width" sid="329415702438622" type="uiButtonRight">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Width">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="114546069444051" type="uiButtonRight">
+                                    <param id="0" name="Width">self.Width*1.15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="512322571850891">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="985230823944061" type="System">
+                            <param id="0" name="First value">distance(Touch.X,Touch.Y,uiButtonLeft.X,uiButtonLeft.Y)</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">distance(Touch.X,Touch.Y,uiButtonRight.X,uiButtonRight.Y)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="150990541906959">
+                            <conditions>
+                                <condition id="-5" name="Compare width" sid="315991060957198" type="uiButtonLeft">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Width">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="702849556170842" type="uiButtonLeft">
+                                    <param id="0" name="Width">self.Width*1.15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="957905303197051">
+                            <conditions>
+                                <condition id="-5" name="Compare width" sid="396204922143643" type="uiButtonRight">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Width">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-5" name="Set width" sid="741536627956680" type="uiButtonRight">
+                                    <param id="0" name="Width">self.Width*0.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="907742392105897">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="375941028113986" type="uiButtons">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="293451178445540" type="uiButtons">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565960763153263">
+            <conditions>
+                <condition id="-18" name="On created" sid="768607492123339" type="uiButtons" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="198433384911804" type="uiButtons" />
+            </actions>
+        </event-block>
+        <event-block sid="235674679412176">
+            <conditions>
+                <condition id="-18" name="On created" sid="477904448427244" type="uiButtonLeft" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="320327750449446" type="uiButtonLeft">
+                    <param id="0" name="Instance variable">buttonNumber</param>
+                    <param id="1" name="Value">Self.Count</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="231095886096125">
+            <conditions>
+                <condition id="-18" name="On created" sid="318839589145850" type="uiButtonRight" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="784978798967234" type="uiButtonRight">
+                    <param id="0" name="Instance variable">buttonNumber</param>
+                    <param id="1" name="Value">Self.Count</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292883860977939">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="951506269684939" type="System">
+                    <param id="0" name="First value">uiButtonLeft.Count</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="876847660310868" type="System">
+                    <param id="0" name="Object to create">uiButtonLeft</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="710325508322332">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="543789773084835" type="System">
+                    <param id="0" name="First value">uiButtonRight.Count</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="102023823602852" type="System">
+                    <param id="0" name="Object to create">uiButtonRight</param>
+                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676001255776576">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="879247220228460" type="Touch">
+                    <param id="0" name="Object">uiButtons</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="227878213353508" type="uiButtons">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="722753614652230">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="652324425188252" type="Touch">
+                    <param id="0" name="Object">uiButtons</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="215104111517370" type="uiButtons">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

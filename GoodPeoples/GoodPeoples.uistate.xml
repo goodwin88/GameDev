@@ -21,8 +21,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="8">setup9grid</event-sheet>
         <event-sheet order="9">mechanicThoughtBubble</event-sheet>
         <event-sheet order="10">mechanicMiniGrid</event-sheet>
-        <event-sheet active="1" order="11">mechanicEmoji</event-sheet>
-        <event-sheet order="12">mechanicThoughts</event-sheet>
+        <event-sheet order="11">mechanicEmoji</event-sheet>
+        <event-sheet active="1" order="12">setupUI</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -38,6 +38,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="invis9Grid" />
         <family expanded="0" name="invisWall" />
         <family expanded="0" name="invis9GridCorner" />
+        <family expanded="0" name="uiButtons" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -112,5 +113,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/whiteoutThoughts/" />
         <folder expanded="1" path="animation-folder/mini9GridBar/" />
         <folder expanded="1" path="animation-folder/emoji/" />
+        <folder expanded="1" path="animation-folder/uiButtonLeft/" />
+        <folder expanded="1" path="animation-folder/uiButtonRight/" />
     </folders-expanded>
 </c2uistate>

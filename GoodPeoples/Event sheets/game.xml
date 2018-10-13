@@ -8,11 +8,9 @@
         <include>setupMouth</include>
         <include>setupEyes</include>
         <include>setupColor</include>
-        <include>setup9grid</include>
+        <include>setupUI</include>
         <include>mechanicShuffle</include>
         <include>mechanicThoughtBubble</include>
-        <include>mechanicMiniGrid</include>
         <include>mechanicEmoji</include>
-        <include>mechanicThoughts</include>
     </events>
 </c2eventsheet>

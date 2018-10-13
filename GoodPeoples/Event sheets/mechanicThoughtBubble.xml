@@ -141,14 +141,18 @@
         </event-block>
         <event-block sid="574171957620608">
             <conditions>
-                <condition id="4" name="Is touching object" sid="331868526975701" type="Touch">
-                    <param id="0" name="Object">faceParts</param>
-                </condition>
                 <condition id="7" name="Compare touch speed" sid="544478021376122" type="Touch">
                     <param id="0" name="Touch index">0</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Speed">0</param>
                 </condition>
+                <condition id="1" name="Is overlapping another object" sid="356117682532663" type="bubblet">
+                    <param id="0" name="Object">particleThoughtBubble</param>
+                </condition>
+                <condition id="4" inverted="1" name="Is touching object" sid="519192694604941" type="Touch">
+                    <param id="0" name="Object">faceParts</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="186442275818537" type="uiButtons" />
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="610536640998773" type="whiteoutThoughts">
@@ -158,18 +162,12 @@
         </event-block>
         <event-block any="1" sid="533308670734416">
             <conditions>
-                <condition id="7" name="Compare touch speed" sid="524645900797062" type="Touch">
-                    <param id="0" name="Touch index">0</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Speed">300</param>
-                </condition>
-                <condition id="4" inverted="1" name="Is touching object" sid="360590352907032" type="Touch">
-                    <param id="0" name="Object">faceParts</param>
-                </condition>
+                <condition id="2" inverted="1" name="Is in touch" sid="187853206019436" type="Touch" />
+                <condition id="-9" name="Is visible" sid="278423317046369" type="uiButtons" />
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="767511463202439" type="whiteoutThoughts">
-                    <param id="0" name="Opacity">self.Opacity+0.5</param>
+                    <param id="0" name="Opacity">self.Opacity+2</param>
                 </action>
             </actions>
         </event-block>
