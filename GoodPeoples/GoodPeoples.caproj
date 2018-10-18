@@ -616,12 +616,12 @@
                     </frame>
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\002.png">
                         <collision-poly>
-                            <point x="0.441459" y="1" />
-                            <point x="1" y="1" />
-                            <point x="1" y="0.935418" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0" />
-                            <point x="0" y="1" />
+                            <point x="0.441459" y="0.5" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.4778" />
+                            <point x="1" y="0.15625" />
+                            <point x="0" y="0.15625" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\003.png">
@@ -830,14 +830,14 @@
                             <point x="0" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="-0.181818" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\004.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\004.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.71009" />
-                            <point x="0" y="0" />
+                            <point x="1" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0" y="0.5" />
+                            <point x="0" y="0.400343" />
+                            <point x="0" y="0.15625" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.504132" hotspotY="-0.193548" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\eyelids lower\005.png">
@@ -1397,7 +1397,7 @@
                 <type>mouthLips</type>
             </container>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662358141194679" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662358141194679" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouthCrease01.gif">
                         <image-point name="Imagepoint 1" x="0" y="0.658537" />
                         <image-point name="Imagepoint 2" x="1" y="0.512195" />
@@ -1438,6 +1438,20 @@
                             <point x="0.5286" y="1" />
                             <point x="0.134123" y="1" />
                             <point x="0.00262987" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.992095" hotspotY="0.135593" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\mouths\003.png">
+                        <image-point name="Imagepoint 1" x="0.0988142" y="0.508475" />
+                        <image-point name="Imagepoint 2" x="1" y="0.508475" />
+                        <collision-poly>
+                            <point x="0.0993662" y="1" />
+                            <point x="0.617354" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.617354" y="1" />
+                            <point x="0.106183" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1574,39 +1588,19 @@
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714778413960677" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0.501171">
                         <image-point name="Imagepoint 1" x="0" y="0.501171" />
+                        <image-point name="Imagepoint 2" x="1" y="1" />
                     </frame>
                     <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear01.gif">
                         <image-point name="Imagepoint 1" x="0" y="0.5" />
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="0.453782" y="0.718045" />
-                            <point x="0.260504" y="0.586467" />
-                            <point x="0.5" y="0.75188" />
-                        </collision-poly>
+                        <image-point name="Imagepoint 2" x="1" y="1" />
                     </frame>
                     <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear02.gif">
                         <image-point name="Imagepoint 1" x="0" y="0.5" />
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="0.406393" y="0.64966" />
-                            <point x="0.196346" y="0.530613" />
-                            <point x="0.456621" y="0.680272" />
-                        </collision-poly>
+                        <image-point name="Imagepoint 2" x="1" y="1" />
                     </frame>
                     <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Faces\assets\ear03.gif">
                         <image-point name="Imagepoint 1" x="0" y="0.5" />
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="0.335052" y="0.758475" />
-                            <point x="0.0979373" y="0.61017" />
-                            <point x="0.391753" y="0.79661" />
-                        </collision-poly>
+                        <image-point name="Imagepoint 2" x="1" y="1" />
                     </frame>
                 </animation>
             </animation-folder>

@@ -11,12 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">game</event-sheet>
+        <event-sheet order="1">game</event-sheet>
         <event-sheet order="2">setupAxis</event-sheet>
         <event-sheet order="3">setupFace</event-sheet>
         <event-sheet order="4">setupColor</event-sheet>
         <event-sheet order="5">mechanicShuffle</event-sheet>
-        <event-sheet order="6">setupMouth</event-sheet>
+        <event-sheet active="1" order="6">setupMouth</event-sheet>
         <event-sheet order="7">setupEyes</event-sheet>
         <event-sheet order="8">setup9grid</event-sheet>
         <event-sheet order="9">mechanicThoughtBubble</event-sheet>

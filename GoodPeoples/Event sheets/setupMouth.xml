@@ -119,5 +119,44 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="512333188165657">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="379291887518990" type="mouthCrease">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Width">(faceNose.Width+nostril.Width)*0.8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="480842974911027" type="mouthCrease">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="706309082983425">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="751381511935683" type="mouthCrease">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Width">(faceNose.Width+nostril.Width)*0.8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="963281708564805" type="mouthCrease">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="765424186744108">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="801204836544581" type="mouthCrease">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Width">faceNose.Width+nostril.Width</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="278205782569971" type="mouthCrease">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

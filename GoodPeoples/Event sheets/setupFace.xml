@@ -281,13 +281,13 @@
                 <action id="-16" name="Set opacity" sid="723101028237129" type="cheekbone">
                     <param id="0" name="Opacity">10*faceForehead.scaleHorizontal</param>
                 </action>
-                <action id="-3" name="Set position" sid="729644613580726" type="faceEarLobe">
-                    <param id="0" name="X">faceEar.X</param>
-                    <param id="1" name="Y">faceEar.Y+nostril.Height</param>
+                <action id="-4" name="Set position to another object" sid="729644613580726" type="faceEarLobe">
+                    <param id="0" name="Object">faceEar</param>
+                    <param id="1" name="Image point (optional)">2</param>
                 </action>
                 <action id="-7" name="Set size" sid="674502040015588" type="faceEarLobe">
-                    <param id="0" name="Width">faceEar.Width/1.5</param>
-                    <param id="1" name="Height">nostril.Height</param>
+                    <param id="0" name="Width">faceCranium.Width-(faceCranium.X-Self.X)</param>
+                    <param id="1" name="Height">nostril.Height/3</param>
                 </action>
                 <action id="5" name="Set frame" sid="645857986140688" type="faceEarLobe">
                     <param id="0" name="Frame number">faceEar.AnimationFrame</param>
