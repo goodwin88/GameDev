@@ -11,7 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
-        <event-sheet order="1">game</event-sheet>
+        <event-sheet active="1" order="1">game</event-sheet>
         <event-sheet order="2">setupAxis</event-sheet>
         <event-sheet order="3">setupFace</event-sheet>
         <event-sheet order="4">setupColor</event-sheet>
@@ -22,7 +22,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="9">mechanicThoughtBubble</event-sheet>
         <event-sheet order="10">mechanicMiniGrid</event-sheet>
         <event-sheet order="11">mechanicEmoji</event-sheet>
-        <event-sheet active="1" order="12">setupUI</event-sheet>
+        <event-sheet order="12">setupUI</event-sheet>
+        <event-sheet order="13">debug</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

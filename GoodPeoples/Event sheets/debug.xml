@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>debug</name>
+    <events>
+        <event-block sid="900029847816104">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="702289213991203" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="957758240645217" type="debugText">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">10</param>
+                </action>
+                <action id="0" name="Set text" sid="313349877261950" type="debugText">
+                    <param id="0" name="Text">faceNose.AnimationFrame&amp;&quot; (&quot;&amp;facenose.Width&amp;&quot; x &quot;&amp;faceNose.Height&amp;&quot;) : NOSE OUTLINE&quot;&amp;newline&amp;faceNoseFill.AnimationFrame&amp;&quot; (&quot;&amp;facenosefill.Width&amp;&quot; x &quot;&amp;faceNosefill.Height&amp;&quot;) : NOSE FILL&quot;</param>
+                </action>
+                <action id="-7" name="Set size" sid="354784836808867" type="debugText">
+                    <param id="0" name="Width">scrollx*2</param>
+                    <param id="1" name="Height">self.FaceSize*4</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
