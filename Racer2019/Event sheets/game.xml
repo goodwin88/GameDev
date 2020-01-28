@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game</name>
+    <events>
+        <include>OLDmechanicZoom</include>
+        <include>debug</include>
+        <include>debugInvis</include>
+        <variable constant="0" name="racer1" sid="317740070135152" static="0" type="number">1</variable>
+        <variable constant="0" name="racer2" sid="240623118951958" static="0" type="number">1</variable>
+        <variable constant="0" name="racer3" sid="761185301589307" static="0" type="number">1</variable>
+        <variable constant="0" name="racer4" sid="116898645037079" static="0" type="number">1</variable>
+        <variable constant="0" name="racer5" sid="397292460064811" static="0" type="number">1</variable>
+        <variable constant="0" name="racer6" sid="117197811398710" static="0" type="number">1</variable>
+        <variable constant="0" name="racer7" sid="872344696615314" static="0" type="number">1</variable>
+        <variable constant="0" name="racer8" sid="285998017875501" static="0" type="number">1</variable>
+        <variable constant="0" name="racer9" sid="157680651573607" static="0" type="number">1</variable>
+        <variable constant="0" name="World" sid="638881812116527" static="0" type="number">0</variable>
+        <variable constant="0" name="Zoom" sid="693155387360288" static="0" type="number">0</variable>
+        <include>setupWorld</include>
+        <include>setupTerrain</include>
+        <include>setupVariablesCharacter</include>
+        <include>setupVariablesVehicle</include>
+        <include>setupVehicleHitbox</include>
+        <include>setupVehicle</include>
+        <include>setupVehicle1</include>
+        <include>setupVehicle2</include>
+        <include>setupVehicle3</include>
+        <include>mechanicParticle</include>
+        <include>mechanicAxis</include>
+        <include>mechanicCamera</include>
+        <include>mechanicLimbo</include>
+        <include>mechanicSwapping</include>
+        <include>momentStart</include>
+    </events>
+</c2eventsheet>

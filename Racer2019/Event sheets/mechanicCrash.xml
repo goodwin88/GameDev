@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicCrash</name>
+    <events>
+        <event-block sid="104154419584256">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="236739806720007" type="invisVehicle1">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="418092669263206" type="beaconCar1" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="764468954751598" type="hitBox1" />
+                <condition id="-7" name="Compare instance variable" sid="270676503713652" type="invisVehicle1">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">random(0,1)</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="958854541727087" type="hitBox1">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="733245777453223" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="913440906695689" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="809113607472703" type="hitBox1">
+                    <param id="0" name="Object">animExplosion</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="441309647597037">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="154698618350532" type="beaconCar1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="531273924476110" type="System">
+                            <param id="0" name="Variable">racer1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="980581878146174">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="107017055464366" type="beaconCar1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="572273961110274" type="System">
+                            <param id="0" name="Variable">racer2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="382695943708790">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="546785783425235" type="beaconCar1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="613361477007966" type="System">
+                            <param id="0" name="Variable">racer3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="799748688100627">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="706842704817049" type="invisVehicle2">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="691663142954188" type="beaconCar2" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="436409015730564" type="hitBox2" />
+                <condition id="-7" name="Compare instance variable" sid="904631461243415" type="invisVehicle2">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">random(0,1)</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="930351326909304" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="174235674848950" type="hitBox2">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="549123936183796" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="692250401873143" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="269775166228831" type="hitBox2">
+                    <param id="0" name="Object">animExplosion</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="608811715739755">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="350476622244610" type="beaconCar2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="108219645061124" type="System">
+                            <param id="0" name="Variable">racer4</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849822353243960">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="629940894243336" type="beaconCar2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="280967737943008" type="System">
+                            <param id="0" name="Variable">racer5</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="819765805815405">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="385100548659870" type="beaconCar2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="441788775045857" type="System">
+                            <param id="0" name="Variable">racer6</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="279119909746137">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="278638987141906" type="invisVehicle3">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="463063245901371" type="beaconCar3" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="959496960239280" type="hitBox3" />
+                <condition id="-7" name="Compare instance variable" sid="291100216074798" type="invisVehicle3">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">random(0,1)</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="788382972793205" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="282333316208203" type="hitBox3">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="445886226414233" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="980638683589911" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="239309245486069" type="hitBox3">
+                    <param id="0" name="Object">animExplosion</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="558384550189486">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="314245241914381" type="beaconCar3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="195388247666375" type="System">
+                            <param id="0" name="Variable">racer7</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="852263623050888">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="888602353227448" type="beaconCar3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="329053981933779" type="System">
+                            <param id="0" name="Variable">racer8</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="894213826677770">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="110478373839741" type="beaconCar3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="939485482663628" type="System">
+                            <param id="0" name="Variable">racer9</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="871030960703486">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="395172152728852" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="364328166123517" type="hitBox1" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="799838471378298" type="beaconCar1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Sine2" id="5" name="Set cycle position" sid="468302486826680" type="beaconCar1">
+                    <param id="0" name="Cycle position">0.75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="592321308303317">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="270902362641128" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="807871710431409" type="hitBox2" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="737016394021291" type="beaconCar2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Sine2" id="5" name="Set cycle position" sid="503770437934479" type="beaconCar2">
+                    <param id="0" name="Cycle position">0.75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="636839555871413">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="708214895375547" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="337581221567360" type="hitBox3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="427799234992538" type="beaconCar3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Sine2" id="5" name="Set cycle position" sid="370645516531771" type="beaconCar3">
+                    <param id="0" name="Cycle position">0.75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="954493862105436">
+            <conditions>
+                <condition id="-18" name="On created" sid="654457850385105" type="animExplosion" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="559383213936769" type="animExplosion">
+                    <param id="0" name="Angle">invisPlatform.Angle</param>
+                </action>
+                <action id="-7" name="Set size" sid="411645969290464" type="animExplosion">
+                    <param id="0" name="Width">300</param>
+                    <param id="1" name="Height">300</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="133654075428694">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="770796989611392" type="animExplosion" />
+                <condition id="-4" name="Trigger once while true" sid="898799802042091" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="316284485416179" type="animExplosion">
+                    <param id="0" name="Object">particlesDebris</param>
+                    <param id="1" name="Layer">&quot;animations&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="506222747491750" type="particlesDebris">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

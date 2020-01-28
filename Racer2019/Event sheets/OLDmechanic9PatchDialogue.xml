@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OLDmechanic9PatchDialogue</name>
+    <events>
+        <event-block sid="661926440721786">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="408313994899949" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="359108477374965" type="dialogSpike">
+                    <param id="0" name="Width">distance(Self.X,Self.Y,dialogBubbleText.X,dialogBubbleText.Y)</param>
+                </action>
+                <action id="3" name="Set font size" sid="250270690968532" type="dialogText">
+                    <param id="0" name="Size (pt)">24/Zoom</param>
+                </action>
+                <action id="-3" name="Set position" sid="550376905822244" type="dialogBubbleText">
+                    <param id="0" name="X">dialogText.x</param>
+                    <param id="1" name="Y">dialogText.Y</param>
+                </action>
+                <action behavior="Fade" id="3" name="Set wait time" sid="490616439283906" type="dialogBubbleText">
+                    <param id="0" name="Wait time">dialogText.Height/(Zoom*100)</param>
+                </action>
+                <action id="-3" name="Set position" sid="598302137350182" type="dialogName">
+                    <param id="0" name="X">dialogBubbleText.BBoxLeft+(self.Width*0.25)</param>
+                    <param id="1" name="Y">dialogBubbleText.BBoxTop</param>
+                </action>
+                <action id="-3" name="Set position" sid="162707465258269" type="dialogBubbleName">
+                    <param id="0" name="X">dialogName.x</param>
+                    <param id="1" name="Y">dialogName.Y</param>
+                </action>
+                <action id="-7" name="Set size" sid="419111338281749" type="dialogBubbleName">
+                    <param id="0" name="Width">dialogName.textwidth+(16*Zoom)</param>
+                    <param id="1" name="Height">dialogName.textheight</param>
+                </action>
+                <action id="-3" name="Set position" sid="675172585403705" type="dialogText">
+                    <param id="0" name="X">invisAxisZeroX.X</param>
+                    <param id="1" name="Y">invisAxisZeroY.Y-(invisAxisZeroX.Height/4)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="177269889505863">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="405818598068490" type="dialogSpike">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="463566587085614" type="visChassis">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">dialogSpike.size</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="755381094243047" type="visChassis" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="827457367891986" type="dialogSpike">
+                            <param id="0" name="Object">visChassis</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="124449123729044">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="127636838791809" type="dialogSpike">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="206326592936898" type="visChassis">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">dialogSpike.size</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="489463289393769" type="visChassis" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="539870521444571" type="dialogSpike">
+                            <param id="0" name="Object">visChassis</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="741368001782292">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="458906983384232" type="dialogSpike">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="565560451792688" type="visChassis">
+                            <param id="0" name="Instance variable">size</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">dialogSpike.size</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="962462061831646" type="visChassis" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="315495641721112" type="dialogSpike">
+                            <param id="0" name="Object">visChassis</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="582275560082112">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="774835046229114" type="System">
+                    <param id="0" name="Interval (seconds)">7</param>
+                </condition>
+                <condition id="-16" name="Pick random instance" sid="441847049025349" type="System">
+                    <param id="0" name="Object">visChassis</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="282893876315005" type="visChassis" />
+                <condition id="-3" name="Is on-screen" sid="184462021868156" type="visChassis" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="365055572308543" type="dialogSpike">
+                    <param id="0" name="Instance variable">size</param>
+                    <param id="1" name="Value">visChassis.size</param>
+                </action>
+                <action id="-10" name="Set value" sid="631353933525267" type="dialogSpike">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Value">visChassis.character</param>
+                </action>
+                <action id="-10" name="Set value" sid="647030204061416" type="visChassis">
+                    <param id="0" name="Instance variable">dialogueType</param>
+                    <param id="1" name="Value">choose(0,1,2,3)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="511654380734305">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="218499223897071" type="dialogText">
+                            <param id="0" name="Text">visChassis.dialogue</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="647527421531296" type="System">
+                            <param id="0" name="Seconds">0.05</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="585511484813141" type="dialogBubbleText" />
+                        <action id="-3" name="Set position" sid="746782898229475" type="dialogName">
+                            <param id="0" name="X">dialogBubbleText.BBoxLeft-(dialogText.Width*0.1)</param>
+                            <param id="1" name="Y">dialogBubbleText.BBoxTop-(dialogText.Width*0.1)</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="557203138732715" type="dialogBubbleText" />
+                        <action id="-25" name="Move to bottom" sid="136114079133918" type="dialogSpike" />
+                        <action id="-16" name="Wait" sid="256689804924514" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="857293171763165" type="dialogName">
+                            <param id="0" name="Text">&quot;Character &quot;&amp;dialogSpike.character</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="127815071856906">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="838695109303299" type="dialogBubbleText" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="693492933056651" type="dialogText">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="260629014241187" type="dialogBubbleName">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="628533860171515" type="dialogName">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="785160429074883" type="dialogSpike">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="736579173094239">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="565693817320160" type="dialogBubbleText">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="557638730093890" type="dialogText">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="621067387304090" type="dialogBubbleName">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="145382822737077" type="dialogName">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="613826663481919" type="dialogSpike">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="962529938465461">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="401026633892340" type="dialogBubbleText">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="227803826930937" type="dialogName">
+                    <param id="0" name="Size (pt)">int(12/Zoom)</param>
+                </action>
+                <action id="-7" name="Set size" sid="419294980226888" type="dialogText">
+                    <param id="0" name="Width">int(256/Zoom)</param>
+                    <param id="1" name="Height">int(512/Zoom)</param>
+                </action>
+                <action id="-7" name="Set size" sid="432248075977577" type="dialogBubbleText">
+                    <param id="0" name="Width">int((dialogText.textwidth*1.25))</param>
+                    <param id="1" name="Height">int((dialogText.textheight*1.25))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="485542051729513">
+            <conditions>
+                <condition id="-18" name="On created" sid="265856688694023" type="dialogSpike" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="534522445554042" type="dialogSpike">
+                    <param id="0" name="Target">dialogBubbleText</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

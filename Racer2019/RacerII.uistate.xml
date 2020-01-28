@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <event-sheet order="1">mechanicCamera</event-sheet>
+        <event-sheet order="2">debug</event-sheet>
+        <event-sheet order="3">debugInvis</event-sheet>
+        <event-sheet order="4">game</event-sheet>
+        <event-sheet order="5">setupTerrain</event-sheet>
+        <event-sheet order="6">mechanicSwapping</event-sheet>
+        <event-sheet order="7">mechanicCrash</event-sheet>
+        <event-sheet order="8">setupVariablesCharacter</event-sheet>
+        <event-sheet active="1" order="9">OLDmechanicZoom</event-sheet>
+        <event-sheet order="10">setupVehicle1</event-sheet>
+        <event-sheet order="11">mechanicPlace</event-sheet>
+        <event-sheet order="12">setupWorld</event-sheet>
+        <event-sheet order="13">setupVehicle2</event-sheet>
+        <event-sheet order="14">setupVehicle3</event-sheet>
+        <event-sheet order="15">setupVehicle</event-sheet>
+        <event-sheet order="16">setupVehicleHitbox</event-sheet>
+        <event-sheet order="17">mechanicAxis</event-sheet>
+        <event-sheet order="18">momentStart</event-sheet>
+        <event-sheet order="19">setupVariablesVehicle</event-sheet>
+        <event-sheet order="20">OLDmechanic9PatchDialogue</event-sheet>
+        <event-sheet order="21">debugReload</event-sheet>
+        <event-sheet order="22">OLDsetupDialogueCharacter</event-sheet>
+        <event-sheet order="23">mechanicLimbo</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="wheels1" />
+        <family expanded="0" name="ground" />
+        <family expanded="0" name="invisVehicle1" />
+        <family expanded="0" name="partsVehicle" />
+        <family expanded="0" name="terrain" />
+        <family expanded="0" name="platform" />
+        <family expanded="0" name="invisVehicle2" />
+        <family expanded="0" name="wheels2" />
+        <family expanded="0" name="invisVehicle3" />
+        <family expanded="0" name="wheels3" />
+        <family expanded="0" name="particles" />
+        <family expanded="0" name="beaconsVehicle" />
+        <family expanded="0" name="hitboxVehicle" />
+        <family expanded="0" name="debugTextStats" />
+        <family expanded="0" name="debugTextAll" />
+        <family expanded="0" name="invisPlace" />
+        <family expanded="0" name="uiPortraits" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/bd/" />
+        <folder expanded="1" path="animation-folder/envFgEarth/" />
+        <folder expanded="1" path="animation-folder/envGroundSpawn/" />
+        <folder expanded="1" path="animation-folder/envGroundBeacon/" />
+        <folder expanded="1" path="animation-folder/wheelFront1/" />
+        <folder expanded="1" path="animation-folder/wheelRear1/" />
+        <folder expanded="1" path="animation-folder/invisAxle1/" />
+        <folder expanded="1" path="animation-folder/invisFrame1/" />
+        <folder expanded="1" path="animation-folder/visWheel/" />
+        <folder expanded="1" path="animation-folder/envBgObject/" />
+        <folder expanded="1" path="animation-folder/visAxle/" />
+        <folder expanded="1" path="animation-folder/visChassis/" />
+        <folder expanded="1" path="animation-folder/envFgTerrain/" />
+        <folder expanded="1" path="animation-folder/beaconCar1/" />
+        <folder expanded="1" path="animation-folder/invisAxle2/" />
+        <folder expanded="1" path="animation-folder/invisFrame2/" />
+        <folder expanded="1" path="animation-folder/beaconCar2/" />
+        <folder expanded="1" path="animation-folder/wheelFront2/" />
+        <folder expanded="1" path="animation-folder/wheelRear2/" />
+        <folder expanded="1" path="animation-folder/beaconCar3/" />
+        <folder expanded="1" path="animation-folder/invisAxle3/" />
+        <folder expanded="1" path="animation-folder/invisFrame3/" />
+        <folder expanded="1" path="animation-folder/wheelFront3/" />
+        <folder expanded="1" path="animation-folder/wheelRear3/" />
+        <folder expanded="1" path="animation-folder/gloom/" />
+        <folder expanded="1" path="animation-folder/beaconCamera/" />
+        <folder expanded="1" path="animation-folder/uiPortraits1/" />
+        <folder expanded="1" path="animation-folder/invisStart01/" />
+        <folder expanded="1" path="animation-folder/momentStart/" />
+        <folder expanded="1" path="animation-folder/invisPlatform/" />
+        <folder expanded="1" path="animation-folder/hitBox1/" />
+        <folder expanded="1" path="animation-folder/bumper1Front/" />
+        <folder expanded="1" path="animation-folder/bumper1Rear/" />
+        <folder expanded="1" path="animation-folder/bumper2Front/" />
+        <folder expanded="1" path="animation-folder/bumper3Front/" />
+        <folder expanded="1" path="animation-folder/bumper2Rear/" />
+        <folder expanded="1" path="animation-folder/bumper3Rear/" />
+        <folder expanded="1" path="animation-folder/hitBox2/" />
+        <folder expanded="1" path="animation-folder/hitBox3/" />
+        <folder expanded="1" path="animation-folder/uiPortraitsWinLose/" />
+        <folder expanded="1" path="animation-folder/beaconCameraLazy/" />
+        <folder expanded="1" path="animation-folder/invisAxisZeroY/" />
+        <folder expanded="1" path="animation-folder/invisAxisZeroX/" />
+        <folder expanded="1" path="animation-folder/cameraInvis/" />
+        <folder expanded="1" path="animation-folder/cameraSprite/" />
+        <folder expanded="1" path="animation-folder/cameraChassis/" />
+        <folder expanded="1" path="animation-folder/dialogSpike/" />
+        <folder expanded="1" path="animation-folder/debugReset/" />
+        <folder expanded="1" path="animation-folder/animExplosion/" />
+        <folder expanded="1" path="animation-folder/invisPlaceGold/" />
+        <folder expanded="1" path="animation-folder/invisPlaceSilver/" />
+        <folder expanded="1" path="animation-folder/invisPlaceBronze/" />
+        <folder expanded="1" path="animation-folder/invisCharacter1/" />
+        <folder expanded="1" path="animation-folder/uiPortraits2/" />
+        <folder expanded="1" path="animation-folder/uiPortraits3/" />
+        <folder expanded="1" path="animation-folder/uiPortraits4/" />
+        <folder expanded="1" path="animation-folder/uiPortraits5/" />
+        <folder expanded="1" path="animation-folder/uiPortraits6/" />
+        <folder expanded="1" path="animation-folder/uiPortraits7/" />
+        <folder expanded="1" path="animation-folder/uiPortraits8/" />
+        <folder expanded="1" path="animation-folder/uiPortraits9/" />
+    </folders-expanded>
+</c2uistate>

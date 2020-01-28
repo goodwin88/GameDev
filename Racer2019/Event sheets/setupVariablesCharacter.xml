@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupVariablesCharacter</name>
+    <events>
+        <variable constant="0" name="range" sid="337964874984498" static="0" type="number">0</variable>
+        <variable constant="0" name="deadOpinion" sid="876572067231211" static="0" type="number">1</variable>
+        <variable constant="0" name="aggressive" sid="996040782589900" static="0" type="number">0.8</variable>
+        <variable constant="0" name="moderate" sid="766192636795866" static="0" type="number">0.5</variable>
+        <variable constant="0" name="defensive" sid="190906984150754" static="0" type="number">0.2</variable>
+        <variable constant="0" name="veteran" sid="305820730395479" static="0" type="number">59</variable>
+        <variable constant="0" name="mature" sid="156530815033768" static="0" type="number">31</variable>
+        <variable constant="0" name="novice" sid="885711052792090" static="0" type="number">19</variable>
+        <variable constant="0" name="deadSkill" sid="115468997415794" static="0" type="number">5</variable>
+        <event-block sid="296156435982900">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="294090906686024" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="723896604600383" type="System">
+                    <param id="0" name="Variable">range</param>
+                    <param id="1" name="Value">scrollx*1.4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="387732212132023">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="133157520850008" type="System">
+                    <param id="0" name="First value">beaconsVehicle.Sine2.CyclePosition</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="479374809769763" type="System">
+                    <param id="0" name="First value">beaconsVehicle.Sine2.CyclePosition</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="1" name="Stop flashing" sid="812713433274518" type="debugTextStats" />
+            </actions>
+            <sub-events>
+                <event-block sid="280424681552249">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="586236771699610" type="System">
+                            <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="527944404247607">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="957078206873397" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="222823282901678" type="beaconCar1">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">aggressive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="935085070554403" type="beaconCar1">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">novice</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="158633075270034" type="beaconCar1">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="894154278871141" type="beaconCar1">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="708793828222289">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="948575253597393" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="536383178072115" type="beaconCar1">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">moderate*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="709402926283621" type="beaconCar1">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">mature</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="897880996982814" type="beaconCar1">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="101883135732562" type="beaconCar1">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="443686773361149">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="190589874359395" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="967381816207422" type="beaconCar1">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">defensive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="640623153530592" type="beaconCar1">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">veteran</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="935854984350090" type="beaconCar1">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="628737786831091" type="beaconCar1">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="147371520021960">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="473363402317724" type="System">
+                            <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="255852218240790">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="297220437206160" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="174689468402166" type="beaconCar2">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">moderate*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="902310787497735" type="beaconCar2">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">veteran</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="661220192189216" type="beaconCar2">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="231846535737422" type="beaconCar2">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="105773328082685">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="631789659898688" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="370980353310755" type="beaconCar2">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">defensive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="128388082190865" type="beaconCar2">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">novice</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="921547457738765" type="beaconCar2">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="177822753552330" type="beaconCar2">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626303586825838">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="874108546630967" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="653632223034565" type="beaconCar2">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">aggressive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="634201501249462" type="beaconCar2">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">mature</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="527340058811678" type="beaconCar2">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="811554419993461" type="beaconCar2">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="928011336129903">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="989634201829279" type="System">
+                            <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="568204630304481">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="163532595352335" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="107142190807073" type="beaconCar3">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">defensive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="188908032936971" type="beaconCar3">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">mature</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="366629638625286" type="beaconCar3">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="594385024531406" type="beaconCar3">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="955287194869610">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="326929174698866" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="490575515245756" type="beaconCar3">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">aggressive*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="937158195013208" type="beaconCar3">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">veteran</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="250536862498022" type="beaconCar3">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="239348029230778" type="beaconCar3">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="497180187496624">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="495316808391763" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="860111358566363" type="beaconCar3">
+                                    <param id="0" name="Instance variable">opinion</param>
+                                    <param id="1" name="Value">moderate*range</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="560518759896602" type="beaconCar3">
+                                    <param id="0" name="Instance variable">skill</param>
+                                    <param id="1" name="Value">novice</param>
+                                </action>
+                                <action behavior="Sine2" id="2" name="Set magnitude" sid="461075930789795" type="beaconCar3">
+                                    <param id="0" name="Magnitude">self.opinion</param>
+                                </action>
+                                <action behavior="Sine2" id="1" name="Set period" sid="748477208531110" type="beaconCar3">
+                                    <param id="0" name="Period">self.skill</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="186093464407510">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="870962240656966" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="117162743925860" type="beaconCar1">
+                    <param id="0" name="Instance variable">opinion</param>
+                    <param id="1" name="Value">deadOpinion*range</param>
+                </action>
+                <action id="-10" name="Set value" sid="948153660347906" type="beaconCar1">
+                    <param id="0" name="Instance variable">skill</param>
+                    <param id="1" name="Value">deadSkill</param>
+                </action>
+                <action behavior="Sine2" id="2" name="Set magnitude" sid="896188471031099" type="beaconCar1">
+                    <param id="0" name="Magnitude">self.opinion</param>
+                </action>
+                <action behavior="Sine2" id="1" name="Set period" sid="875544418689116" type="beaconCar1">
+                    <param id="0" name="Period">self.skill</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="298537408077282">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="453466561382897" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="895288427117885" type="beaconCar2">
+                    <param id="0" name="Instance variable">opinion</param>
+                    <param id="1" name="Value">deadOpinion*range</param>
+                </action>
+                <action id="-10" name="Set value" sid="875114398685124" type="beaconCar2">
+                    <param id="0" name="Instance variable">skill</param>
+                    <param id="1" name="Value">deadSkill</param>
+                </action>
+                <action behavior="Sine2" id="2" name="Set magnitude" sid="156497126509815" type="beaconCar2">
+                    <param id="0" name="Magnitude">self.opinion</param>
+                </action>
+                <action behavior="Sine2" id="1" name="Set period" sid="975981849540921" type="beaconCar2">
+                    <param id="0" name="Period">self.skill</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="705490833746146">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="404783808011895" type="System">
+                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="269501551307714" type="beaconCar3">
+                    <param id="0" name="Instance variable">opinion</param>
+                    <param id="1" name="Value">deadOpinion*range</param>
+                </action>
+                <action id="-10" name="Set value" sid="463886966924747" type="beaconCar3">
+                    <param id="0" name="Instance variable">skill</param>
+                    <param id="1" name="Value">deadSkill</param>
+                </action>
+                <action behavior="Sine2" id="2" name="Set magnitude" sid="663531528256840" type="beaconCar3">
+                    <param id="0" name="Magnitude">self.opinion</param>
+                </action>
+                <action behavior="Sine2" id="1" name="Set period" sid="246840827949048" type="beaconCar3">
+                    <param id="0" name="Period">self.skill</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

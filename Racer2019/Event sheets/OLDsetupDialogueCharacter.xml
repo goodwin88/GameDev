@@ -1,0 +1,1870 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OLDsetupDialogueCharacter</name>
+    <events>
+        <event-block sid="417690851565802">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="798117997077114" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="847805421250032">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="371453622903551" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="718393752343438" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="749661893318369" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="857835460782281">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="729424467904442" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="726479319349865">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="440141222773924" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="136261352623820" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="662323664986522">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="888247607874643" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="599411841318710" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="632462072683988">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="776071969131173" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="670642604791157" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="871737371732208">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="665542912789400" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="199551231565288" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="902351644906115">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="446359435413810" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="224562642927127">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="545768534378877" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="583216327974546" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="331461769104159">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="917948702934226" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="364890681062117" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="580601846255722">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="824693727152535" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="185007386816174" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="282606458301821">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="842389831518368" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="387698151138067">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="824486604813122" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="982454108292523" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="303098271591485">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="798869573102696" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="473023941812422" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735910505279375">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="798833708965342" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="533318954062952" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="284280036905204">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="730296144581763" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="534051171254189">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="240264383490299" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="658033091346080" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="288961289853737" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="756413950336953">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="441212578987299" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="240024933103929">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="380821355097266" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="476842104629613" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="769524232411859">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="187527241741089" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="919171012730203" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="274947784765329">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="211340932691970" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="296239112882317" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="468309078816782">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="904791808099022" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="749816707922060" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="950053418940601">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="147911172252550" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="187597684878485">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="324675081075141" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="738787074701371" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="413534188647563">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="423374937974210" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="224943487230203" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="851740052081655">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="386902074509369" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="264514423414746" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="991173442059602">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="196175270204831" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="535641167470010">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="397328254590321" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="261454823234097" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="927945355948086">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="676706588523668" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="401433091635080" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="560275412876857">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="207489541825447" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="124235046010956" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="763528670245250">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="388553349755428" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="224683676772003">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="508037120942376" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="865710196358806" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="898729178389767" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="321219419128153">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="247014663450737" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="286331074090133">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="379425274512426" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="857300431127839" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="550974010026003">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="821075338261970" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="336246776189840" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="852366119418599">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="109235680234427" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="228670057626352" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="956520711770457">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="654504931505030" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="501292785352764" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="862724474967040">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="454114282830594" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="136972568879352">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="295069133769362" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="474445212243669" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374606739631762">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="217568730248204" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="849084579011907" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="144626877837251">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="420370875328654" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="712728183365897" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="491996437840571">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="146525594709044" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="882666728790444">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="384787010773714" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="604792502783900" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="298249466068038">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="409692876623403" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="206055076964318" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="324363951026105">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="789057971002004" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="537513191806274" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="852116797593233">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="122098637891841" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="549332874984163">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="858966098695463" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="378614370613585" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="467902879218437" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="632448400243967">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="397979402869318" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="471864501626516">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="987258882613398" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="879450020072659" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="809137452008793">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="443615941823934" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="196142863575004" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="578425749058371">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="134803727047417" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="771995121932795" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="921668370458644">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="852575755306795" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="883377911260756" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="190013263186968">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="374505699972858" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="481325971303405">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="979586157547978" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="240855492394975" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="246397025337275">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="949273957053218" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="452966401533894" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="710287116975624">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="253181734477795" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="393723604545349" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="716235603891860">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="969182590573330" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="754968373503834">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="908340293146253" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="921631500345823" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="948353315436734">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="249638980429244" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="651809429850578" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="508627593538310">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="914873245487606" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="799368714068591" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="448500396604071">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="343873547658013" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="342244471473971">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="155142135140745" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="513074443522103" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="426849167720651" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="291164395018090">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="847822912342386" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="118914526189080">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="113932508197630" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="925447430867695" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="378633313740247">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="189168544923201" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="970255398316505" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="402224632608703">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="241500867147074" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="574710628401038" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="401424877230139">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="103145483447466" type="invisAxle2">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="445525165388314" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="736550114425118">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="646216828460296" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="750461428753923">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="827478525016073" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="724604848715426" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="919090287490028">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="124230729809142" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="162640419293298" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="287384125182698">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="875848966550492" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="804193325648932" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="390475815477858">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="171812330573856" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="496776650605740">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="859266929700601" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="521863297502857" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="427029680159707">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="593736722453097" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="350084121657967" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="152856316548018">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="826453089984189" type="beaconCar2">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="682935114277237" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="713482287812580">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="368924792525800" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="808007961740896">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="617167256723231" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="593349704163338" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="565203101938603" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="719261678740976">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="941566652340203" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="345281648827416">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="380751871422193" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="857132267056518" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="696955668229802">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="366623369152428" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="522033190355066" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="830206583425215">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="155575736822095" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="109107118460934" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="355866346110296">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="538311485861646" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="237411627715080" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="362664008651395">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="283662397438744" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="859638330951586">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="541840332692689" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="101862222949259" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="651597607725868">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="451858640929558" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="774656429051840" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="675671857150960">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="226293793832031" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="204972182039026" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="177849998127267">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="969263399367797" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="352585954943006">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="740077878362453" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="787351831130135" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="362305739670379">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="263120153379808" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="363159189025365" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="222836285983532">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="256528643815795" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="686709077536167" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="398110962567401">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="949831157559187" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="167080317568353">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="941054386259674" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="220138503403569" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="859283991752177" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="432901778795021">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="185688510544067" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="177337195782572">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="744983689952261" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="217401141692882" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="753974002889462">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="353533962180185" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="836547460377213" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="951437673114536">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="904177877866811" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="685031695608601" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="486367429880105">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="646661469003742" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="532805048193083" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="853642494272750">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="979721673568490" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="883931408718056">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="475121158575387" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="631878967077756" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="195757844208155">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="667958306606936" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="537065131115988" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="436358911003382">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="548470130636627" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="656587794707975" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="903529492862429">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="777180580168721" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="540572234955049">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="381092249096058" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="579006985012765" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="731819896074431">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="697641803915804" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="674590266982910" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="812908803990486">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="401866050149218" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="202800150655583" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="787287770130592">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="664111444666729" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="923112972745447">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="597893414751843" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="531571449734495" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="134780649612531" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="819987780320623">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="446264374855437" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="369007793443346">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="427793651711525" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="660146440286689" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="611755991751933">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="904154400230572" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="529114706904793" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="408056617550594">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="552493750094681" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="693362716642626" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="465527526468308">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="244282267068257" type="invisAxle3">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="946666432666924" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="299455572081123">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="270166716289298" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="610828983156402">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="388267880490619" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="197830619900369" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="583364290135511">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="452132288656703" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="941639875274377" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="768806124548349">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="493949225825740" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="861323353810918" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="870215734069085">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="216237042324731" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="933094796949865">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="322715116657606" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="548049873686443" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="888943599418558">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="669868165908760" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="720243409791185" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="788606683750838">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="797061416194818" type="beaconCar3">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="720013210970873" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="399395124288819">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="524438689268373" type="visChassis">
+                    <param id="0" name="Instance variable">character</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Comment on Motive</comment>
+                <event-block sid="742006097405658">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="123789769574879" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="443177945016827" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="933399973132813" type="dialogText">
+                            <param id="0" name="Text">choose(&quot;My first motive!&quot;,&quot;My second motive!&quot;,&quot;My third motive!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Comment on chanceCrash</comment>
+                <event-block sid="897930126910885">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="178857613277608" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="985823857972605">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="999702835421961" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="381603662208719" type="dialogText">
+                                    <param id="0" name="Text">&quot;I&apos;m the last one in my size!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="879742009387361">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="475485196671514" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="100501110994519" type="dialogText">
+                                    <param id="0" name="Text">&quot;I am suited to the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="388440941725989">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="675556009280624" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="507083045384995" type="dialogText">
+                                    <param id="0" name="Text">&quot;The terrain is 50/50 risky for me!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="925565282017285">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="836348038915675" type="invisAxle1">
+                                    <param id="0" name="Instance variable">chanceCrash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="143693746157156" type="dialogText">
+                                    <param id="0" name="Text">&quot;I don&apos;t match the terrain!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Location</comment>
+                <event-block sid="104118194386992">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="939785186173274" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="602584230959659">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="469386022546297" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="728805283590190" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Island!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="151382453763559">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="716804498567742" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="188074494556627" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on City!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="940364044486395">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="931434115937220" type="System">
+                                    <param id="0" name="First value">World</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="927468713674119" type="dialogText">
+                                    <param id="0" name="Text">&quot;Comment on Lair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Comment on Place</comment>
+                <event-block sid="617565309268026">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="921344576053498" type="visChassis">
+                            <param id="0" name="Instance variable">dialogueType</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="907949404511901">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="871528832866210" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="801732161417964" type="dialogText">
+                                    <param id="0" name="Text">&quot;Yay!I&apos;m in First Place!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="226644858439733">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="825478694346276" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="431598045852943" type="dialogText">
+                                    <param id="0" name="Text">&quot;Second Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="834791750139635">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="720454537451522" type="beaconCar1">
+                                    <param id="0" name="Instance variable">place</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="765612689177213" type="dialogText">
+                                    <param id="0" name="Text">&quot;Third Place comment!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

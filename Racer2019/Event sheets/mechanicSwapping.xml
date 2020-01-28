@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicSwapping</name>
+    <events>
+        <comment>Large Vehicle</comment>
+        <event-block sid="520641721913664">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="314113301665258" type="hitBox1">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="217343335899420" type="hitBox1" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="782721683539097">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="884718323183332" type="partsVehicle">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">beaconCar1.character</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="163266863734564" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="151206086399465" type="beaconCar1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Value">choose(1,2,3)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="905169532568758">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="597890162832259" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="774376121451436" type="System">
+                                    <param id="0" name="First value">racer1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="653299554901016" type="invisVehicle1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="837162258836519" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="756688491185776" type="beaconCar1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="927617113605891" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="403465579188250">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="230099642731728" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="414356518392946" type="System">
+                                    <param id="0" name="First value">racer2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="223150966463026" type="invisVehicle1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="171545622385939" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="536210611683425" type="beaconCar1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="396368053708019" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="135678177372260">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="387135475148685" type="beaconCar1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="328823668619753" type="System">
+                                    <param id="0" name="First value">racer3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="766066804435307" type="invisVehicle1">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="675521924034341" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar1.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="577389137295398" type="beaconCar1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="737329757094501" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle1&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Medium Vehicle</comment>
+        <event-block sid="169990959093750">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="177713305172846" type="hitBox2">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="942711612152654" type="hitBox2" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="998605193165955">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="475745536244909" type="partsVehicle">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">beaconCar2.character</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="996901801576295" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="942225235053054" type="beaconCar2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Value">choose(4,5,6)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="175211089092576">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="205820400635919" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="546370686241247" type="System">
+                                    <param id="0" name="First value">racer1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="736408053100049" type="invisVehicle2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="721741991084247" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="815440447205048" type="beaconCar2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="932771781710608" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="885596093125496">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="340634761523550" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="486672535076138" type="System">
+                                    <param id="0" name="First value">racer2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="581388245119298" type="invisVehicle2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="196667347111419" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="801829421482820" type="beaconCar2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="779796412765358" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="764429021203765">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="598287933701850" type="beaconCar2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="653794013215126" type="System">
+                                    <param id="0" name="First value">racer3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="207046401929347" type="invisVehicle2">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="722983209645543" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar2.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="467108824791230" type="beaconCar2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="814104023802311" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle2&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Small Vehicle</comment>
+        <event-block sid="283868453696795">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="437056511899252" type="hitBox3">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">beaconCamera.X</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="849682183214133" type="hitBox3" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="329036142801497">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="761474418198639" type="partsVehicle">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">beaconCar3.character</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="161826314950156" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="801213219997224" type="beaconCar3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Value">choose(7,8,9)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="562219809855216">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="703633680462255" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="598681155051928" type="System">
+                                    <param id="0" name="First value">racer1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="608388674598119" type="invisVehicle3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="310236057551441" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="908644910033775" type="beaconCar3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="424621052909509" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="292139485202768">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="452450776018803" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="399871688565412" type="System">
+                                    <param id="0" name="First value">racer2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="216491017458478" type="invisVehicle3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="370067050319562" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="410763413303785" type="beaconCar3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="834523852492790" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="465879389906935">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="870352875772970" type="beaconCar3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="575823977794424" type="System">
+                                    <param id="0" name="First value">racer3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="193703985887408" type="invisVehicle3">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="419834088773416" type="partsVehicle">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">beaconCar3.character</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="686711168140613" type="beaconCar3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="326360358250266" type="System">
+                                    <param id="0" name="Layer">&quot;Vehicle3&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

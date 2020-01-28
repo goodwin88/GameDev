@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicAxis</name>
+    <events>
+        <event-block sid="985559833738349">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="739788316106717" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="168681870640021" type="invisAxisZeroY">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-3" name="Set position" sid="642269110089435" type="invisAxisZeroX">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-7" name="Set size" sid="876965890589460" type="invisAxisZeroY">
+                    <param id="0" name="Width">OriginalWindowWidth/Zoom</param>
+                    <param id="1" name="Height">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="628123403387566" type="invisAxisZeroX">
+                    <param id="0" name="Width">1</param>
+                    <param id="1" name="Height">OriginalWindowHeight/zoom</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setupVariablesVehicle</name>
+    <events>
+        <event-block sid="170139488489969">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="116301399687302" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="452895247295077">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="311817355290407" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="308870122434038" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="780012468783906">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="774550919847759" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="485630206908957" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571343612398483">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="952077774680247" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="902243521673333" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="716317496070396">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="317704699150685" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="659817448524628" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="960162308602888">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="728151066136519" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="955143672729498" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="344950770072275">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="394977777370720" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="279500048310024" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="607410838941739">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="938846474694186" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="746095852446641" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="394496655018094">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="104626732053968" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="502230552613287" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="286917320749505">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="300105253314336" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="265181262163912" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="792022919581227">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="854495931576646" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="375601407452689">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="674698539499692" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="296761613986124" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="466634914197873">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="582021927352908" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="981649258366395" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="253432795177292">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="964077432417504" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="165722214599075" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="436656109116529">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="922744992534311" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="773240105518705" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="644566950875309">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="127250900007376" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="615734900437280" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412822203645428">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="812640817463874" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="264373722728916" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="844568730983036">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="182718096442900" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="739020555755861" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="667656008240432">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="239088493140114" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="398186939291826" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="866334930204599">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="239813315753248" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="133177259479930" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="371034104718781">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="189443937919926" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="572488499479720">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="430302605915693" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="797227141606046" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="261907483960553">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="401905730437810" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="114314114884254" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943947823605754">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="948980226894243" type="invisVehicle1">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="944694114816334" type="invisVehicle1">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="969837349499847">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="633273531682734" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="368282087218438" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="765735516222602">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="912151945572397" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="230925121776119" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="788719407793739">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="627692052703990" type="invisVehicle2">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="607212321607174" type="invisVehicle2">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="898622267670157">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="858399342062919" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="889404775357981" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.75</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="347889781093000">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="931645387182117" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="654924680813040" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="962942610078183">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="370884726239143" type="invisVehicle3">
+                            <param id="0" name="Instance variable">character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="555890558034189" type="invisVehicle3">
+                            <param id="0" name="Instance variable">chanceCrash</param>
+                            <param id="1" name="Value">0.25</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="878436353845738">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="744731278877396" type="invisVehicle1">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="174095854125530" type="invisVehicle1">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="685336769621445">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="369353296110511" type="invisVehicle2">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="969658395876158" type="invisVehicle2">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164589880829120">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="712713626223707" type="invisVehicle3">
+                    <param id="0" name="Instance variable">last</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="207088262901545" type="invisVehicle3">
+                    <param id="0" name="Instance variable">chanceCrash</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

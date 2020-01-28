@@ -1,0 +1,2088 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>RacerII</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>26900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_boundary" version="1">Boundary</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_light" version="1">Light</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_pin2imgpt" version="1">Pin to image point</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bd" sid="316839724626653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453923737186718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\sky03.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\sky01.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="envFgEarth" sid="182684801004782">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="302119626434196">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="319841371424786">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="942689470316125">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>envFgEarth</type>
+                <type>envFgTerrain</type>
+                <type>envBgObject</type>
+            </container>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187346245902582" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.12" y="1" />
+                            <point x="0.12" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.12" y="1" />
+                            <point x="0.12" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\groundFast.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.1" y="1" />
+                            <point x="0.1" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.12" y="1" />
+                            <point x="0.12" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="envGroundSpawn" sid="395863357267488">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisPlatform</type>
+                <type>envGroundSpawn</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629610965825281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="envGroundBeacon" sid="559028948895305">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684927103797294" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelFront1" sid="548289127561996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571744609945911" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.469231" y="0.0269231" />
+                            <point x="0.825" y="0.165385" />
+                            <point x="0.961538" y="0.519231" />
+                            <point x="0.8" y="0.844231" />
+                            <point x="0.488461" y="0.953846" />
+                            <point x="0.161538" y="0.821154" />
+                            <point x="0.0346154" y="0.496154" />
+                            <point x="0.163462" y="0.173077" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelRear1" sid="109965751437550">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176925230376805" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.488462" y="0.0384615" />
+                            <point x="0.838462" y="0.188462" />
+                            <point x="0.942308" y="0.5" />
+                            <point x="0.807692" y="0.836539" />
+                            <point x="0.488462" y="0.95" />
+                            <point x="0.15" y="0.813462" />
+                            <point x="0.0346154" y="0.507692" />
+                            <point x="0.165385" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="423825341350094">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="invisAxle1" sid="944881047242920">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="452251145944426">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invisFrame1</type>
+                <type>invisAxle1</type>
+                <type>hitBox1</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563067622016699" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0" y="0" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisFrame1" sid="738338750186882">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame1</type>
+                <type>invisAxle1</type>
+                <type>hitBox1</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923513582256175" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="visWheel" sid="351268514859159">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="155268371165095">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299067410505689" speed="5">
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.506024" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\wheel02.png">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.506024">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\wheel01.png">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.506024">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\wheel03.png">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.506024">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.152871" y="0.105393" />
+                            <point x="0.492615" y="0" />
+                            <point x="0.847129" y="0.105393" />
+                            <point x="1" y="0.476788" />
+                            <point x="0.8619" y="0.879131" />
+                            <point x="0.492615" y="1" />
+                            <point x="0.1381" y="0.879131" />
+                            <point x="0" y="0.476788" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="envBgObject" sid="548031459080815">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="343351882512088">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>envFgEarth</type>
+                <type>envFgTerrain</type>
+                <type>envBgObject</type>
+            </container>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275684297876476" speed="5">
+                    <frame duration="1" hotspotX="0.501182" hotspotY="0.954545" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\bush01.png">
+                        <collision-poly>
+                            <point x="0.200946" y="0.454545" />
+                            <point x="0.501182" y="0.329545" />
+                            <point x="0.825059" y="0.340909" />
+                            <point x="0.791962" y="0.102273" />
+                            <point x="0.501182" y="0.988636" />
+                            <point x="0.640662" y="0.102273" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501182" hotspotY="0.954545">
+                        <collision-poly>
+                            <point x="0.200946" y="0.454545" />
+                            <point x="0.501182" y="0.329545" />
+                            <point x="0.825059" y="0.340909" />
+                            <point x="0.791962" y="0.102273" />
+                            <point x="0.501182" y="0.988636" />
+                            <point x="0.640662" y="0.102273" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.95" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\bush02.png">
+                        <collision-poly>
+                            <point x="0.192177" y="0" />
+                            <point x="0.666435" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.666435" y="1" />
+                            <point x="0.88676" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501333" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\rail02.png">
+                        <collision-poly>
+                            <point x="0.23643" y="0" />
+                            <point x="0.8845" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.8845" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501333" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\rail01.png">
+                        <collision-poly>
+                            <point x="0.23643" y="0" />
+                            <point x="0.8845" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.8845" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501333" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.23643" y="0" />
+                            <point x="0.8845" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.8845" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="visAxle" sid="830587117369682">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198194389566355" speed="5">
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\axle01.png">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0909091" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.899676" y="1" />
+                            <point x="0.522331" y="1" />
+                            <point x="0.466786" y="0.19116" />
+                            <point x="0.277988" y="0.19116" />
+                            <point x="0.206851" y="1" />
+                            <point x="0.0854794" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0909091" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.899676" y="1" />
+                            <point x="0.522331" y="1" />
+                            <point x="0.466786" y="0.19116" />
+                            <point x="0.277988" y="0.19116" />
+                            <point x="0.206851" y="1" />
+                            <point x="0.0854794" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0930233" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.895566" y="1" />
+                            <point x="0.53378" y="1" />
+                            <point x="0.480525" y="0.463748" />
+                            <point x="0.299512" y="0.463748" />
+                            <point x="0.231308" y="1" />
+                            <point x="0.114941" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.180258" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\axle03.png">
+                        <image-point name="Imagepoint 1" x="0.502146" y="0.0952381" />
+                        <image-point name="Imagepoint 2" x="0.83691" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.89672" y="1" />
+                            <point x="0.524065" y="1" />
+                            <point x="0.46921" y="0.347794" />
+                            <point x="0.282759" y="0.347794" />
+                            <point x="0.212506" y="1" />
+                            <point x="0.0926431" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0909091" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.899676" y="1" />
+                            <point x="0.522331" y="1" />
+                            <point x="0.466786" y="0.19116" />
+                            <point x="0.277988" y="0.19116" />
+                            <point x="0.206851" y="1" />
+                            <point x="0.0854794" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0930233" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.895566" y="1" />
+                            <point x="0.53378" y="1" />
+                            <point x="0.480525" y="0.463748" />
+                            <point x="0.299512" y="0.463748" />
+                            <point x="0.231308" y="1" />
+                            <point x="0.114941" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.180258" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502146" y="0.0952381" />
+                        <image-point name="Imagepoint 2" x="0.83691" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.89672" y="1" />
+                            <point x="0.524065" y="1" />
+                            <point x="0.46921" y="0.347794" />
+                            <point x="0.282759" y="0.347794" />
+                            <point x="0.212506" y="1" />
+                            <point x="0.0926431" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0909091" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.899676" y="1" />
+                            <point x="0.522331" y="1" />
+                            <point x="0.466786" y="0.19116" />
+                            <point x="0.277988" y="0.19116" />
+                            <point x="0.206851" y="1" />
+                            <point x="0.0854794" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.178723" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0.0930233" />
+                        <image-point name="Imagepoint 2" x="0.838298" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.895566" y="1" />
+                            <point x="0.53378" y="1" />
+                            <point x="0.480525" y="0.463748" />
+                            <point x="0.299512" y="0.463748" />
+                            <point x="0.231308" y="1" />
+                            <point x="0.114941" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.180258" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.502146" y="0.0952381" />
+                        <image-point name="Imagepoint 2" x="0.83691" y="1" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.89672" y="1" />
+                            <point x="0.524065" y="1" />
+                            <point x="0.46921" y="0.347794" />
+                            <point x="0.282759" y="0.347794" />
+                            <point x="0.212506" y="1" />
+                            <point x="0.0926431" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="visChassis" sid="903234076007503">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="dialogue" sid="500567829449646" type="string" />
+                <instance-variable name="dialogueType" sid="744411137435756" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203391875081241" speed="5">
+                    <frame duration="1" hotspotX="0.489362" hotspotY="0.968085" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassis01.png">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0" />
+                        <image-point name="Imagepoint 2" x="0.591489" y="0.382979" />
+                        <collision-poly>
+                            <point x="0.653564" y="0" />
+                            <point x="0.763505" y="0.3101" />
+                            <point x="0.993858" y="0.666259" />
+                            <point x="1" y="0.988496" />
+                            <point x="0" y="0.988496" />
+                            <point x="0" y="0.0780443" />
+                            <point x="0.237431" y="0.25922" />
+                            <point x="0.389632" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489362" hotspotY="0.968085" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisLarge03.png">
+                        <image-point name="Imagepoint 1" x="0.502128" y="0" />
+                        <image-point name="Imagepoint 2" x="0.595745" y="0.382979" />
+                        <collision-poly>
+                            <point x="0.658219" y="0" />
+                            <point x="0.777717" y="0.151577" />
+                            <point x="1" y="0.61306" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.205918" y="0.0856504" />
+                            <point x="0.371347" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.48927" hotspotY="0.968085" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisLarge02.png">
+                        <image-point name="Imagepoint 1" x="0.502146" y="0" />
+                        <image-point name="Imagepoint 2" x="0.515021" y="0.521277" />
+                        <collision-poly>
+                            <point x="0.643375" y="0" />
+                            <point x="0.764932" y="0.242568" />
+                            <point x="1" y="0.704051" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.183275" y="0.176642" />
+                            <point x="0.351556" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.491379" hotspotY="0.967742" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisLarge01.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.646552" y="0.139785" />
+                        <collision-poly>
+                            <point x="0.640633" y="0" />
+                            <point x="0.769001" y="0" />
+                            <point x="1" y="0.515065" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.154752" y="0" />
+                            <point x="0.332463" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.973684" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisMedium03.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.818627" y="0.197368" />
+                        <collision-poly>
+                            <point x="0.658222" y="0" />
+                            <point x="0.831945" y="0" />
+                            <point x="1" y="0.861105" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.00066961" y="0" />
+                            <point x="0.241168" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.972973" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisMedium02.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.563725" y="0.189189" />
+                        <collision-poly>
+                            <point x="0.658222" y="0" />
+                            <point x="0.831945" y="0" />
+                            <point x="1" y="0.815511" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.00066961" y="0" />
+                            <point x="0.241168" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.487923" hotspotY="0.974026" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisMedium01.png">
+                        <image-point name="Imagepoint 1" x="0.502415" y="0" />
+                        <image-point name="Imagepoint 2" x="0.536232" y="0.220779" />
+                        <collision-poly>
+                            <point x="0.584717" y="0" />
+                            <point x="0.753442" y="0" />
+                            <point x="1" y="0.804476" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0.179665" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490323" hotspotY="0.972973" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisSmall03.png">
+                        <image-point name="Imagepoint 1" x="0.503226" y="0" />
+                        <image-point name="Imagepoint 2" x="0.309677" y="0.189189" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.932386" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.494017" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490323" hotspotY="0.972973" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisSmall02.png">
+                        <image-point name="Imagepoint 1" x="0.503226" y="0" />
+                        <image-point name="Imagepoint 2" x="0.245161" y="0.189189" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.58907" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.460719" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490323" hotspotY="0.973333" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\chassisSmall01.png">
+                        <image-point name="Imagepoint 1" x="0.503226" y="0" />
+                        <image-point name="Imagepoint 2" x="0.341935" y="0.266667" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0.0360573" />
+                            <point x="1" y="0.78687" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.535846" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="envFgTerrain" sid="688471393329497">
+            <plugin id="Sprite" />
+            <container>
+                <type>envFgEarth</type>
+                <type>envFgTerrain</type>
+                <type>envBgObject</type>
+            </container>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404883173548847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.96">
+                        <collision-poly>
+                            <point x="0.00515464" y="1" />
+                            <point x="0.252577" y="0.33" />
+                            <point x="0.451031" y="0" />
+                            <point x="0.755155" y="0.68" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.96">
+                        <collision-poly>
+                            <point x="0.00515464" y="1" />
+                            <point x="0.252577" y="0.33" />
+                            <point x="0.451031" y="0" />
+                            <point x="0.755155" y="0.68" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.96" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\terrain01.png">
+                        <collision-poly>
+                            <point x="0.00515464" y="1" />
+                            <point x="0.252577" y="0.33" />
+                            <point x="0.451031" y="0" />
+                            <point x="0.755155" y="0.68" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.96">
+                        <collision-poly>
+                            <point x="0.00515464" y="1" />
+                            <point x="0.252577" y="0.33" />
+                            <point x="0.451031" y="0" />
+                            <point x="0.755155" y="0.68" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beaconCar1" sid="853406093955079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392746822723671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisAxle2" sid="950757380623557">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout2" sid="815383967748436">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invisFrame2</type>
+                <type>invisAxle2</type>
+                <type>hitBox2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530863665903584" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0" y="0" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisFrame2" sid="642921691023609">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame2</type>
+                <type>invisAxle2</type>
+                <type>hitBox2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372092931379422" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beaconCar2" sid="516399425489903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131286207344230" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelFront2" sid="374782471899461">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368036224404764" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.469231" y="0.0269231" />
+                            <point x="0.825" y="0.165385" />
+                            <point x="0.961538" y="0.519231" />
+                            <point x="0.8" y="0.844231" />
+                            <point x="0.488461" y="0.953846" />
+                            <point x="0.161538" y="0.821154" />
+                            <point x="0.0346154" y="0.496154" />
+                            <point x="0.163462" y="0.173077" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelRear2" sid="766794172988090">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782478725022407" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.488462" y="0.0384615" />
+                            <point x="0.838462" y="0.188462" />
+                            <point x="0.942308" y="0.5" />
+                            <point x="0.807692" y="0.836539" />
+                            <point x="0.488462" y="0.95" />
+                            <point x="0.15" y="0.813462" />
+                            <point x="0.0346154" y="0.507692" />
+                            <point x="0.165385" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beaconCar3" sid="509548058759234">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604078423988360" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisAxle3" sid="876237079925840">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout2" sid="623961186275363">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invisFrame3</type>
+                <type>invisAxle3</type>
+                <type>hitBox3</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287692475510728" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0" y="0" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisFrame3" sid="637192404399597">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame3</type>
+                <type>invisAxle3</type>
+                <type>hitBox3</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479033621296847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelFront3" sid="904676315446269">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201637218437739" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.469231" y="0.0269231" />
+                            <point x="0.825" y="0.165385" />
+                            <point x="0.961538" y="0.519231" />
+                            <point x="0.8" y="0.844231" />
+                            <point x="0.488461" y="0.953846" />
+                            <point x="0.161538" y="0.821154" />
+                            <point x="0.0346154" y="0.496154" />
+                            <point x="0.163462" y="0.173077" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wheelRear3" sid="796542271746777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982656557996889" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.488462" y="0.0384615" />
+                            <point x="0.838462" y="0.188462" />
+                            <point x="0.942308" y="0.5" />
+                            <point x="0.807692" y="0.836539" />
+                            <point x="0.488462" y="0.95" />
+                            <point x="0.15" y="0.813462" />
+                            <point x="0.0346154" y="0.507692" />
+                            <point x="0.165385" y="0.153846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gloom" sid="804772098567977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655887146163479" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\gloom.png">
+                        <collision-poly>
+                            <point x="1" y="0.499327" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.000834725" y="0.499327" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="665792995640061">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="particlesMud" sid="923011210279728">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="beaconCamera" sid="117419175993411">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="794013051207936">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199877173590114" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="particlesWater" sid="511402817991633">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="debugText" sid="772103775038223">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="uiPortraits1" sid="728725885597512">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="851858556331455">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="333651095654721">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>uiPortraits1</type>
+                <type>uiPortraitsWinLose</type>
+                <type>debugTextPlace</type>
+            </container>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934252884082357" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisStart01" sid="646536254288623">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="104383520655765">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>invisStart01</type>
+                <type>momentStart</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709482292716039" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="momentStart" sid="853777325639716">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisStart01</type>
+                <type>momentStart</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101533148060359" speed="5">
+                    <frame duration="1" hotspotX="0.933276" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\momentStart.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.50078" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.50078" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="0.998267" y="1" />
+                            <point x="0" y="0.99844" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisPlatform" sid="330828108464963">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisPlatform</type>
+                <type>envGroundSpawn</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112195189686590" speed="5">
+                    <frame duration="1" hotspotX="0.104" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hitBox1" sid="494827886613153">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame1</type>
+                <type>invisAxle1</type>
+                <type>hitBox1</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780818620630539" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper1Front" sid="313111758722928">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546107926400340" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper1Rear" sid="884857648680136">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117119025684803" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper2Front" sid="263533420089128">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266350631079620" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper3Front" sid="781472328391618">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615100982149444" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper2Rear" sid="170575269454402">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136375149407824" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bumper3Rear" sid="680295185522937">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="449839646365523" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hitBox2" sid="688458898527496">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame2</type>
+                <type>invisAxle2</type>
+                <type>hitBox2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573389799595753" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hitBox3" sid="987697038096532">
+            <plugin id="Sprite" />
+            <container>
+                <type>invisFrame3</type>
+                <type>invisAxle3</type>
+                <type>hitBox3</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="352814256537206" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraitsWinLose" sid="335889449206429">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="character" sid="845122132457359" type="number" />
+                <instance-variable name="place" sid="685098583268727" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="135575079022384">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="390786143448965">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>uiPortraits1</type>
+                <type>uiPortraitsWinLose</type>
+                <type>debugTextPlace</type>
+            </container>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335805389631747" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0" y="0" />
+                        <image-point name="Imagepoint 2" x="1" y="1" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beaconCameraLazy" sid="528930605369120">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="461052986270521">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366309161223180" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisAxisZeroY" sid="507742612069869">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509148938756307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.0358974" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisAxisZeroX" sid="175705776251371">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986354243788666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cameraInvis" sid="545281356727336">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="457665789235681">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="760340703957715">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="191787575296439">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916870270711673" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debugTextCharacterStats1" sid="598677681668348">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="debugTextCharacterStats2" sid="169040727417429">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="debugTextCharacterStats3" sid="558622132770480">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="cameraSprite" sid="941962168391550">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="209221876950923">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="465193056256515">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="380391186098762">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776271033378787" speed="5">
+                    <frame duration="1" hotspotX="0.457143" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cameraChassis" sid="685328420219159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297997914740623" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="435828413980542">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="dialogBubbleText" sid="184873945504596">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Fade" sid="905424670372555">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Art\Racers\Assets\bubbleText.png" />
+        </object-type>
+        <object-type name="dialogText" sid="530230892612362">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Boundary" sid="401140933003165">
+                    <behavior id="Rex_boundary" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="dialogBubbleName" sid="556618243111026">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Art\Racers\Assets\bubbleName.png" />
+        </object-type>
+        <object-type name="dialogName" sid="440012486537409">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dialogSpike" sid="535263274138449">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="character" sid="527405369679244" type="number" />
+                <instance-variable name="size" sid="824333522644261" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Turret" sid="707705196811671">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572309921146943" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\Art\Racers\Assets\bubbleTextSpike.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.0263158" y="0.5" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debugReset" sid="944493224251564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843088263656939" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.502128" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="animExplosion" sid="644990408792681">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="260865376276191">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="781757946837235">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241759091243855" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\000.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\001.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\002.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\003.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\004.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\005.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\006.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\goodwin88\Desktop\GameDev\Grannies\Animations\animationExplosion\explosion\007.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.351852" />
+                            <point x="0.62963" y="0.37037" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.685185" y="0.685185" />
+                            <point x="0.5" y="0.703704" />
+                            <point x="0.314815" y="0.685185" />
+                            <point x="0.314815" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="particlesDebris" sid="791165144144254">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\goodwin88\Desktop\GameDev\Racer\assets\wheel02.png" />
+        </object-type>
+        <object-type name="invisPlaceGold" sid="317880394449656">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161542927824648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisPlaceSilver" sid="853883415514800">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691515193148984" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisPlaceBronze" sid="615618011278453">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986558186356662" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debugTextPlace" sid="729627217284560">
+            <plugin id="Text" />
+            <container>
+                <type>uiPortraits1</type>
+                <type>uiPortraitsWinLose</type>
+                <type>debugTextPlace</type>
+            </container>
+        </object-type>
+        <object-type name="invisCharacter1" sid="336238490358684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765892800550474" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits2" sid="590420471873381">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="193269746989484">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="854773926723433">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346426991719843" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.0151515" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits3" sid="296792658435099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="903317155495292">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="796585079204980">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700520518356186" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits4" sid="869072020234723">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="392619241132914">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="759780144695370">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604779519600660" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits5" sid="988017661709154">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="157525058821702">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="290235611101995">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795608858615796" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits6" sid="972712036257118">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="619644260368755">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="218372848136450">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488655219571461" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits7" sid="951252460492607">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="344624921026958">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="568931920605135">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="710678277919500" speed="5">
+                    <frame duration="1" hotspotX="-0.287879" hotspotY="1.6">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits8" sid="925744670136286">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="702450452283152">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="624838481643734">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847351701908907" speed="5">
+                    <frame duration="1" hotspotX="-1.95455" hotspotY="1.55385">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraits9" sid="254438666962832">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="914303198093869">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="PinToImagePoint" sid="764888574364764">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183914488763893" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.18462" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                        <image-point name="imagepoint 3" x="0.5" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="wheels1" plugin-id="Sprite" sid="115542465405794">
+            <members>
+                <member>wheelFront1</member>
+                <member>wheelRear1</member>
+            </members>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="449566128122204">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="276130167595856">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="ground" plugin-id="Sprite" sid="925307826183040">
+            <members>
+                <member>envFgEarth</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Bullet2" sid="958262532402366">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="invisVehicle1" plugin-id="Sprite" sid="879452523480469">
+            <members>
+                <member>invisAxle1</member>
+                <member>invisFrame1</member>
+                <member>wheelFront1</member>
+                <member>wheelRear1</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="character" sid="334192551422752" type="number" />
+                <instance-variable name="chanceCrash" sid="619441909086196" type="number" />
+                <instance-variable name="last" sid="205976078276559" type="number" />
+            </instance-variables>
+        </family>
+        <family name="partsVehicle" plugin-id="Sprite" sid="404171396471684">
+            <members>
+                <member>visAxle</member>
+                <member>visChassis</member>
+                <member>visWheel</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="character" sid="980600816227932" type="number" />
+                <instance-variable name="size" sid="889944681597973" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="396662801801756">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="terrain" plugin-id="Sprite" sid="157518073919718">
+            <members>
+                <member>envFgTerrain</member>
+            </members>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="143403102147325">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="platform" plugin-id="Sprite" sid="987774498336516">
+            <members>
+                <member>envFgTerrain</member>
+                <member>invisPlatform</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid2" sid="110784297842993">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="invisVehicle2" plugin-id="Sprite" sid="315618835824660">
+            <members>
+                <member>invisAxle2</member>
+                <member>invisFrame2</member>
+                <member>wheelFront2</member>
+                <member>wheelRear2</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="character" sid="529192313197279" type="number" />
+                <instance-variable name="chanceCrash" sid="259472126538482" type="number" />
+                <instance-variable name="last" sid="975687911602200" type="number" />
+            </instance-variables>
+        </family>
+        <family name="wheels2" plugin-id="Sprite" sid="383406900260558">
+            <members>
+                <member>wheelFront2</member>
+                <member>wheelRear2</member>
+            </members>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="347447474225987">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="110121926215264">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="invisVehicle3" plugin-id="Sprite" sid="386798309312455">
+            <members>
+                <member>invisAxle3</member>
+                <member>invisFrame3</member>
+                <member>wheelFront3</member>
+                <member>wheelRear3</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="character" sid="551950867726063" type="number" />
+                <instance-variable name="chanceCrash" sid="140261662667591" type="number" />
+                <instance-variable name="last" sid="250631741772390" type="number" />
+            </instance-variables>
+        </family>
+        <family name="wheels3" plugin-id="Sprite" sid="338192493768015">
+            <members>
+                <member>wheelFront3</member>
+                <member>wheelRear3</member>
+            </members>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="429028500843359">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="459385518831848">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="particles" plugin-id="Particles" sid="927624033974288">
+            <members>
+                <member>particlesMud</member>
+                <member>particlesWater</member>
+            </members>
+            <behaviors>
+                <behavior-type name="PinToImagePoint" sid="697660856166255">
+                    <behavior id="Rex_pin2imgpt" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="335435262578216">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="beaconsVehicle" plugin-id="Sprite" sid="115660212518156">
+            <members>
+                <member>beaconCar1</member>
+                <member>beaconCar2</member>
+                <member>beaconCar3</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="status" sid="867169638153545" type="number" />
+                <instance-variable name="character" sid="671687388817128" type="number" />
+                <instance-variable name="skill" sid="860418233853971" type="number" />
+                <instance-variable name="opinion" sid="490377828398192" type="number" />
+                <instance-variable name="place" sid="790530209907519" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="724232763798495">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="889191781840050">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="883738076551174">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="hitboxVehicle" plugin-id="Sprite" sid="182413621909674">
+            <members>
+                <member>hitBox1</member>
+                <member>hitBox2</member>
+                <member>hitBox3</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="limbo" sid="373930249467148" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Light" sid="270056167090352">
+                    <behavior id="Rex_light" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="debugTextStats" plugin-id="Text" sid="878684625658590">
+            <members>
+                <member>debugTextCharacterStats1</member>
+                <member>debugTextCharacterStats2</member>
+                <member>debugTextCharacterStats3</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Flash" sid="725491665229483">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="debugTextAll" plugin-id="Text" sid="731915746341715">
+            <members>
+                <member>debugText</member>
+                <member>debugTextCharacterStats1</member>
+                <member>debugTextCharacterStats2</member>
+                <member>debugTextCharacterStats3</member>
+                <member>debugTextPlace</member>
+            </members>
+        </family>
+        <family name="invisPlace" plugin-id="Sprite" sid="919148402837748">
+            <members>
+                <member>invisPlaceBronze</member>
+                <member>invisPlaceGold</member>
+                <member>invisPlaceSilver</member>
+            </members>
+        </family>
+        <family name="uiPortraits" plugin-id="Sprite" sid="741640386152187">
+            <members>
+                <member>uiPortraits1</member>
+                <member>uiPortraits2</member>
+                <member>uiPortraits3</member>
+                <member>uiPortraits4</member>
+                <member>uiPortraits5</member>
+                <member>uiPortraits6</member>
+                <member>uiPortraits7</member>
+                <member>uiPortraits8</member>
+                <member>uiPortraits9</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="character" sid="111802631034328" type="number" />
+                <instance-variable name="place" sid="479602031701701" type="number" />
+            </instance-variables>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>game.xml</event-sheet>
+        <event-sheet>setupTerrain.xml</event-sheet>
+        <event-sheet>setupVehicle1.xml</event-sheet>
+        <event-sheet>setupVehicle2.xml</event-sheet>
+        <event-sheet>setupVehicle.xml</event-sheet>
+        <event-sheet>setupVehicle3.xml</event-sheet>
+        <event-sheet>setupWorld.xml</event-sheet>
+        <event-sheet>mechanicParticle.xml</event-sheet>
+        <event-sheet>OLDmechanicZoom.xml</event-sheet>
+        <event-sheet>mechanicSwapping.xml</event-sheet>
+        <event-sheet>mechanicPlace.xml</event-sheet>
+        <event-sheet>setupVariablesCharacter.xml</event-sheet>
+        <event-sheet>momentStart.xml</event-sheet>
+        <event-sheet>setupVariablesVehicle.xml</event-sheet>
+        <event-sheet>setupVehicleHitbox.xml</event-sheet>
+        <event-sheet>mechanicCamera.xml</event-sheet>
+        <event-sheet>mechanicAxis.xml</event-sheet>
+        <event-sheet>debug.xml</event-sheet>
+        <event-sheet>debugInvis.xml</event-sheet>
+        <event-sheet>mechanicCrash.xml</event-sheet>
+        <event-sheet>OLDmechanic9PatchDialogue.xml</event-sheet>
+        <event-sheet>debugReload.xml</event-sheet>
+        <event-sheet>OLDsetupDialogueCharacter.xml</event-sheet>
+        <event-sheet>mechanicLimbo.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="10" />
+        <global-instance type="Touch" uid="28">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="55" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

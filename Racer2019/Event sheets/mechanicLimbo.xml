@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicLimbo</name>
+    <events>
+        <event-block sid="745597942843494">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="924778853905669" type="hitboxVehicle" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="127202113023225" type="hitboxVehicle">
+                    <param id="0" name="Instance variable">limbo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="958067217371401">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="288818485519303" type="hitboxVehicle" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="764874726667093" type="hitboxVehicle">
+                    <param id="0" name="Instance variable">limbo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

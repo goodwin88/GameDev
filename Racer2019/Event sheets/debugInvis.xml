@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>debugInvis</name>
+    <events>
+        <event-block sid="928740063754051">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="438435023861817" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="225913659107460" type="System">
+                    <param id="0" name="Layer">&quot;invis&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="496888558955664" type="System">
+                    <param id="0" name="Layer">&quot;nozoom&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="419963629343631" type="System">
+                    <param id="0" name="Layer">&quot;debug&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="304303425384918">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="200406909575953" type="Keyboard">
+                    <param id="0" name="Key">49</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="184341709518909" type="System">
+                    <param id="0" name="Layer">&quot;invis&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="334178328463399" type="System">
+                    <param id="0" name="Layer">&quot;nozoom&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="948607753144762" type="System">
+                    <param id="0" name="Layer">&quot;debug&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="898776276527055">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="835333728203307" type="Keyboard">
+                    <param id="0" name="Key">48</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="855729889337628" type="System">
+                    <param id="0" name="Layer">&quot;invis&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="299835169929326" type="System">
+                    <param id="0" name="Layer">&quot;nozoom&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="437320392474318" type="System">
+                    <param id="0" name="Layer">&quot;debug&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
