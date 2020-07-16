@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>setup</name>
+    <events>
+        <event-block sid="541106952802135">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="966799947983312" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="499866119357388" type="bd">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+                <action id="-7" name="Set size" sid="535297945787673" type="bd">
+                    <param id="0" name="Width">scrollx*2</param>
+                    <param id="1" name="Height">scrolly*2</param>
+                </action>
+                <action id="-3" name="Set position" sid="129235748644494" type="uiBD">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="742060842087618" type="uiBD">
+                    <param id="0" name="Width">scrollx*2</param>
+                    <param id="1" name="Height">scrollx*1.75</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="359685072491997" type="uiAnchor2">
+                    <param id="0" name="Object">uiBD</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-7" name="Set size" sid="220875140523626" type="uiAnchor2">
+                    <param id="0" name="Width">scrollx*2</param>
+                    <param id="1" name="Height">(scrolly*2)-portrait.Y-100</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="501150925826838" type="uiPortraitsBD">
+                    <param id="0" name="Object">uiAnchor2</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="249089747631762" type="uiPortraitsBD">
+                    <param id="0" name="Width">scrollx*1.1</param>
+                    <param id="1" name="Height">uiAnchor2.Height-32</param>
+                </action>
+                <action id="9" name="Set scale" sid="509747050539062" type="portrait">
+                    <param id="0" name="Scale">0.85</param>
+                </action>
+                <action id="-3" name="Set position" sid="592653318588020" type="portrait">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">uiBD.ImagePointY(1)</param>
+                </action>
+                <action id="9" name="Set scale" sid="867807080456736" type="uiPortrait">
+                    <param id="0" name="Scale">0.2</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="861557706748751" type="uiPortrait">
+                    <param id="0" name="Object">uiPortraitsBD</param>
+                    <param id="1" name="Image point (optional)">self.expression</param>
+                </action>
+                <action id="5" name="Set frame" sid="976467233322704" type="uiPortrait">
+                    <param id="0" name="Frame number">self.expression+((uibd.page-1)*9)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="415594605499187">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="664429856917485" type="System">
+                    <param id="0" name="First value">uiPortrait.Count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="903340535044357">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="734232139661120" type="System">
+                            <param id="0" name="Count">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="931917993973176" type="uiPortraitsBD">
+                            <param id="0" name="Object">uiPortrait</param>
+                            <param id="1" name="Layer">&quot;ui&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="529901581419232" type="uiPortrait">
+                            <param id="0" name="Instance variable">expression</param>
+                            <param id="1" name="Value">uiPortrait.Count</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="147573630573331">
+            <conditions>
+                <condition id="-18" name="On created" sid="679433562048318" type="portrait" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="433796941289999" type="portrait" />
+            </actions>
+        </event-block>
+        <event-block sid="543381205895423">
+            <conditions>
+                <condition id="-18" name="On created" sid="549743225344576" type="uiPortrait" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="402466579876076" type="uiPortrait" />
+            </actions>
+        </event-block>
+        <event-block sid="994712454219335">
+            <conditions>
+                <condition id="-18" name="On created" sid="832582591059159" type="uiCursor" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Move to bottom" sid="155925168909340" type="uiCursor" />
+            </actions>
+        </event-block>
+        <event-block sid="614801294364553">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="214276476350320" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="526023070903470" type="portrait">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="343843758983966" type="uiCursor">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="638967392035242" type="portrait">
+                    <param id="0" name="Fade-in time">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="735366814983700" type="portrait" />
+            </actions>
+            <sub-events>
+                <event-block sid="561798716305882">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="957307544558795" type="Touch">
+                            <param id="0" name="Object">uiPortrait</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="241939085348143" type="uiCursor">
+                            <param id="0" name="Object">uiPortrait</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="389983179736904" type="portrait">
+                            <param id="0" name="Frame number">uiPortrait.AnimationFrame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="775506175745899">
+            <conditions>
+                <condition id="2" inverted="1" name="Is in touch" sid="920425309721643" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="910690777040389" type="uiCursor">
+                    <param id="0" name="Opacity">portrait.Opacity</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="421748437055413" type="portrait">
+                    <param id="0" name="Fade-in time">1.75</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="453423123984489" type="portrait" />
+            </actions>
+            <sub-events>
+                <event-block sid="766744731668443">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="533313834890092" type="uiPortrait">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">portrait.AnimationFrame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="950904655979905" type="uiCursor">
+                            <param id="0" name="Object">uiPortrait</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="617744074643398">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="901503720281561" type="uiBD">
+                    <param id="0" name="Instance variable">page</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="598574395445227" type="uiArrowLeft">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="366243535882120" type="uiArrowRight">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="143590112881791">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="657253921193525" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="585137011471396" type="portrait">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="931256679118985">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="564227328752124" type="portrait">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="109486343821230">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="368210434456463" type="portrait">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="327578047107729">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="940303267758406" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="939651088969134" type="portrait">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="924835418099603">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="456601740021077" type="portrait">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Number">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="105451298559251">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="469416163381749" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="151775630148981" type="portrait">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="916171814010092">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="455386874840448" type="portrait">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Number">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="656851954869968">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="682249770378274" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="123666712593804" type="portrait">
+                                            <param id="0" name="Frame number">self.AnimationFrame+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="219391461053784">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="401405777575237" type="uiBD">
+                    <param id="0" name="Instance variable">page</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="267753727007888" type="uiArrowLeft">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="165604328647243" type="uiArrowRight">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="925716673907796">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="434946142304077" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="543557230673817" type="portrait">
+                            <param id="0" name="Frame number">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244759744207010">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="392758438178360" type="portrait">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="600649060760205">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="269322150752667" type="portrait">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">18</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="875893704710022">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="416729317351950" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="236110778928438" type="portrait">
+                                            <param id="0" name="Frame number">9</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="864760381046543">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="862814072356074" type="portrait">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Number">18</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="619777444215760">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="737741608729866" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="264957689648723" type="portrait">
+                                            <param id="0" name="Frame number">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="321753893915989">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="136749099445069" type="portrait">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Number">18</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="483413618500229">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="558991512150315" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="376214259030204" type="portrait">
+                                            <param id="0" name="Frame number">self.AnimationFrame+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848295997492798">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="959460952671110" type="uiBD">
+                    <param id="0" name="Instance variable">page</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="290646630482753" type="uiArrowLeft">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="169013566839499" type="uiArrowRight">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="580556572533302">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="540657713046542" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="626723918929992" type="portrait">
+                            <param id="0" name="Frame number">18</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="648106308679789">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="207161797991647" type="portrait">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="621635731486927">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="362904107196316" type="portrait">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">27</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="951434150022390">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="478026796892009" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="305505482565370" type="portrait">
+                                            <param id="0" name="Frame number">18</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="953765021823972">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="462947373198825" type="portrait">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Number">27</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="423525886997864">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="927166798000149" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="608298749380711" type="portrait">
+                                            <param id="0" name="Frame number">19</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="914706766562218">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="982921865030499" type="portrait">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Number">27</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="794590562757263">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="639861044770101" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="578682419702382" type="portrait">
+                                            <param id="0" name="Frame number">self.AnimationFrame+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="553876567700416">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="619502975111946" type="uiPortrait">
+                    <param id="0" name="Layer">&quot;storage&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="295824774049735" type="uiPortrait" />
+            </actions>
+        </event-block>
+        <event-block sid="913360895633202">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="731519232006768" type="uiCursor">
+                    <param id="0" name="Object">uiPortrait</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="986052629188530" type="uiCursor">
+                    <param id="0" name="Width">uiPortrait.Width*1.2</param>
+                    <param id="1" name="Height">uiPortrait.Height*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="859093117576450">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="538385554454656" type="uiPortrait">
+                    <param id="0" name="Instance variable">expression</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="148447337894604" type="uiArrows">
+                    <param id="0" name="Y">uiPortrait.Y-(self.Height/2)</param>
+                </action>
+                <action id="-1" name="Set X" sid="636010019429641" type="uiArrowLeft">
+                    <param id="0" name="X">10</param>
+                </action>
+                <action id="-1" name="Set X" sid="400919415987788" type="uiArrowRight">
+                    <param id="0" name="X">(scrollx*2)-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="335256906775660">
+            <conditions>
+                <condition id="-18" name="On created" sid="491541599283803" type="uiArrows" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="658655646754056" type="uiArrows">
+                    <param id="0" name="Width">32</param>
+                    <param id="1" name="Height">64</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="572403138081087">
+            <conditions>
+                <condition id="3" name="On touched object" sid="742897341999369" type="Touch">
+                    <param id="0" name="Object">uiArrowRight</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="963272104058254" type="uiArrowRight" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="707355650814511" type="uiBD">
+                    <param id="0" name="Instance variable">page</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276477790112373">
+            <conditions>
+                <condition id="3" name="On touched object" sid="138119248742744" type="Touch">
+                    <param id="0" name="Object">uiArrowLeft</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="756847717819794" type="uiArrowLeft" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="616148211967794" type="uiBD">
+                    <param id="0" name="Instance variable">page</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="675733038401878">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="138408128698071" type="portrait">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">19</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="569873699348856" type="portrait">
+                    <param id="0" name="Scale">0.6</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

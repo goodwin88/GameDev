@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bd" sid="607439882682930">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610191307077012" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiBD" sid="136455658636064">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="page" sid="938394010783694" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331552217370939" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.78" />
+                        <image-point name="Imagepoint 2" x="0" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="portrait" sid="704079017234861">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="628882595319511">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177227347367945" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.519355" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.486405" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitPurple.png" />
+                    <frame duration="1" hotspotX="0.485714" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\orangePortrait.png" />
+                    <frame duration="1" hotspotX="0.5209" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.438944" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitPurple.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\gynoPortrait01.png">
+                        <collision-poly>
+                            <point x="0.799383" y="0.312977" />
+                            <point x="0.762346" y="0.305344" />
+                            <point x="0.734568" y="0.301527" />
+                            <point x="0.62037" y="0.160305" />
+                            <point x="0.762346" y="0.992366" />
+                            <point x="0.00617284" y="0.98855" />
+                            <point x="0.00617284" y="0.160305" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\gynoPortrait03.png">
+                        <collision-poly>
+                            <point x="0.817901" y="0.337037" />
+                            <point x="0.765432" y="0.325926" />
+                            <point x="0.725309" y="0.322222" />
+                            <point x="0.567901" y="0.17037" />
+                            <point x="0.765432" y="0.992593" />
+                            <point x="0.00308642" y="0.981481" />
+                            <point x="0.132716" y="0.17037" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501538" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\gynoPortrait02.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.934758" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489552" hotspotY="0.993921" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitGhost.png">
+                        <collision-poly>
+                            <point x="0.656716" y="0.148936" />
+                            <point x="1" y="0.109423" />
+                            <point x="1" y="0.130699" />
+                            <point x="1" y="0.240122" />
+                            <point x="1" y="0.987842" />
+                            <point x="0.00597015" y="0.993921" />
+                            <point x="0.173134" y="0.240122" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489552" hotspotY="0.993243" />
+                    <frame duration="1" hotspotX="0.478134" hotspotY="0.993443" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitRedBoss.png">
+                        <collision-poly>
+                            <point x="0.043131" y="0.0636792" />
+                            <point x="0.5" y="0.122642" />
+                            <point x="0.803514" y="0.290094" />
+                            <point x="0.968051" y="0.5" />
+                            <point x="0.979233" y="0.96934" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501859" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitCosmo.png">
+                        <collision-poly>
+                            <point x="0.345725" y="0.0905172" />
+                            <point x="1" y="0.150862" />
+                            <point x="1" y="0.474138" />
+                            <point x="1" y="0.99569" />
+                            <point x="0.345725" y="0.991379" />
+                            <point x="0.234201" y="0.474138" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501859" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiAnchor2" sid="466833588075506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364712639903851" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="1" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiPortraitsBD" sid="637335594727856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962074919451219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                        <image-point name="topLeft" x="0" y="0" />
+                        <image-point name="Imagepoint 1" x="0.5" y="0" />
+                        <image-point name="Imagepoint 2" x="1" y="0" />
+                        <image-point name="Imagepoint 3" x="0" y="0.5" />
+                        <image-point name="Imagepoint 4" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 5" x="1" y="0.5" />
+                        <image-point name="Imagepoint 6" x="0" y="1" />
+                        <image-point name="Imagepoint 7" x="0.5" y="1" />
+                        <image-point name="Imagepoint 8" x="1" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiCursor" sid="658326794191089">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823223339300037" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="941437527777681">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="uiPortrait" sid="471128053569254">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="expression" sid="241142183372083" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104021856239015" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitGreen.png">
+                        <image-point name="Imagepoint 1" x="0.501577" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501577" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.501683" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501511" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitPurple.png">
+                        <image-point name="Imagepoint 1" x="0.501511" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501587" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\orangePortrait.png">
+                        <image-point name="Imagepoint 1" x="0.501587" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501608" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501608" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.50165" y="0.501393" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitPurple.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.501706" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501538" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501538" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501493" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501493" y="0.50152" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501493" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501493" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501597" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitRedBoss.png">
+                        <image-point name="Imagepoint 1" x="0.501597" y="0.5" />
+                        <collision-poly>
+                            <point x="0.043131" y="0.0636792" />
+                            <point x="0.5" y="0.122642" />
+                            <point x="0.803514" y="0.290094" />
+                            <point x="0.968051" y="0.5" />
+                            <point x="0.979233" y="0.96934" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501859" hotspotY="1" original-source="C:\Users\goodwin88\Desktop\GameDev\Ships\assets\portraitCosmo.png">
+                        <image-point name="Imagepoint 1" x="0.501859" y="0.5" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.345725" y="0" />
+                            <point x="1" y="0.140625" />
+                            <point x="1" y="0.476293" />
+                            <point x="1" y="1" />
+                            <point x="0.345725" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.476293" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501859" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501859" y="0.502183" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501458" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.501458" y="0.501639" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiArrowRight" sid="999578320499376">
+            <plugin id="Sprite" />
+            <container>
+                <type>uiArrowLeft</type>
+                <type>uiArrowRight</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514876450609317" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uiArrowLeft" sid="242186495225671">
+            <plugin id="Sprite" />
+            <container>
+                <type>uiArrowLeft</type>
+                <type>uiArrowRight</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838267525773641" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="uiArrows" plugin-id="Sprite" sid="907670742382047">
+            <members>
+                <member>uiArrowLeft</member>
+                <member>uiArrowRight</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>main.xml</event-sheet>
+        <event-sheet>setup.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="7">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
